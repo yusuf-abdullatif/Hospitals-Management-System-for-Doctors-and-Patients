@@ -11,6 +11,17 @@ body {
     border-radius: 5px 5px 0 0;
 }
 
+.footer {
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
 .logo {
     float: left;
 }
