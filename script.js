@@ -1,7 +1,7 @@
 const loginButton = document.querySelector('.login-button');
 const loginPopup = document.querySelector('.login-popup');
 const loginPopupClose = document.querySelector('.login-popup-close');
-
+const homeButton = document.querySelector('.homebutton');
 loginButton.addEventListener('click', () => {
     loginPopup.style.display = 'block';
 });
