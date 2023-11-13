@@ -6,15 +6,28 @@
 </head>
 <body>
     
-<header id="header">
+<header id="header_c">
     <div class="logo">
         <img src="icon.jpg" alt="Logo">
+        <span>Healthcare</span>
+        <button onclick="tomainpage()" class="button">Main Page</button>
+        <button onclick="toaboutpage()" class="button">About Us</button>
+<script>
+function tomainpage() {
+  window.location.href = "main_page.html";
+}
+</script>  
+<script>
+    function toaboutpage() {
+      window.location.href = "about_us.html";
+    }
+    </script>    
+
     </div>
-
-    
-      
+</header>
+    <div id="rightLayer">
     <div id="contactUs">
-
+        
         <h1>CONTACT US</h1>
         <form action="post">
             <table>

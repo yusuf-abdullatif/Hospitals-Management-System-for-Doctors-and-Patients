@@ -11,6 +11,15 @@ body {
     border-radius: 5px 5px 0 0;
 }
 
+#header_c {
+    border: 3px solid black;
+    background-color: aqua;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom:20px;
+}
+
 .footer {
     background-color: #fff;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
@@ -23,7 +32,12 @@ body {
 
 
 .logo {
-    float: left;
+
+    width: 100%;    
+    height: 50px;
+
+    font-style: bold;
+    font-size: 45px;
 }
 
 .logo img {
@@ -80,9 +94,24 @@ body {
     background-color: #f2f2f2;
 }
 
-.form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+
+
+#contactUs{
+    float:right;
+}
+#rightLayer{
+    width:50%;
+    height:90%;
+    float:right;
+    background-color: coral;
+    border:3px solid black;
+}
+.homebutton{
+    float:right;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
