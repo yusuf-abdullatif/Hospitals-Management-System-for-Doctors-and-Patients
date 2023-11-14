@@ -10,10 +10,11 @@
     <div class="logo">
         <img src="icon.jpg" alt="Logo">
         <span>Healthcare</span>
-        <button onclick="tomainpage()" class="button">Main Page</button>
-        <button onclick="toaboutpage()" class="button">About Us</button>
+        <button onclick="tomainpage()" class="login-button">Main Page</button>
+        <button onclick="toaboutpage()" class="login-button">About Us</button>
+        <div class="clear"></div>
 <script>
-function tomainpage() {
+function tomainpage() { 
   window.location.href = "main_page.html";
 }
 </script>  
@@ -24,62 +25,72 @@ function tomainpage() {
     </script>    
 
     </div>
-</header>
-    <div id="rightLayer">
-    <div id="contactUs">
-        
-        <h1>CONTACT US</h1>
-        <form action="post">
-            <table>
-                <tr>
-                    <td>
-                        <label style="display:block;">First Name *</label>
-                        <input type="text" required>
-                    </td>
-                    <td>
-                        <label style="display:block;">Last Name *</label>
-                        <input type="text" style="width:80%;" required>
-                    </td>
-                </tr>
+</header> 
+<div style="width: 100%;">
+    <div id="leftLayer">
+    <p>+90 123 456 78 91</p>
+    <p>Hospital@mail.com</p>
+    <p>Address</p>
+</div>
+    
+        <div id="rightLayer">
+            <div id="contactUs">
+                
+                
+                
+                <form action="post">
+                    <table class="contactTable">
+                        <tr>    
+                            <td><h1>CONTACT US</h1></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <label style="display:block;">First Name *</label>
+                                <input type="text" required>
+                            </td>
+                            <td>
+                                <label style="display:block;">Last Name *</label>
+                                <input type="text" style="width:80%;" required>
+                            </td>
+                        </tr>
 
-                <tr>
-                    <td>
-                        <label style="display:block;">Email *</label>
-                        <input type="email" required >
-                    </td>
-                    <td>
-                        <label style="display:block;">Tel</label>
-                        <input type="text" style="width:80%;">
-                    </td>
-                </tr>
+                        <tr>
+                            <td>
+                                <label style="display:block;">Email *</label>
+                                <input type="email" required >
+                            </td>
+                            <td>
+                                <label style="display:block;">Tel</label>
+                                <input type="text" style="width:80%;">
+                            </td>
+                        </tr>
 
-                <tr>
-                    <td colspan="2">
-                        <label style="display:block;">Subject *</label>
-                        <input type="text" style="width:90%;" required>
-                    </td>
+                        <tr>
+                            <td colspan="2">
+                                <label style="display:block;">Subject *</label>
+                                <input type="text" style="width:90%;" required>
+                            </td>
 
-                </tr>
+                        </tr>
 
-                <tr>
-                    <td colspan="2">
-                        <label style="display:block;">Message *</label>
-                        <textarea style="width:90%;" required></textarea>
-                    </td>
+                        <tr>
+                            <td colspan="2">
+                                <label style="display:block;">Message *</label>
+                                <textarea style="width:90%;" required></textarea>
+                            </td>
 
-                </tr>
+                        </tr>
 
+                    </table>
 
-
-            </table>
-
-            <button>Submit</button>
-
-        </form>
+                    <button>Submit</button>
+                    
+                </form>
+        </div>
     </div>
-    </div>
-</header>
-
+</div>
+<div style="clear:both"></div>
 
 <script src="script.js"></script>
 </body>
