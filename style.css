@@ -17,7 +17,9 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 5px 5px 0 0;
-    margin-bottom:20px;
+    margin-bottom:0px;
+
+
 }
 
 .footer {
@@ -94,17 +96,38 @@ body {
     background-color: #f2f2f2;
 }
 
-
-
 #contactUs{
-    float:right;
+
+    padding-left: 300px;
+}
+#leftLayer{
+    float:left;width: 50%;
+    height: 800px;
+    border:3px solid black;
+    border-right:0px;
+    border-top:0px;
+    box-sizing: border-box;
+    position:relative;
+	background-image:url('contactUsBackground.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+    object-fit: fill;
+    background-size: cover;
 }
 #rightLayer{
+    position: absolute 0 0 0 0;
     width:50%;
-    height:90%;
+    height:800px;
     float:right;
-    background-color: coral;
-    border:3px solid black;
+    border:3px solid black;  
+    border-left:0px;
+    border-top:0px;
+    box-sizing:border-box;
+    background-image:url('contactUsBackground2.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+    object-fit: fill;
+    background-size: cover;
 }
 .homebutton{
     float:right;
@@ -114,4 +137,23 @@ body {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}
+
+.contactTable{
+    margin-top:170px;
+}
+
+.flex{
+    display:inline-block;
+}
+
+#leftLayer, p {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
 }
