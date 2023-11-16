@@ -81,7 +81,6 @@ a {
 .footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 5px 5px;
-    position: fixed;
     bottom: 0;
     width: 100%;
     /*text style barlow*/
@@ -283,5 +282,17 @@ a {
         margin-inline-start:0px
     }
 }
+#map {
+    margin-top: 10px;
+    height: 400px;
+    width: 400px;
+    border: solid 3px black;
+  }
 
+  .gm-style .gm-style-cc {
+    bottom: auto;
+    top: 0;
+    left: 0;
+    right: auto;
+  }
 
