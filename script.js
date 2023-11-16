@@ -1,7 +1,7 @@
 const loginButton = document.querySelector('.login-button');
 const loginPopup = document.querySelector('.login-popup');
 const loginPopupClose = document.querySelector('.login-popup-close');
-const homeButton = document.querySelector('.homebutton');
+document.querySelector('.homebutton');
 loginButton.addEventListener('click', () => {
     loginPopup.style.display = 'block';
 });
@@ -41,7 +41,7 @@ const position = { lat: -25.344, lng: 131.031 };
 // Request needed libraries.
 //@ts-ignore
 const { Map } = await google.maps.importLibrary("maps");
-const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
 
 // The map, centered at Uluru
 map = new Map(document.getElementById("map"), {
@@ -50,6 +50,6 @@ map = new Map(document.getElementById("map"), {
   mapId: "DEMO_MAP_ID",
 });
 function msgAlert() {
-var msgSent = "Message Sent!";
+  const msgSent = "Message Sent!";
   alert (msgSent);
 }
