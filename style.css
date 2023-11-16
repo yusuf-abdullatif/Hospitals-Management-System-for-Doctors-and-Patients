@@ -237,7 +237,7 @@ a {
 }
 
 .contactTable{
-    margin-top:170px;
+    margin-top:60px;
 }
 
 .flex{
@@ -430,7 +430,7 @@ body {
 
 #map {
     margin-top: 10px;
-    height: 540px;
+    height: 400px;
     width: 540px;
     border: solid 3px black;
 }

@@ -49,3 +49,7 @@ map = new Map(document.getElementById("map"), {
   center: position,
   mapId: "DEMO_MAP_ID",
 });
+function msgAlert() {
+var msgSent = "Message Sent!";
+  alert (msgSent);
+}
