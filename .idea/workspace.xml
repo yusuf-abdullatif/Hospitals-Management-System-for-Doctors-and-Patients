@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="Created gitignore">
+    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="fixed contact us header and footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact_us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/style.css" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -58,13 +62,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahyil/Downloads/www.hespanol.com&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahyil/WebstormProjects/Hospitals-Management-System-for-Doctors-and-Patients&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -90,9 +95,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.main_page.html" />
-        <item itemvalue="JavaScript Debug.contact_us.html" />
-        <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="JavaScript Debug.about_us.html" />
+        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="JavaScript Debug.contact_us.html" />
       </list>
     </recent_temporary>
   </component>
@@ -105,7 +110,8 @@
       <option name="presentableId" value="Default" />
       <updated>1699883806515</updated>
       <workItem from="1699883808151" duration="2752000" />
-      <workItem from="1699888129449" duration="33517000" />
+      <workItem from="1699888129449" duration="35591000" />
+      <workItem from="1700158487044" duration="514000" />
     </task>
     <task id="LOCAL-00001" summary="created template for project and added icon">
       <option name="closed" value="true" />
@@ -259,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700154193948</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fixed contact us header and footer">
+      <option name="closed" value="true" />
+      <created>1700155940005</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1700155940005</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +315,7 @@
     <MESSAGE value="Updated main page background" />
     <MESSAGE value="Updated main page and fixed a lot of bugs" />
     <MESSAGE value="Created gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created gitignore" />
+    <MESSAGE value="fixed contact us header and footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed contact us header and footer" />
   </component>
 </project>
