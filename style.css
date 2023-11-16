@@ -343,12 +343,10 @@ body {
     background-color: #370511ff;
 }
 .solid-button-root-class-name {
-    flex: 1;
+
     width: auto;
 }
-.solid-button-root-class-name1 {
-    width: auto;
-}
+
 
 .landing-page-container {
     width: 100%;
