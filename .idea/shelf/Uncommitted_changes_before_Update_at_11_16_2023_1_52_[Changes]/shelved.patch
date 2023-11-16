@@ -1,0 +1,374 @@
+Index: test.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <div id=\"sticky-wrapper\" class=\"sticky-wrapper\" style=\"height: 77px;\"><div class=\"header below\">\r\n        <div class=\"content\">\r\n            <div class=\"menu\"></div>\r\n            <div class=\"context\">\r\n                <div class=\"holder\">\r\n                    <a title=\"Acıbadem Sağlık Grubu\" class=\"brand logo\" href=\"/\">\r\n                        <img class=\"lazy-load-img-cancelled\" src=\"/assets/images/acibadem-saglik-grubu.png\" alt=\"Acıbadem Sağlık Grubu\" width=\"686\" height=\"80\">\r\n                    </a>\r\n                    <div class=\"seperator\"></div>\r\n                    <nav>\r\n                        <ul>\r\n                            <li id=\"active\">\r\n                                <a title=\"ANA SAYFA\" href=\"/\">ANA SAYFA</a>\r\n                            </li>\r\n                            <li>\r\n                                <a title=\"HASTANELER\" id=\"\" href=\"/hastaneler/\">HASTANELER</a>\r\n                            </li>\r\n                            <li>\r\n                                <a title=\"TIBBİ BİRİMLER\" id=\"\" href=\"/tibbi-birimler/\">TIBBİ BİRİMLER</a>\r\n                            </li>\r\n                            <li>\r\n                                <a title=\"DOKTORLAR\" id=\"\" href=\"/doktorlar/\">DOKTORLAR</a>\r\n                            </li>\r\n                            <li>\r\n                                <a title=\"MEDİKAL TEKNOLOJİLER\" id=\"\" href=\"/medikal-teknolojiler/\">MEDİKAL TEKNOLOJİLER</a>\r\n                            </li>\r\n                            <li>\r\n                                <a title=\"İLGİ ALANLARI\" href=\"/ilgi-alanlari/\">İLGİ ALANLARI</a>\r\n                            </li>\r\n                            <li>\r\n                                <a title=\"İLETİŞİM\" href=\"/iletisim/\">İLETİŞİM</a>\r\n                            </li>\r\n                            <li class=\"brand \">\r\n                                <ul class=\"brandList\">\r\n                                    <li class=\"acibademOnline\">\r\n                                        <a href=\"https://www.acibadem.com.tr/acibademonline/\" title=\"ACIBADEM ONLINE\" rel=\"external\" target=\"_blank\">ACIBADEM <strong>ONLINE</strong></a>\r\n                                    </li>\r\n                                    <li class=\"acibademHayat\">\r\n                                        <a href=\"https://www.acibadem.com.tr/hayat/\" title=\"ACIBADEM HAYAT\" rel=\"external\" target=\"_blank\">ACIBADEM <strong>HAYAT</strong></a>\r\n                                    </li>\r\n\r\n                                    <li class=\"enguzelYasinda\">\r\n                                        <a href=\"https://www.enguzelyasinda.com/\" title=\"enguzelyasinda.com\" rel=\"external\" target=\"_blank\"><img src=\"/assets/images/enguzelyasinda.com-logo.png\" alt=\"enguzelyasinda.com\"></a>\r\n                                    </li>\r\n\r\n                                </ul>\r\n                            </li>\r\n                        </ul>\r\n                    </nav>\r\n                    <div class=\"seperator\"></div>\r\n                    <div class=\"clearFix\"></div>\r\n                </div>\r\n            </div>\r\n            <span class=\"searchButtonMobile\"></span></div>\r\n    </div></div>\r\n</head>\r\n<body>\r\n\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test.html b/test.html
+--- a/test.html	(revision d18bbecdf283b742ab0f9e99b549772b22874c5f)
++++ b/test.html	(date 1700088460309)
+@@ -1,63 +1,184 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <div id="sticky-wrapper" class="sticky-wrapper" style="height: 77px;"><div class="header below">
++<footer>
++    <div class="interestContent">
++        <h2>SIK ZİYARET EDİLENLER</h2>
++        <ul class="interestContentList">
++            <li>
++                <a title="Akciğer kanseri" href="/ilgi-alani/akciger-kanseri/">Akciğer kanseri</a>
++            </li>
++            <li>
++                <a title="Bağırsak kanseri" href="/ilgi-alani/kalin-bagirsak-kanseri/">Bağırsak kanseri</a>
++            </li>
++            <li>
++                <a title="Böbrek nakli" href="/merkezler/bobrek-nakli-merkezi/">Böbrek nakli</a>
++            </li>
++            <li>
++                <a title="Cilt kanseri" href="/ilgi-alani/deri-kanseri/">Cilt kanseri</a>
++            </li>
++            <li>
++                <a title="Gırtlak kanseri" href="/ilgi-alani/girtlak-kanseri/">Gırtlak kanseri</a>
++            </li>
++            <li>
++                <a title="Hemoroid" href="/ilgi-alani/hemoroid/">Hemoroid</a>
++            </li>
++            <li>
++                <a title="Kalp krizi belirtileri" href="/ilgi-alani/kalp-krizi/">Kalp krizi belirtileri</a>
++            </li>
++            <li>
++                <a title="Kan kanseri (Lösemi)" href="/ilgi-alani/losemi/">Kan kanseri (Lösemi)</a>
++            </li>
++            <li>
++                <a title="Karaciğer nakli" href="/merkezler/karaciger-nakli-merkezi/">Karaciğer nakli</a>
++            </li>
++            <li>
++                <a title="Kemik iliği nakli" href="/ilgi-alani/kemik-iligi-kok-hucre/">Kemik iliği nakli</a>
++            </li>
++            <li>
++                <a title="Kolon kanseri" href="/ilgi-alani/kolon-ve-rektum-kanseri/">Kolon kanseri</a>
++            </li>
++            <li>
++                <a href="https://www.acibadem.com.tr/koronavirus/koronavirus-corona-virusu-nedir-belirtileri/" title="Koronavirüs Belirtileri" rel="external" target="_blank">Koronavirüs Belirtileri</a>
++            </li>
++            <li>
++                <a title="Lenf kanseri" href="/ilgi-alani/lenf-kanseri-lenfoma/">Lenf kanseri</a>
++            </li>
++            <li>
++                <a title="Lenfödem" href="/ilgi-alani/lenfodem/">Lenfödem</a>
++            </li>
++            <li>
++                <a title="Meme kanseri" href="/ilgi-alani/meme-kanseri/">Meme kanseri</a>
++            </li>
++            <li>
++                <a title="Mide kanseri" href="/ilgi-alani/mide-kanseri/">Mide kanseri</a>
++            </li>
++            <li>
++                <a title="Pankreas kanseri" href="/ilgi-alani/pankreas-kanseri/">Pankreas kanseri</a>
++            </li>
++            <li>
++                <a title="Prostat kanseri" href="/ilgi-alani/prostat-kanseri/">Prostat kanseri</a>
++            </li>
++            <li>
++                <a title="Rahim kanseri" href="/ilgi-alani/rahim-kanseri/">Rahim kanseri</a>
++            </li>
++            <li>
++                <a title="Vücut kitle endeksi hesaplama" href="/ilgi-alani/vucut-kitle-indeksi-hesaplama/">Vücut kitle endeksi hesaplama</a>
++            </li>
++        </ul>
++        <div class="clearFix"></div>
++    </div>
++    <div class="footer above">
+         <div class="content">
+-            <div class="menu"></div>
+-            <div class="context">
+-                <div class="holder">
+-                    <a title="Acıbadem Sağlık Grubu" class="brand logo" href="/">
+-                        <img class="lazy-load-img-cancelled" src="/assets/images/acibadem-saglik-grubu.png" alt="Acıbadem Sağlık Grubu" width="686" height="80">
++            <ul class="slideList">
++                <li>
++                    <a href="https://www.acibadem.com.tr/acibademonline/" title="ACIBADEM ONLINE" class="acibadem-online" rel="external" target="_blank">ACIBADEM <span>ONLINE</span></a>
++                </li>
++                <li>
++                    <a href="https://www.acibadem.com.tr/hayat/" title="ACIBADEM HAYAT" class="acibadem-hayat" rel="external" target="_blank">ACIBADEM <span>HAYAT</span></a>
++                </li>
++                <li>
++                    <a title="GRUP İŞTİRAKLERİ" href="/kurumsal-bilgiler/?rel=grup-istirakleri">GRUP <span>İŞTİRAKLERİ</span></a>
++                </li>
++                <li>
++                    <a title="TIBBİ DANIŞMA" class="medical-quest" href="/iletisim/?rel=tibbi-danisma">TIBBİ <span>DANIŞMA</span></a>
++                </li>
++                <li>
++                    <a title="FİYAT SOR" class="appointment" href="/iletisim/?rel=fiyat-sor">FİYAT <span>SOR</span></a>
++                </li>
++            </ul>
++            <ul class="socialList">
++                <li>
++                    <a href="https://www.facebook.com/acibademsaglik" title="Facebook" rel="external" target="_blank">
++                        <img class="lazy-load-img-cancelled" src="/assets/images/facebook-footer-logo.png" alt="Facebook" width="60" height="60">
++                    </a>
++                </li>
++                <li>
++                    <a href="https://twitter.com/acibademsaglik" title="Twitter" rel="external" target="_blank">
++                        <img class="lazy-load-img-cancelled" src="/assets/images/twitter-footer-logo.png" alt="Twitter" width="60" height="60">
++                    </a>
++                </li>
++                <li>
++                    <a href="https://www.youtube.com/user/acibademsaglikgrubu" title="YouTube" rel="external" target="_blank">
++                        <img class="lazy-load-img-cancelled" src="/assets/images/youtube-footer-logo.png" alt="YouTube" width="60" height="60">
++                    </a>
++                </li>
++                <li>
++                    <a href="https://www.linkedin.com/company/acibadem-healthcare-group/" title="LinkedIn" rel="external" target="_blank">
++                        <img class="lazy-load-img-cancelled" src="/assets/images/linkedin-footer-logo.png" alt="LinkedIn" width="60" height="60">
++                    </a>
++                </li>
++                <li>
++                    <a href="https://www.instagram.com/acibademsaglik/" title="Instagram" rel="external" target="_blank">
++                        <img class="lazy-load-img-cancelled" src="/assets/images/instagram-footer-logo.png" alt="Instagram" width="60" height="60">
+                     </a>
+-                    <div class="seperator"></div>
+-                    <nav>
+-                        <ul>
+-                            <li id="active">
+-                                <a title="ANA SAYFA" href="/">ANA SAYFA</a>
+-                            </li>
+-                            <li>
+-                                <a title="HASTANELER" id="" href="/hastaneler/">HASTANELER</a>
+-                            </li>
+-                            <li>
+-                                <a title="TIBBİ BİRİMLER" id="" href="/tibbi-birimler/">TIBBİ BİRİMLER</a>
+-                            </li>
+-                            <li>
+-                                <a title="DOKTORLAR" id="" href="/doktorlar/">DOKTORLAR</a>
+-                            </li>
+-                            <li>
+-                                <a title="MEDİKAL TEKNOLOJİLER" id="" href="/medikal-teknolojiler/">MEDİKAL TEKNOLOJİLER</a>
+-                            </li>
+-                            <li>
+-                                <a title="İLGİ ALANLARI" href="/ilgi-alanlari/">İLGİ ALANLARI</a>
+-                            </li>
+-                            <li>
+-                                <a title="İLETİŞİM" href="/iletisim/">İLETİŞİM</a>
+-                            </li>
+-                            <li class="brand ">
+-                                <ul class="brandList">
+-                                    <li class="acibademOnline">
+-                                        <a href="https://www.acibadem.com.tr/acibademonline/" title="ACIBADEM ONLINE" rel="external" target="_blank">ACIBADEM <strong>ONLINE</strong></a>
+-                                    </li>
+-                                    <li class="acibademHayat">
+-                                        <a href="https://www.acibadem.com.tr/hayat/" title="ACIBADEM HAYAT" rel="external" target="_blank">ACIBADEM <strong>HAYAT</strong></a>
+-                                    </li>
+-
+-                                    <li class="enguzelYasinda">
+-                                        <a href="https://www.enguzelyasinda.com/" title="enguzelyasinda.com" rel="external" target="_blank"><img src="/assets/images/enguzelyasinda.com-logo.png" alt="enguzelyasinda.com"></a>
+-                                    </li>
+-
+-                                </ul>
+-                            </li>
+-                        </ul>
+-                    </nav>
+-                    <div class="seperator"></div>
+-                    <div class="clearFix"></div>
+-                </div>
+-            </div>
+-            <span class="searchButtonMobile"></span></div>
+-    </div></div>
+-</head>
+-<body>
+-
+-</body>
+-</html>
+\ No newline at end of file
++                </li>
++                <li>
++                    <a href="https://www.threads.net/@acibademsaglik" title="Threads" rel="external" target="_blank">
++                        <img class="lazy-load-img-cancelled" src="/assets/images/threads-footer-logo.png" alt="Instagram" width="60" height="60">
++                    </a>
++                </li>
++            </ul>
++            <div class="footerNavWrapper">
++                <ul class="navList">
++                    <li>
++                        <a title="Ana Sayfa" href="/">Ana Sayfa</a>
++                    </li>
++                    <li>
++                        <a title="Hastaneler" href="/hastaneler/">Hastaneler</a>
++                    </li>
++                    <li>
++                        <a title="Doktorlar" id="" href="/doktorlar/">Doktorlar</a>
++                    </li>
++                    <li>
++                        <a title="Medikal Teknolojiler" href="/medikal-teknolojiler/">Medikal Teknolojiler</a>
++                    </li>
++                    <li>
++                        <a title="Kurumsal Bilgiler" href="/kurumsal-bilgiler/">Kurumsal Bilgiler</a>
++                    </li>
++                    <li>
++                        <a title="Sponsorluklar" href="/sponsorluklar/">Sponsorluklar</a>
++                    </li>
++                    <li>
++                        <a href="https://kalite.acibadem.com.tr/" title="Bilgilendirilmiş Onamlar" rel="external" target="_blank">Bilgilendirilmiş Onamlar</a>
++                    </li>
++                    <li>
++                        <a data-fancybox="" href="#kvkk" title="Kişisel Verilerin Korunması">Kişisel Verilerin Korunması</a>
++                    </li>
++                    <li>
++                        <a title="İletişim" href="/iletisim/">İletişim</a>
++                    </li>
++                    <li class="aloAcibadem">
++                        <img class="lazy-load-img-cancelled" src="/assets/images/alo-acibadem-444-55-44.png" alt="Alo Acıbadem" width="282" height="96">
++                    </li>
++                </ul>
++            </div>
++            <div class="mobileSreenContent">
++
++                <img src="/assets/images/acibadem-online-mobile-app.png" alt="Acıbadem Online" width="202" height="538">
++
++
++                <ul class="storeList">
++                    <li>
++                        <a href="https://play.google.com/store/apps/details?id=com.ACIBADEM&amp;hl=tr" title="Google Play Store" rel="external" target="_blank">
++                            <img class="lazy-load-img-cancelled" src="/assets/images/google-play-store-logo.png" alt="Google Play Store" width="254" height="76">
++                        </a>
++                    </li>
++                    <li>
++                        <a href="https://itunes.apple.com/tr/app/ac-badem/id436376938?mt=8" title="Apple Store" rel="external" target="_blank">
++                            <img class="lazy-load-img-cancelled" src="/assets/images/apple-store-logo.png" alt="Apple Store" width="254" height="76">
++                        </a>
++                    </li>
++                    <li>
++                        <a href="https://appgallery.huawei.com/app/C104903191" title="Huawei AppGallery" rel="external" target="_blank">
++                            <img class="lazy-load-img-cancelled" src="/assets/images/huawei-appGallery-logo.png" alt="Huawei AppGallery" width="254" height="76">
++                        </a>
++                    </li>
++                </ul>
++            </div>
++        </div>
++    </div>
++    <div class="footer below">
++        <img class="logo" src="/assets/images/acibadem-saglik-grubu.png" alt="Acıbadem Sağlık Grubu" width="686" height="80">
++    </div>
++    <div class="footer below footerLegalWarning">
++        Web sitemizde bulunan tüm görsellerin, işitsel veya içerik bilgilerinin izinsiz kullanılması yasaktır. Durumun tespit edilmesi halinde hukuki yollara başvurulacaktır.
++    </div>
++</footer>
+\ No newline at end of file
+Index: main_page.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n\r\n\r\n    <title>Main Page - Hospital Appointment</title>\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n</head>\r\n<body>\r\n\r\n<header id=\"header\">\r\n    <div class=\"logo\">\r\n        <img src=\"icon.jpg\" alt=\"Logo\">\r\n        <span>Healthcare</span>\r\n        <a href=\"#\" class=\"login-button\">Login</a>\r\n        <a href=\"#\" class=\"login-button\">Sign Up</a>\r\n        <div class=\"clear\"></div>\r\n    </div>\r\n\r\n    <span class=\"international-hospitals\">HOSPITAL LIST</span>\r\n\r\n    <div class=\"footer\">\r\n        <a class=\"gotoTop\" href=\"about_us.html\">About Us</a>\r\n        <a class=\"gotoTop\" href=\"contact_us.html\">Contact Us</a>\r\n    </div>\r\n\r\n\r\n\r\n\r\n</header>\r\n<div id=\"MainPageBackground\" >\r\n    <p id=\"MainPageText\">Welcome to the Hospital Appointment App! We are a team of dedicated healthcare professionals who are committed to making it easy for patients to schedule appointments with their doctors.</p>\r\n</div>\r\n\r\n\r\n<div class=\"login-popup\">\r\n    <div class=\"login-popup-content\">\r\n        <h1>Login</h1>\r\n        <form action=\"#\">\r\n            <label for=\"username\">Username:</label>\r\n            <input type=\"text\" id=\"username\" name=\"username\"><br>\r\n            <label for=\"password\">Password:</label>\r\n            <input type=\"password\" id=\"password\" name=\"password\"><br>\r\n            <button type=\"submit\" >Login</button>\r\n        </form>\r\n    </div>\r\n</div>\r\n\r\n<script src=\"script.js\"></script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main_page.html b/main_page.html
+--- a/main_page.html	(revision d18bbecdf283b742ab0f9e99b549772b22874c5f)
++++ b/main_page.html	(date 1700087258355)
+@@ -10,14 +10,16 @@
+ 
+ <header id="header">
+     <div class="logo">
+-        <img src="icon.jpg" alt="Logo">
++        <img src="resources/icon.jpg" alt="Logo">
+         <span>Healthcare</span>
+         <a href="#" class="login-button">Login</a>
+         <a href="#" class="login-button">Sign Up</a>
+         <div class="clear"></div>
+     </div>
+ 
+-    <span class="international-hospitals">HOSPITAL LIST</span>
++    <span class="allOurHospitals">Our Hospitals</span>
++
++
+ 
+     <div class="footer">
+         <a class="gotoTop" href="about_us.html">About Us</a>
+Index: style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>body {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: sans-serif;\r\n}\r\n\r\n#header {\r\n    background-color: #fff;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n    padding: 20px;\r\n    border-radius: 5px 5px 0 0;\r\n}\r\n\r\n#header_c {\r\n    border: 3px solid black;\r\n    background-color: aqua;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n    padding: 20px;\r\n    border-radius: 5px 5px 0 0;\r\n    margin-bottom:0px;\r\n\r\n\r\n}\r\n\r\n.footer {\r\n    background-color: #fff;\r\n    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);\r\n    padding: 10px;\r\n    border-radius: 0 0 5px 5px;\r\n    position: fixed;\r\n    bottom: 0;\r\n    width: 90%;\r\n    /*text style barlow*/\r\n    font-family: 'Barlow', sans-serif;\r\n    font-size: 15px;\r\n    font-weight: 400;\r\n    color: #1f1975;\r\n\r\n}\r\n\r\n.gotoTop {\r\n    width: auto;\r\n    height: auto;\r\n    background-color: #007bff;\r\n    border-radius: 0;\r\n    cursor: pointer;\r\n    font-size: 20px;\r\n    color: #fff;\r\n    font-weight: 700;\r\n    text-align: center;\r\n    padding: 8px;\r\n    border-top-left-radius: 15px;\r\n    border-bottom-right-radius: 15px;\r\n}\r\n\r\n.international-hospitals {\r\n    position: absolute;\r\n    top: 45%;\r\n    left: 0;\r\n\r\n    transform-origin: 0 50%;\r\n    -webkit-transform: rotate(-90deg) translate(-50%, 50%);\r\n    background-color: #092c74;\r\n    padding-top: 15px;\r\n    padding-right: 10px;\r\n    padding-bottom: 15px;\r\n    padding-left: 10px;\r\n    cursor: pointer;\r\n    font-size: 16px;\r\n    line-height: 16px;\r\n    font-weight: 600;\r\n    color: #fff;\r\n    z-index: 9999;\r\n}\r\n\r\n.logo {\r\n\r\n    width: 100%;    \r\n    height: 50px;\r\n\r\n    font-style: bold;\r\n    font-size: 45px;\r\n}\r\n\r\n.logo img {\r\n    height: 50px;\r\n}\r\n\r\n.login-button {\r\n    float: right;\r\n    padding: 10px 20px;\r\n    border-radius: 7px;\r\n    margin: 10px;\r\n    background-color: #007bff;\r\n    color: #fff;\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n    font-family: sans-serif;\r\n    font-size: 20px;\r\n}\r\n\r\n.login-button:hover {\r\n    background-color: #0069d9;\r\n}\r\n\r\n.login-popup {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: rgba(0, 0, 0, 0.5);\r\n    display: none;\r\n}\r\n\r\n.login-popup-content {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n    width: 400px;\r\n    background-color: #fff;\r\n    padding: 20px;\r\n    border-radius: 5px;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.login-popup-close {\r\n    position: absolute;\r\n    top: 10px;\r\n    right: 10px;\r\n    padding: 10px;\r\n    border-radius: 50%;\r\n    background-color: #fff;\r\n    cursor: pointer;\r\n}\r\n\r\n.login-popup-close:hover {\r\n    background-color: #f2f2f2;\r\n}\r\n\r\n#contactUs{\r\n\r\n    padding-left: 300px;\r\n}\r\n#ContactLeftLayer{\r\n    float:left;width: 50%;\r\n    height: 800px;\r\n    border:3px solid black;\r\n    border-right:0px;\r\n    border-top:0px;\r\n    box-sizing: border-box;\r\n    position:relative;\r\n\tbackground-image:url('resources/contactUsBackground.jpg');\r\n\tbackground-repeat:no-repeat;\r\n\tbackground-position:center center;\r\n    object-fit: fill;\r\n    background-size: cover;\r\n}\r\n#ContactRightLayer{\r\n    position: absolute 0 0 0 0;\r\n    width:50%;\r\n    height:800px;\r\n    float:right;\r\n    border:3px solid black;  \r\n    border-left:0px;\r\n    border-top:0px;\r\n    box-sizing:border-box;\r\n    background-image:url('resources/contactUsBackground2.jpg');\r\n\tbackground-repeat:no-repeat;\r\n\tbackground-position:center center;\r\n    object-fit: fill;\r\n    background-size: cover;\r\n}\r\n\r\n#MainPageBackground{\r\n    position: absolute 0 0 0 0;\r\n    width:100%;\r\n    height:800px;\r\n    background-image:url('MainPageBackground.jpg');\r\n    background-repeat:no-repeat;\r\n    background-position:center center;\r\n    object-fit: fill;\r\n    background-size: cover;\r\n}\r\n\r\n.homebutton{\r\n    float:right;\r\n    padding: 10px 20px;\r\n    border-radius: 5px;\r\n    background-color: #007bff;\r\n    color: #fff;\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n}\r\n\r\n.clear {\r\n    clear: both;\r\n}\r\n\r\n.contactTable{\r\n    margin-top:170px;\r\n}\r\n\r\n.flex{\r\n    display:inline-block;\r\n}\r\n\r\n#ContactLeftLayer, p {\r\n    font-size: 30px;\r\n    font-weight: bold;\r\n    color: black;\r\n    padding: 10px;\r\n}\r\n\r\n.sticky-wrapper {\r\n    position: fixed;\r\n    top: 0;\r\n    width: 100%;\r\n    z-index: 100;\r\n    height: 100px;\r\n    background-color: #fff;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n    padding: 20px;\r\n    border-radius: 5px 5px 0 0;\r\n}\r\n#sticky-wrapper {\r\n    position: relative;\r\n    z-index: 100;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/style.css b/style.css
+--- a/style.css	(revision d18bbecdf283b742ab0f9e99b549772b22874c5f)
++++ b/style.css	(date 1700087332844)
+@@ -53,14 +53,14 @@
+     border-bottom-right-radius: 15px;
+ }
+ 
+-.international-hospitals {
++.allOurHospitals {
+     position: absolute;
+     top: 45%;
+     left: 0;
+ 
+     transform-origin: 0 50%;
+     -webkit-transform: rotate(-90deg) translate(-50%, 50%);
+-    background-color: #092c74;
++    background-color: #007bff;
+     padding-top: 15px;
+     padding-right: 10px;
+     padding-bottom: 15px;
+@@ -72,7 +72,6 @@
+     color: #fff;
+     z-index: 9999;
+ }
+-
+ .logo {
+ 
+     width: 100%;    
+@@ -211,20 +210,4 @@
+     font-weight: bold;
+     color: black;
+     padding: 10px;
+-}
+-
+-.sticky-wrapper {
+-    position: fixed;
+-    top: 0;
+-    width: 100%;
+-    z-index: 100;
+-    height: 100px;
+-    background-color: #fff;
+-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+-    padding: 20px;
+-    border-radius: 5px 5px 0 0;
+-}
+-#sticky-wrapper {
+-    position: relative;
+-    z-index: 100;
+ }
+\ No newline at end of file
+Index: script.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>const loginButton = document.querySelector('.login-button');\r\nconst loginPopup = document.querySelector('.login-popup');\r\nconst loginPopupClose = document.querySelector('.login-popup-close');\r\nconst homeButton = document.querySelector('.homebutton');\r\nloginButton.addEventListener('click', () => {\r\n    loginPopup.style.display = 'block';\r\n});\r\n\r\nloginPopupClose.addEventListener('click', () => {\r\n    loginPopup.style.display = 'none';\r\n});\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/script.js b/script.js
+--- a/script.js	(revision d18bbecdf283b742ab0f9e99b549772b22874c5f)
++++ b/script.js	(date 1700087258358)
+@@ -1,7 +1,8 @@
+ const loginButton = document.querySelector('.login-button');
+ const loginPopup = document.querySelector('.login-popup');
+ const loginPopupClose = document.querySelector('.login-popup-close');
+-const homeButton = document.querySelector('.homebutton');
++const internationalShowOrHide = document.querySelector('.allOurHospitals');
++const internationalShowOrrHide = document.querySelector('.international-hospitals-container');
+ loginButton.addEventListener('click', () => {
+     loginPopup.style.display = 'block';
+ });
+@@ -10,4 +11,7 @@
+     loginPopup.style.display = 'none';
+ });
+ 
+-
++internationalShowOrHide.addEventListener('click', () => {
++    internationalShowOrHide.display = 'none';
++    internationalShowOrrHide.display = 'block';
++});
+\ No newline at end of file
