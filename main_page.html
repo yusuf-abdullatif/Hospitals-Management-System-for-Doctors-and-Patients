@@ -5,25 +5,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header id="header">
-    <div class="logo">
-        <img src="resources/icon.jpg" alt="Logo">
-        <span>Healthcare</span>
-        <a href="#" class="login-button">Login</a>
-        <a href="#" class="login-button">Sign Up</a>
-        <div class="clear"></div>
-    </div>
-    <span class="allOurHospitals">Our Hospitals</span>
 
-</header>
-<div id="MainPageBackground" >
-    <p id="MainPageText">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+
+
+
+<div class="landing-page-container">
+    <div class="landing-page-top-container">
+        <nav data-role="Header" class="landing-page-navbar">
+            <h1>Hospital Website Template </h1>
+            <div class="landing-page-right-side">
+                <div class="landing-page-links-container">
+                    <span class="landing-page-text"><a href="main_page.html">Home</a></span>
+                    <span class="landing-page-text01"> <a href="about_us.html">About US</a></span>
+                    <span class="landing-page-text02"> <a href="contact_us.html">Contact Us</a></span>
+                </div>
+                <div class="solid-button-container solid-button-root-class-name">
+                    <button class="solid-button-button button Button">
+                        <span>Sign up</span>
+                    </button>
+                </div>
+                <div class="solid-button-container solid-button-root-class-name1">
+                    <button class="solid-button-button button Button">
+                        <span>Sign in</span>
+                    </button>
+                </div>
+            </div>
+
+        </nav>
+        <div class="landing-page-hero">
+            <div class="landing-page-content-container">
+                <h1 class="Heading landing-page-text08">Book an appointment</h1>
+                <h2 class="Subheading landing-page-subheading"> For all your needs</h2>
+                <span class="landing-page-text09">
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span>
+            <br/><span>sed do eiusmod tempor incididunt ut labore et dolore</span><br/>
+            <span>magna aliqua.</span></span>
+                <div class="solid-button-container">
+                    <button class="solid-button-button button Button">
+                        <span>Book Appointment</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
+<script src="script.js"></script>
+</body>
 <div class="footer">
     <div class="landing-page-container">
         <div class="landing-page-footer">
@@ -105,22 +135,4 @@
         </div>
     </div>
 </div>
-
-<div class="login-popup">
-    <div class="login-popup-content">
-        <h1>Login</h1>
-        <form action="#">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br>
-            <button type="submit" >Login</button>
-        </form>
-    </div>
-</div>
-
-
-
-<script src="script.js"></script>
-</body>
 </html>

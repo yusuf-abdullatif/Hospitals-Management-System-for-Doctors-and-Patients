@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="updated main fixed contact us page">
-      <change afterPath="$PROJECT_DIR$/style_test.css" afterDir="false" />
+    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="Updated main page background">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainPageBackground.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/MainPageBackground.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style_test.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,32 +50,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Notification.DisplayName-DoNotAsk-WindowsDefender": "Microsoft Defender configuration",
-    "Notification.DoNotAsk-WindowsDefender": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/ahyil/Downloads/www.hespanol.com",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-WindowsDefender&quot;: &quot;Microsoft Defender configuration&quot;,
+    &quot;Notification.DoNotAsk-WindowsDefender&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahyil/Downloads/www.hespanol.com&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ahyil\WebstormProjects\Hospitals-Management-System-for-Doctors-and-Patients\resources" />
       <recent name="C:\Users\ahyil\WebstormProjects\Hospitals-Management-System-for-Doctors-and-Patients" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.contact_us.html">
+  <component name="RunManager" selected="JavaScript Debug.main_page.html">
     <configuration name="about_us.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:54920/Hospitals-Management-System-for-Doctors-and-Patients/about_us.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -91,9 +90,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.main_page.html" />
         <item itemvalue="JavaScript Debug.contact_us.html" />
         <item itemvalue="JavaScript Debug.test.html" />
-        <item itemvalue="JavaScript Debug.main_page.html" />
         <item itemvalue="JavaScript Debug.about_us.html" />
       </list>
     </recent_temporary>
@@ -107,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699883806515</updated>
       <workItem from="1699883808151" duration="2752000" />
-      <workItem from="1699888129449" duration="24614000" />
+      <workItem from="1699888129449" duration="27650000" />
     </task>
     <task id="LOCAL-00001" summary="created template for project and added icon">
       <option name="closed" value="true" />
@@ -221,7 +220,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700126868242</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated main page and test caases">
+      <option name="closed" value="true" />
+      <created>1700146055419</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700146055419</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Updated main page background">
+      <option name="closed" value="true" />
+      <created>1700146081082</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700146081082</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +274,8 @@
     <MESSAGE value="fixed title names" />
     <MESSAGE value="updated main page" />
     <MESSAGE value="updated main fixed contact us page" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated main fixed contact us page" />
+    <MESSAGE value="Updated main page and test caases" />
+    <MESSAGE value="Updated main page background" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated main page background" />
   </component>
 </project>

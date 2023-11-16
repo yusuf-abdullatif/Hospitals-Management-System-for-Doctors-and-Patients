@@ -83,11 +83,10 @@ a {
     border-radius: 0 0 5px 5px;
     bottom: 0;
     width: 100%;
-    /*text style barlow*/
     font-family: 'Barlow', sans-serif;
     font-size: 15px;
+    margin-bottom: 0px;
 
-    margin: 0;
     padding: 0;
     font-weight: 400;
     font-style: normal;
@@ -282,17 +281,159 @@ a {
         margin-inline-start:0px
     }
 }
-#map {
-    margin-top: 10px;
-    height: 400px;
-    width: 400px;
-    border: solid 3px black;
-  }
 
-  .gm-style .gm-style-cc {
-    bottom: auto;
-    top: 0;
-    left: 0;
-    right: auto;
-  }
+
+html {
+    font-family:'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 1.15;
+}
+input {
+    padding: 2px 4px;
+}
+
+img {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth
+}
+body {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.55;
+    color: #000000;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.button {
+    color: #000000;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-family: 'Barlow', sans-serif;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+
+
+
+.Subheading {
+    font-size: 1.6rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+}
+.Heading {
+    font-size: 3rem;
+    font-family:'Barlow', sans-serif;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+}
+.Button {
+    font-size: 14px;
+    font-family:'Barlow', sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    text-decoration: none;
+}
+
+
+.solid-button-container {
+    display: flex;
+    position: relative;
+}
+.solid-button-button {
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5em 2em;
+    background-color: #370511ff;
+}
+.solid-button-root-class-name {
+    flex: 1;
+    width: auto;
+}
+.solid-button-root-class-name1 {
+    width: auto;
+}
+
+.landing-page-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.landing-page-top-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-image: url('resources/main_page_background.jpg');
+    background-position: 0% 40%;
+}
+.landing-page-navbar {
+    width: 1200px;
+    height: 105px;
+    display: flex;
+    padding:  2em;
+    max-width: 1000px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.landing-page-right-side {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.landing-page-text {
+    margin-right:  2em;
+}
+.landing-page-text01 {
+    margin-right:  2em;
+}
+.landing-page-text02 {
+    margin-right:  2em;
+}
+
+
+
+
+.landing-page-hero {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    flex-direction: row;
+    padding:  3em  2em;
+    justify-content: space-between;
+}
+.landing-page-content-container {
+    width: 550px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.landing-page-text09 {
+    padding-top:  2em;
+    padding-bottom:  2em;
+}
+
 
