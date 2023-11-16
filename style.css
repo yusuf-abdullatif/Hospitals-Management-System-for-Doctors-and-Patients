@@ -266,6 +266,17 @@ body {
     background-position: 0 40%;
 }
 
+.aboutus-page-top-container {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-image: url('resources/contactUsBackground2.jpg');
+    background-position: 0 40%;
+}
+
 .contactus-page-top-container {
     width: 100%;
     height: 1000px;
