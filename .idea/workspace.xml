@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="Updated main page background">
+    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="Updated main page and fixed a lot of bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact_us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style_test.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <recent name="C:\Users\ahyil\WebstormProjects\Hospitals-Management-System-for-Doctors-and-Patients" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.main_page.html">
+  <component name="RunManager" selected="JavaScript Debug.contact_us.html">
     <configuration name="about_us.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:54920/Hospitals-Management-System-for-Doctors-and-Patients/about_us.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -90,8 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.main_page.html" />
         <item itemvalue="JavaScript Debug.contact_us.html" />
+        <item itemvalue="JavaScript Debug.main_page.html" />
         <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="JavaScript Debug.about_us.html" />
       </list>
@@ -106,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699883806515</updated>
       <workItem from="1699883808151" duration="2752000" />
-      <workItem from="1699888129449" duration="27650000" />
+      <workItem from="1699888129449" duration="31712000" />
     </task>
     <task id="LOCAL-00001" summary="created template for project and added icon">
       <option name="closed" value="true" />
@@ -236,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700146081082</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Updated main page and fixed a lot of bugs">
+      <option name="closed" value="true" />
+      <created>1700149275452</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1700149275452</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +282,7 @@
     <MESSAGE value="updated main fixed contact us page" />
     <MESSAGE value="Updated main page and test caases" />
     <MESSAGE value="Updated main page background" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated main page background" />
+    <MESSAGE value="Updated main page and fixed a lot of bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated main page and fixed a lot of bugs" />
   </component>
 </project>
