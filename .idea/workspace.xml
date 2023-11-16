@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="Updated main page and fixed a lot of bugs" />
+    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="Created gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +74,7 @@
       <recent name="C:\Users\ahyil\WebstormProjects\Hospitals-Management-System-for-Doctors-and-Patients" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.contact_us.html">
+  <component name="RunManager" selected="JavaScript Debug.main_page.html">
     <configuration name="about_us.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:54920/Hospitals-Management-System-for-Doctors-and-Patients/about_us.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -84,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.contact_us.html" />
         <item itemvalue="JavaScript Debug.main_page.html" />
+        <item itemvalue="JavaScript Debug.contact_us.html" />
         <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="JavaScript Debug.about_us.html" />
       </list>
@@ -100,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699883806515</updated>
       <workItem from="1699883808151" duration="2752000" />
-      <workItem from="1699888129449" duration="32155000" />
+      <workItem from="1699888129449" duration="33517000" />
     </task>
     <task id="LOCAL-00001" summary="created template for project and added icon">
       <option name="closed" value="true" />
@@ -246,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700153982320</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Created gitignore">
+      <option name="closed" value="true" />
+      <created>1700154193947</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1700154193948</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +300,7 @@
     <MESSAGE value="Updated main page and test caases" />
     <MESSAGE value="Updated main page background" />
     <MESSAGE value="Updated main page and fixed a lot of bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated main page and fixed a lot of bugs" />
+    <MESSAGE value="Created gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created gitignore" />
   </component>
 </project>
