@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="finalized design of main page and style.css file">
+    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="added images">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/about_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +83,7 @@
       <recent name="C:\Users\ahyil\WebstormProjects\Hospitals-Management-System-for-Doctors-and-Patients" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.about_us.html">
+  <component name="RunManager" selected="JavaScript Debug.main_page.html">
     <configuration name="about_us.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:54920/Hospitals-Management-System-for-Doctors-and-Patients/about_us.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -93,10 +98,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.about_us.html" />
         <item itemvalue="JavaScript Debug.main_page.html" />
-        <item itemvalue="JavaScript Debug.contact_us.html" />
         <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="JavaScript Debug.about_us.html" />
+        <item itemvalue="JavaScript Debug.contact_us.html" />
       </list>
     </recent_temporary>
   </component>
@@ -111,7 +116,7 @@
       <workItem from="1699883808151" duration="2752000" />
       <workItem from="1699888129449" duration="35591000" />
       <workItem from="1700158487044" duration="1874000" />
-      <workItem from="1700165687042" duration="5090000" />
+      <workItem from="1700165687042" duration="6133000" />
     </task>
     <task id="LOCAL-00001" summary="created template for project and added icon">
       <option name="closed" value="true" />
@@ -289,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700173413322</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added images">
+      <option name="closed" value="true" />
+      <created>1700173616331</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1700173616331</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +348,7 @@
     <MESSAGE value="optimisation" />
     <MESSAGE value="deleted unnecessary stuff" />
     <MESSAGE value="finalized design of main page and style.css file" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalized design of main page and style.css file" />
+    <MESSAGE value="added images" />
+    <option name="LAST_COMMIT_MESSAGE" value="added images" />
   </component>
 </project>

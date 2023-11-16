@@ -19,7 +19,7 @@ a {
 }
 
 
-.landing-page-footer {
+.main-page-footer {
     color: #FFFFFF;
     width: 100%;
     display: flex;
@@ -29,7 +29,7 @@ a {
     justify-content: center;
     background-color: #000000;
 }
-.landing-page-menu {
+.main-page-menu {
     width: 100%;
     display: flex;
     max-width: 1500px;
@@ -37,24 +37,24 @@ a {
     flex-direction: row;
     justify-content: space-between;
 }
-.landing-page-links-container {
+.main-page-links-container {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
-.landing-page-container1 {
+.main-page-container1 {
     display: flex;
     align-items: flex-start;
     margin-left: 100px;
     flex-direction: column;
 }
 
-.landing-page-link01 {
+.main-page-link01 {
     margin-bottom: 1em;
     text-decoration: none;
 }
-.landing-page-container2 {
+.main-page-container2 {
     display: flex;
     align-items: flex-start;
     margin-left: 100px;
@@ -196,12 +196,13 @@ body {
 }
 
 
-.solid-button-container {
+.button-container {
+    width: auto;
     display: flex;
     position: relative;
 }
 
-.solid-button-button {
+.button-inner {
     color: #FFFFFF;
     border: none;
     border-radius: 50px;
@@ -209,13 +210,9 @@ body {
     background-color: #370511ff;
 }
 
-.solid-button-root-class-name {
-
-    width: auto;
-}
 
 
-.landing-page-container {
+.main-page-container {
     width: 100%;
 
     height: auto;
@@ -224,7 +221,7 @@ body {
     flex-direction: column;
 }
 
-.landing-page-top-container {
+.main-page-top-container {
     width: 100%;
     height: 1000px;
     display: flex;
@@ -235,7 +232,7 @@ body {
     background-position: 0 40%;
 }
 
-.aboutus-page-top-container {
+.about-us-top-page-top-container {
     width: 100%;
     height: 1000px;
     display: flex;
@@ -246,7 +243,7 @@ body {
     background-position: 0 40%;
 }
 
-.contactus-page-top-container {
+.contact-us-page-top-container {
     width: 100%;
     height: 1000px;
     display: flex;
@@ -257,7 +254,7 @@ body {
     background-position: 0 40%;
 }
 
-.landing-page-navbar {
+.main-page-navbar {
     width: 1200px;
     height: 105px;
     display: flex;
@@ -268,27 +265,21 @@ body {
     justify-content: space-between;
 }
 
-.landing-page-right-side {
+.main-page-right-side {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.landing-page-text {
+.main-page-text {
+
+    padding-top: 2em;
+    padding-bottom: 2em;
     margin-right: 2em;
 }
 
-.landing-page-text01 {
-    margin-right: 2em;
-}
-
-.landing-page-text02 {
-    margin-right: 2em;
-}
-
-
-.landing-page-hero {
+.main-page-middle {
     flex: 1;
     width: 100%;
     display: flex;
@@ -299,18 +290,12 @@ body {
     justify-content: space-between;
 }
 
-.landing-page-content-container {
+.main-page-text-container {
     width: 550px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
-
-.landing-page-text09 {
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
 
 
 #map {
@@ -322,32 +307,32 @@ body {
 }
 
 
-.outline-button-container {
+.info-box-container {
     display: flex;
     position: relative;
 }
 
-.outline-button-button {
+.info-box-button {
     color: #000000;
     border-color: #370511ff;
     border-width: 1px;
     border-radius: 50px;
 }
 
-.place-card-container {
+.info-image-container {
     width: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.place-card-image {
+.info-image {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-.place-card-container1 {
+.info-text-container {
     width: 100%;
     display: flex;
     padding: 1em;
@@ -355,21 +340,21 @@ body {
     flex-direction: column;
 }
 
-.place-card-text {
+.info-title {
     font-size: 20px;
     font-family: 'Barlow', sans-serif;
     font-weight: 700;
     padding-bottom: 0.5em;
 }
 
-.place-card-text1 {
+.info-text {
     font-size: 12px;
     max-width: 250px;
     margin-bottom: 2em;
 }
 
 
-.landing-page-container {
+.main-page-container {
     width: 100%;
     height: auto;
     display: flex;
@@ -378,7 +363,7 @@ body {
     flex-direction: column;
 }
 
-.landing-page-main {
+.main-page-main {
     width: 100%;
     display: flex;
     align-items: center;
@@ -387,7 +372,7 @@ body {
     justify-content: flex-start;
 }
 
-.landing-page-cards-container {
+.main-page-info-container {
     width: 100%;
     display: flex;
     grid-gap: 2em;
