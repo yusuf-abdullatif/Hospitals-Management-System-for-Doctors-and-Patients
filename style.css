@@ -4,22 +4,6 @@ body {
     font-family: sans-serif;
 }
 
-#header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 5px 5px 0 0;
-}
-
-#header_c {
-    border: 3px solid black;
-    background-color: aqua;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 5px 5px 0 0;
-    margin-bottom:0px;
-}
-
 html {
     line-height: 1.15;
 }
@@ -111,7 +95,6 @@ a {
     width: 50%;
     height: 800px;
     box-sizing: border-box;
-    position: relative;
     margin-top : 200px;
     background-position: center center;
     object-fit: fill;
@@ -119,30 +102,16 @@ a {
 }
 
 #ContactRightLayer {
+    float: right;
     width: 50%;
     height: 800px;
-    float: right;
     box-sizing: border-box;
+    margin-top : 200px;
+    background-position: center center;
     object-fit: fill;
     background-size: cover;
-    margin-top : 200px;
 }
 
-
-
-.homebutton{
-    float:right;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.clear {
-    clear: both;
-}
 
 .contactTable{
     margin-top:60px;
@@ -340,14 +309,6 @@ body {
     width: 456px;
     border: solid 3px black;
 }
-
-.gm-style .gm-style-cc {
-    bottom: auto;
-    top: 0;
-    left: 0;
-    right: auto;
-}
-
 
 
 .outline-button-container {
