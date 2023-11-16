@@ -1,216 +1,185 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="main-page-container">
-    <div class="contact-us-page-top-container">
-        <nav data-role="Header" class="main-page-navbar">
-            <h1>Europa Universalis Hospital </h1>
-            <div class="main-page-right-side">
-                <div class="main-page-links-container">
-                    <span class="main-page-text"><a href="main_page.html">Home</a></span>
-                    <span class="main-page-text"> <a href="about_us.html">About Us</a></span>
-                    <span class="main-page-text"> <a href="contact_us.html">Contact Us</a></span>
-                </div>
-                <div class="button-container ">
-                    <button class="button-inner button Button">
-                        <span>Sign up</span>
-                    </button>
-                </div>
-                <div class="button-container ">
-                    <button class="button-inner button Button">
-                        <span>Sign in</span>
-                    </button>
-                </div>
-            </div>
-
-        </nav>
-
-
-        <div style="width: 100%;">
-            <div id="ContactLeftLayer">
-                <div style="float: right">
-
-                    <button class="button-inner" >
-                <span class="theme-topbar-info"><a href="tel:1234567891" >
-                <i class="fa fa-phone"></i><br/>Telephone|+90 123 456 78 91</a></span><br/><br/>
-                    </button>
-                    <button class="button-inner" >
-                        <a href="mailto:example@example.com"><br/>Email Us</a><br/><br/>
-                    </button>
-                    <button class="button-inner" >
-                        <a href="https://maps.app.goo.gl/pXwp8vhGE8oBC7zr6" ><br/>Address</a><br/><br/>
-                    </button>
-                    <div id="map" >
-                        <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.4035450872243!2d28.830852867304735!3d40.99128293265346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa366eb3aaf89%3A0x9197adcb0f10f39a!2zQXZydXBhIFlha2FzxLEsIEF0YWvDtnkgNy04LTktMTAsIDM0MTU4IEJha8SxcmvDtnkvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1700087877999!5m2!1str!2str"
-                                width="450"
-                                height="400"
-                                style="border:5px;;"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-
-            <div id="ContactRightLayer">
-                <div id="contactUs">
-                    <form action="post">
-                        <table class="contactTable">
-                            <tr>
-                                <td><h1>CONTACT US</h1></td>
-
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label style="display:block;">First Name *</label>
-                                    <label>
-                                        <input type="text" required>
-                                    </label>
-                                </td>
-                                <td>
-                                    <label style="display:block;">Last Name *</label>
-                                    <label>
-                                        <input type="text" style="width:80%;" required>
-                                    </label>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <label style="display:block;">Email *</label>
-                                    <label>
-                                        <input type="email" required>
-                                    </label>
-                                </td>
-                                <td>
-                                    <label style="display:block;">Tel</label>
-                                    <label>
-                                        <input type="text" style="width:80%;">
-                                    </label>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2">
-                                    <label style="display:block;">Subject *</label>
-                                    <label>
-                                        <input type="text" style="width:90%;" required>
-                                    </label>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td colspan="2">
-                                    <label style="display:block;">Message *</label>
-                                    <label>
-                                        <textarea style="width:90%;" required></textarea>
-                                    </label>
-                                </td>
-
-                            </tr>
-
-                        </table>
-
-                        <button style="border-radius: 10px " onclick="msgAlert()"> Send Message</button>
-
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="clear:both"></div>
-    <div class="footer">
-        <div class="main-page-container">
-            <div class="main-page-footer">
-                <div class="main-page-menu">
-                    <h1>Europa Universalis </h1>
+    <div class="main-page-container">
+        <div class="contact-us-page-top-container">
+            <nav data-role="Header" class="main-page-navbar">
+                <h1>Europa Universalis Hospital </h1>
+                <div class="main-page-right-side">
                     <div class="main-page-links-container">
-                        <div class="main-page-container1">
-                            <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="main-page-link01"
-                            >
-                                Health Packages
-                            </a>
-                            <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="main-page-link01"
-                            >
-                                Emergency Services
-                            </a>
-                            <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="main-page-link01"
-                            >
-                                Patient Care Excellence
-                            </a>
-                            <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="main-page-link01"
-                            >
-                                Wellness Programs
-                            </a>
-                        </div>
-                        <div class="main-page-container2">
-                            <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="main-page-link01"
-                            >
-                                About us
-                            </a>
-                            <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="main-page-link01"
-                            >
-                                FAQ
-                            </a>
-                            <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="main-page-link01"
-                            >
-                                Terms and conditions
-                            </a>
-                            <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="main-page-link01"
-                            >
-                                Contact
-                            </a>
+                        <span class="main-page-text"><a href="main_page.html">Home</a></span>
+                        <span class="main-page-text"> <a href="about_us.html">About Us</a></span>
+                        <span class="main-page-text"> <a href="contact_us.html">Contact Us</a></span>
+                    </div>
+                    <div class="button-container ">
+                        <button class="button-inner button Button">
+                            <span>Sign up</span>
+                        </button>
+                    </div>
+                    <div class="button-container ">
+                        <button class="button-inner button Button">
+                            <span>Sign in</span>
+                        </button>
+                    </div>
+                </div>
+
+            </nav>
+
+
+            <div style="width: 100%;">
+                <div id="ContactLeftLayer">
+                    <div style="float: right">
+
+                        <button class="button-inner">
+                            <span class="theme-topbar-info"><a href="tel:1234567891" class="theme-topbar-info-phone">
+                                    <i class="fa fa-phone"></i><br />Telephone|+90 123 456 78 91</a></span><br /><br />
+                        </button>
+                        <button class="button-inner">
+                            <a href="mailto:example@example.com"><br />Email Us</a><br /><br />
+                        </button>
+                        <button class="button-inner">
+                            <a href="https://maps.app.goo.gl/pXwp8vhGE8oBC7zr6"><br />Address</a><br /><br />
+                        </button>
+                        <div id="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.4035450872243!2d28.830852867304735!3d40.99128293265346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa366eb3aaf89%3A0x9197adcb0f10f39a!2zQXZydXBhIFlha2FzxLEsIEF0YWvDtnkgNy04LTktMTAsIDM0MTU4IEJha8SxcmvDtnkvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1700087877999!5m2!1str!2str"
+                                width="450" height="400" style="border:5px;;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                         </div>
                     </div>
-                    <div>
+                </div>
+
+                <div id="ContactRightLayer">
+                    <div id="contactUs">
+                        <form action="post">
+                            <table class="contactTable">
+                                <tr>
+                                    <td>
+                                        <h1>CONTACT US</h1>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label style="display:block;">First Name *</label>
+                                        <label>
+                                            <input type="text" required>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label style="display:block;">Last Name *</label>
+                                        <label>
+                                            <input type="text" style="width:80%;" required>
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label style="display:block;">Email *</label>
+                                        <label>
+                                            <input type="email" required>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label style="display:block;">Tel</label>
+                                        <label>
+                                            <input type="text" style="width:80%;">
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2">
+                                        <label style="display:block;">Subject *</label>
+                                        <label>
+                                            <input type="text" style="width:90%;" required>
+                                        </label>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2">
+                                        <label style="display:block;">Message *</label>
+                                        <label>
+                                            <textarea style="width:90%;" required></textarea>
+                                        </label>
+                                    </td>
+
+                                </tr>
+
+                            </table>
+
+                            <button style="border-radius: 10px " onclick="msgAlert()"> Send Message</button>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        <div class="footer">
+            <div class="main-page-container">
+                <div class="main-page-footer">
+                    <div class="main-page-menu">
+                        <h1>Europa Universalis </h1>
+                        <div class="main-page-links-container">
+                            <div class="main-page-container1">
+                                <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                                    class="main-page-link01">
+                                    Health Packages
+                                </a>
+                                <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                                    class="main-page-link01">
+                                    Emergency Services
+                                </a>
+                                <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                                    class="main-page-link01">
+                                    Patient Care Excellence
+                                </a>
+                                <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                                    class="main-page-link01">
+                                    Wellness Programs
+                                </a>
+                            </div>
+                            <div class="main-page-container2">
+                                <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                                    class="main-page-link01">
+                                    About us
+                                </a>
+                                <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                                    class="main-page-link01">
+                                    FAQ
+                                </a>
+                                <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                                    class="main-page-link01">
+                                    Terms and conditions
+                                </a>
+                                <a href="contact_us.html" target="_blank" rel="noreferrer noopener"
+                                    class="main-page-link01">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
