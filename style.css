@@ -1,12 +1,6 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
 
-html {
-    line-height: 1.15;
-}
+
+
 * {
     box-sizing: border-box;
     border-width: 0;
@@ -27,7 +21,7 @@ a {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    background-color: #000000;
+    background-color: teal;
 }
 .main-page-menu {
     width: 100%;
@@ -37,12 +31,42 @@ a {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.footer-menu {
+    width: 100%;
+    display: flex;
+    max-width: 1500px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .main-page-links-container {
+    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.3);
+    /*rounded corners*/
+    border-radius: 100px;
+    width: 730px;
+    padding: 10px;
+    border : 2px solid teal;
+    height: 50px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
+
+.footer-links-container {
+    background-color: teal;
+    width: 730px;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .main-page-container1 {
     display: flex;
     align-items: flex-start;
@@ -114,6 +138,10 @@ a {
 
 
 .contactTable{
+    background-color: rgba(0, 128, 128, 0.3);
+    border-radius: 50px;
+    padding: 20px;
+    padding-left: 50px;
     margin-top:60px;
 }
 
@@ -124,11 +152,11 @@ a {
     padding: 10px;
 }
 
-@media all and (min-width: 992px) {
-}
+
 
 
 html {
+    scroll-behavior: smooth;
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
     line-height: 1.15;
@@ -142,11 +170,12 @@ img {
     display: block;
 }
 
-html {
-    scroll-behavior: smooth
-}
+
 
 body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
@@ -155,19 +184,9 @@ body {
     line-height: 1.55;
     color: #000000;
     background-color: #FFFFFF;
-    margin: 0;
 }
 
-.button {
-    color: #000000;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    font-family: 'Barlow', sans-serif;
-    border-color: #000000;
-    border-width: 1px;
-    border-radius: 4px;
-    background-color: #FFFFFF;
-}
+
 
 
 .Subheading {
@@ -193,10 +212,18 @@ body {
     font-weight: 600;
     text-transform: none;
     text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-color: #000000;
+    border-width: 5px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
 }
 
 
 .button-container {
+    border : 20px solid rgba(255, 255, 255, 0.0);
     width: auto;
     display: flex;
     position: relative;
@@ -206,20 +233,45 @@ body {
     color: #FFFFFF;
     border: none;
     border-radius: 50px;
+    font-size: 20px;
     padding: 0.5em 2em;
-    background-color: #370511ff;
+    background-color: teal;
 }
 
+.button-inner-for-contact-us  {
+    color: #FFFFFF;
+    border: none;
+    border-radius: 100px;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 14px;
+    background-color: teal;
+}
 
+.button-inner-send {
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5em 2em;
+    background-color: teal;
+}
 
 .main-page-container {
     width: 100%;
-
     height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+.footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 
 .main-page-top-container {
     width: 100%;
@@ -255,6 +307,7 @@ body {
 }
 
 .main-page-navbar {
+
     width: 1500px;
     height: 105px;
     display: flex;
@@ -272,10 +325,17 @@ body {
     justify-content: space-between;
 }
 
+.main-page-left-side {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .main-page-text {
 
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding: 2em;
     margin-right: 2em;
 }
 
@@ -301,8 +361,8 @@ body {
 #map {
     margin-top: 20px;
     margin-right: 310px;
-    height: 406px;
-    width: 456px;
+    height: 476px;
+    width: 476px;
     border: solid 3px black;
 }
 
@@ -314,7 +374,7 @@ body {
 
 .info-box-button {
     color: #000000;
-    border-color: #370511ff;
+    border-color: teal;
     border-width: 1px;
     border-radius: 50px;
 }
@@ -383,4 +443,95 @@ body {
     margin-bottom: 2em;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+.list-item {
+    display: list-item;
+}
+
+
+ul, div,   figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+[data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+    display: flex;
+}
+
+[data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+    transform: rotate(90deg);
+}
+
+.home-thq-dropdown {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+}
+.home-dropdown-toggle-main {
+
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2px;
+    padding: 8px 16px;
+}
+
+.home-dropdown-arrow {
+    transition: 0.3s;
+}
+.home-icon {
+    width: 18px;
+    height: 18px;
+    transition: 0.3s;
+}
+.home-dropdown-list {
+    left: 0;
+    width: max-content;
+    display: none;
+    z-index: 100;
+    position: absolute;
+    min-width: 100%;
+    transition: 0.3s;
+    align-items: stretch;
+    border-color: #D9D9D9;
+    border-width: 1px;
+    border-radius: 4px;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: #FFFFFF;
+    list-style-position: inside;
+}
+.home-dropdown {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+}
+.home-dropdown-toggle-option {
+    fill: #595959;
+    color: #595959;
+    width: 100%;
+    display: inline-flex;
+    transition: 0.3s;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+.home-dropdown-toggle-option:hover {
+    fill: #fff;
+    color: #fff;
+    background-color: #595959;
+}
+.home-text {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
 }
