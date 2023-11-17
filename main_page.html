@@ -12,13 +12,15 @@
 <div class="main-page-container">
     <div class="main-page-top-container">
         <nav data-role="Header" class="main-page-navbar">
-            <h1>Europa Universalis Hospital </h1>
+            <div class="main-page-left-side">
+                <h1>Terra Europe Hospital </h1>
+            </div>
             <div class="main-page-right-side">
                 <div class="main-page-links-container">
 
                     <span class="main-page-text"><a href="main_page.html">Home</a></span>
                     <div data-thq="thq-dropdown" class="home-thq-dropdown list-item">
-                        <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle">
+                        <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-main">
                             <span class="home-text">Departments</span>
                             <div data-thq="thq-dropdown-arrow" class="home-dropdown-arrow">
                                 <svg viewBox="0 0 1024 1024" class="home-icon">
@@ -28,28 +30,28 @@
                         </div>
                         <ul data-thq="thq-dropdown-list" class="home-dropdown-list">
                             <li data-thq="thq-dropdown" class="home-dropdown list-item">
-                                <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle1">
-                                    <span class="home-text1">Cardiology</span>
+                                <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
+                                    <span class="home-text">Cardiology</span>
                                 </div>
                             </li>
                             <li data-thq="thq-dropdown" class="home-dropdown list-item">
-                                <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle1">
-                                    <span class="home-text1">Orthopedics</span>
+                                <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
+                                    <span class="home-text">Orthopedics</span>
                                 </div>
                             </li>
                             <li data-thq="thq-dropdown" class="home-dropdown list-item">
-                                <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle1">
-                                    <span class="home-text1">Obstetrics and Gynecology</span>
+                                <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
+                                    <span class="home-text">Obstetrics and Gynecology</span>
                                 </div>
                             </li>
                             <li data-thq="thq-dropdown" class="home-dropdown list-item">
-                                <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle1">
-                                    <span class="home-text1">Emergency Medicine</span>
+                                <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
+                                    <span class="home-text">Dermatology</span>
                                 </div>
                             </li>
                             <li data-thq="thq-dropdown" class="home-dropdown list-item">
-                                <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle1">
-                                    <span class="home-text1">Neurology</span>
+                                <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
+                                    <span class="home-text">Neurology</span>
                                 </div>
                             </li>
                         </ul>
@@ -58,12 +60,12 @@
                     <span class="main-page-text"> <a href="contact_us.html">Contact Us</a></span>
                 </div>
                 <div class="button-container ">
-                    <button class="button-inner button Button">
+                    <button class="button-inner">
                         <span>Sign up</span>
                     </button>
                 </div>
                 <div class="button-container ">
-                    <button class="button-inner button Button">
+                    <button class="button-inner">
                         <span>Sign in</span>
                     </button>
                 </div>
@@ -75,14 +77,12 @@
                 <h1 class="Heading main-page-text08">Book an appointment</h1>
                 <h2 class="Subheading main-page-subheading"> For all your needs</h2>
                 <span class="main-page-text">
-                        <span>Experience exceptional healthcare at Europa Universalis, </span>
+                        <span>Experience exceptional healthcare at Terra Europe, </span>
                         <br/><span>where expert care meets advanced technology. Our team-</span><br/>
                         <span>is dedicated to your well-being, offering personalized services-</span><br/>
                         <span> and cutting edge treatments.</span></span>
                 <div class="button-container">
-                    <button class="button-inner button Button">
-                        <span>Book Appointment</span>
-                    </button>
+                    <button class="button-inner"><a href="about_us.html">Book Appointment</a> </button>
                 </div>
             </div>
         </div>
@@ -101,27 +101,45 @@
                         <span class="info-title"><span>Eskisehir</span></span>
                         <span class="info-text">
                                 <span>
-                                    Eskisehir Europa Universalis Hospital is a 500-bed hospital
+                                    Eskisehir Terra Europe Hospital is a 500-bed hospital
                                 </span>
                             </span>
                         <div class="info-box-container">
-                            <button class="info-box-button button Button">
+                            <button class="info-box-button Button">
                                 <span>Show On Map</span>
                             </button>
                         </div>
                     </div>
                 </div>
+
+                <div class="info-image-container">
+                    <img alt="image" src="resources/sakura.jpg" class="info-image"/>
+                    <div class="info-text-container">
+                        <span class="info-title"><span>Istanbul</span></span>
+                        <span class="info-text">
+                                <span>
+                                    Malatya Terra Europe Hospital is a 200-bed hospital
+                                </span>
+                            </span>
+                        <div class="info-box-container">
+                            <button class="info-box-button Button">
+                                <span>Show On Map</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="info-image-container">
                     <img alt="image" src="resources/sivas.jpg" class="info-image"/>
                     <div class="info-text-container">
                         <span class="info-title"><span>Sivas</span></span>
                         <span class="info-text">
                                 <span>
-                                    Sivas Europa Universalis Hospital is a 400-bed hospital
+                                    Sivas Terra Europe Hospital is a 400-bed hospital
                                 </span>
                             </span>
                         <div class="info-box-container">
-                            <button class="info-box-button button Button">
+                            <button class="info-box-button Button">
                                 <span>Show On Map</span>
                             </button>
                         </div>
@@ -133,11 +151,11 @@
                         <span class="info-title"><span>Kabul</span></span>
                         <span class="info-text">
                                 <span>
-                                    Kabul Europa Universalis Hospital is a 300-bed hospital
+                                    Kabul Terra Europe Hospital is a 300-bed hospital
                                 </span>
                             </span>
                         <div class="info-box-container">
-                            <button class="info-box-button button Button">
+                            <button class="info-box-button Button">
                                 <span>Show On Map</span>
                             </button>
                         </div>
@@ -150,11 +168,11 @@
                         <span class="info-title"><span>Malatya</span></span>
                         <span class="info-text">
                                 <span>
-                                    Malatya Europa Universalis Hospital is a 200-bed hospital
+                                    Malatya Terra Europe Hospital is a 200-bed hospital
                                 </span>
                             </span>
                         <div class="info-box-container">
-                            <button class="info-box-button button Button">
+                            <button class="info-box-button Button">
                                 <span>Show On Map</span>
                             </button>
                         </div>
@@ -167,11 +185,11 @@
                         <span class="info-title"><span>Kocaeli</span></span>
                         <span class="info-text">
                                 <span>
-                                    Malatya Europa Universalis Hospital is a 200-bed hospital
+                                    Malatya Terra Europe Hospital is a 200-bed hospital
                                 </span>
                             </span>
                         <div class="info-box-container">
-                            <button class="info-box-button button Button">
+                            <button class="info-box-button Button">
                                 <span>Show On Map</span>
                             </button>
                         </div>
@@ -184,11 +202,11 @@
                         <span class="info-title"><span>Manisa</span></span>
                         <span class="info-text">
                                 <span>
-                                    Manisa Europa Universalis Hospital is a 100-bed hospital
+                                    Manisa Terra Europe Hospital is a 100-bed hospital
                                 </span>
                             </span>
                         <div class="info-box-container">
-                            <button class="info-box-button button Button">
+                            <button class="info-box-button Button">
                                 <span>Show On Map</span>
                             </button>
                         </div>
@@ -201,11 +219,11 @@
 <script src="script.js"></script>
 </body>
 <div class="footer">
-    <div class="main-page-container">
+    <div class="footer-container">
         <div class="main-page-footer">
-            <div class="main-page-menu">
-                <h1>Europa Universalis </h1>
-                <div class="main-page-links-container">
+            <div class="footer-menu">
+                <h1>Terra Europe </h1>
+                <div class="footer-links-container">
                     <div class="main-page-container1">
                         <a href="https://example.com" target="_blank" rel="noreferrer noopener"
                            class="main-page-link01">
