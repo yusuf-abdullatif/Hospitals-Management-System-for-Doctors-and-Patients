@@ -1,12 +1,6 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
 
-html {
-    line-height: 1.15;
-}
+
+
 * {
     box-sizing: border-box;
     border-width: 0;
@@ -124,11 +118,11 @@ a {
     padding: 10px;
 }
 
-@media all and (min-width: 992px) {
-}
+
 
 
 html {
+    scroll-behavior: smooth;
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
     line-height: 1.15;
@@ -142,11 +136,12 @@ img {
     display: block;
 }
 
-html {
-    scroll-behavior: smooth
-}
+
 
 body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
@@ -155,7 +150,6 @@ body {
     line-height: 1.55;
     color: #000000;
     background-color: #FFFFFF;
-    margin: 0;
 }
 
 .button {
@@ -383,4 +377,100 @@ body {
     margin-bottom: 2em;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+.list-item {
+    display: list-item;
+}
+
+
+ul, div,   figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+[data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+    display: flex;
+}
+
+[data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+    transform: rotate(90deg);
+}
+
+.home-thq-dropdown {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+}
+.home-dropdown-toggle {
+
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2px;
+    padding: 8px 16px;
+}
+.home-text {
+    font-style: normal;
+    text-align: center;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.home-dropdown-arrow {
+    transition: 0.3s;
+}
+.home-icon {
+    width: 18px;
+    height: 18px;
+    transition: 0.3s;
+}
+.home-dropdown-list {
+    left: 0;
+    width: max-content;
+    display: none;
+    z-index: 100;
+    position: absolute;
+    min-width: 100%;
+    transition: 0.3s;
+    align-items: stretch;
+    border-color: #D9D9D9;
+    border-width: 1px;
+    border-radius: 4px;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: #FFFFFF;
+    list-style-position: inside;
+}
+.home-dropdown {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+}
+.home-dropdown-toggle1 {
+    fill: #595959;
+    color: #595959;
+    width: 100%;
+    display: inline-flex;
+    transition: 0.3s;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+.home-dropdown-toggle1:hover {
+    fill: #fff;
+    color: #fff;
+    background-color: #595959;
+}
+.home-text1 {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
 }
