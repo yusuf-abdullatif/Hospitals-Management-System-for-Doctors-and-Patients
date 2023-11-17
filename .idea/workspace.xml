@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="Last min changes" />
+    <list default="true" id="96c5edc5-3a54-4c64-93c6-29ca8a233067" name="Changes" comment="reformatting">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +82,7 @@
       <recent name="C:\Users\ahyil\WebstormProjects\Hospitals-Management-System-for-Doctors-and-Patients" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.contact_us.html">
+  <component name="RunManager" selected="JavaScript Debug.about_us.html">
     <configuration name="about_us.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:54920/Hospitals-Management-System-for-Doctors-and-Patients/about_us.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -94,10 +97,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.about_us.html" />
         <item itemvalue="JavaScript Debug.contact_us.html" />
         <item itemvalue="JavaScript Debug.main_page.html" />
         <item itemvalue="JavaScript Debug.test.html" />
-        <item itemvalue="JavaScript Debug.about_us.html" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +115,7 @@
       <workItem from="1699883808151" duration="2752000" />
       <workItem from="1699888129449" duration="35591000" />
       <workItem from="1700158487044" duration="1874000" />
-      <workItem from="1700165687042" duration="7657000" />
+      <workItem from="1700165687042" duration="9174000" />
     </task>
     <task id="LOCAL-00001" summary="created template for project and added icon">
       <option name="closed" value="true" />
@@ -314,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700177853492</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="reformatting">
+      <option name="closed" value="true" />
+      <created>1700178148168</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1700178148168</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,6 +374,7 @@
     <MESSAGE value="added images" />
     <MESSAGE value="name changes" />
     <MESSAGE value="Last min changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Last min changes" />
+    <MESSAGE value="reformatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformatting" />
   </component>
 </project>
