@@ -343,7 +343,7 @@ body {
     flex: 1;
     width: 100%;
     display: flex;
-    max-width: 1500px;
+    max-width: 1300px;
     align-items: center;
     flex-direction: row;
     padding: 3em 2em;
