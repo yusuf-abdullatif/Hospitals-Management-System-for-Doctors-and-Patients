@@ -535,3 +535,10 @@ ul, div,   figcaption {
     font-style: normal;
     font-weight: 500;
 }
+.dashboard-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
