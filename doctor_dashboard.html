@@ -2,23 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
 </head>
 <body>
+    <div>
     <div class="dashboard-container">
         <div class="dashboard-top-container">
             <nav data-role="Header" class="main-page-navbar">
                 <div class="main-page-left-side">
                     <h1>Terra Europe Hospital </h1>
                 </div>
+                <div class="main-page-right-side">
+                    <div class="main-page-links-container">
+    
+                        <span class="main-page-text"><a href="main_page.html">Home</a></span>
+                        <div data-thq="thq-dropdown" class="home-thq-dropdown list-item">
+                            <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-main">
+                                <span class="home-text">Departments</span>
+                                <div data-thq="thq-dropdown-arrow" class="home-dropdown-arrow">
+                                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                                        <path d="M426 726v-428l214 214z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul data-thq="thq-dropdown-list" class="home-dropdown-list">
+                                <li data-thq="thq-dropdown" class="home-dropdown list-item">
+                                    <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
+                                        <span class="home-text">Cardiology</span>
+                                    </div>
+                                </li>
+                                <li data-thq="thq-dropdown" class="home-dropdown list-item">
+                                    <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
+                                        <span class="home-text">Orthopedics</span>
+                                    </div>
+                                </li>
+                                <li data-thq="thq-dropdown" class="home-dropdown list-item">
+                                    <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
+                                        <span class="home-text">Obstetrics and Gynecology</span>
+                                    </div>
+                                </li>
+                                <li data-thq="thq-dropdown" class="home-dropdown list-item">
+                                    <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
+                                        <span class="home-text">Dermatology</span>
+                                    </div>
+                                </li>
+                                <li data-thq="thq-dropdown" class="home-dropdown list-item">
+                                    <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
+                                        <span class="home-text">Neurology</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="main-page-text"> <a href="about_us.html">About Us</a></span>
+                        <span class="main-page-text"> <a href="contact_us.html">Contact Us</a></span>
+                    </div>
+                    <div class="button-container ">
+                        <button class="button-inner">
+                            <span>Sign up</span>
+                        </button>
+                    </div>
+                    <div class="button-container ">
+                        <button class="button-inner">
+                            <span>Sign in</span>
+                        </button>
+                    </div>
+                </div>
+    
             </nav>
         </div>
     </div>
-    <div class="dashboard-container">
-        
-    </div>
+    <div class="dashboard-mid-container">
+        <div class="dashboard-left">
+            <div class="dashboard-left-top">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" width="50" height="50">
+                <p>dashboard-left</p>
+                <div id="doctor-info">
+                    <script>
+                        var doctorname = "Dr. Baris Can Kara"; //temporary
+                        var patientname = "Patient"; //temporary
+                        var elementdashboard =document.getElementById("doctor-info");
+                        elementdashboard.innerHTML = "Welcome " + doctorname + "!";
+                    </script>
+                </div>
+            </div>
+            <div class="dashboard-left-bottom">
+                <div class="button-container ">
+                    <button class="button-inner">
+                        <span>My information</span>
+                    </button>
+                </div>
+                <div class="button-container ">
+                    <button class="button-inner">
+                        <span>Patient information</span>
+                    </button>
+                </div>
+                <div class="button-container ">
+                    <button class="button-inner">
+                        <span>My appointments</span>
+                    </button>
+                </div>
 
+            </div>
+        </div>
+        <div class="dashboard-right">
+            <div class="dashboard-right-top">
+                dashboard-right-top
+
+            </div>
+            <div class="dashboard-right-bottom">
+                dashboard-right-bottom
+            <div class="calendar-container">
+                <iframe src="https://calendar.google.com/calendar/embed?src=tr.turkish%23holiday%40group.v.calendar.google.com&ctz=Europe%2FIstanbul" style="border: 0" width="600" height="500" frameborder="0" scrolling="no">
+                </iframe>
+            </div>
+            </div>
+            <p>dashboard-right</p>
+        </div>
+    </div>
+</div>
     
 </body>
 <div class="footer">
