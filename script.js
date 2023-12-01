@@ -61,3 +61,8 @@ function openLoginModal() {
 function closeLoginModal() {
   document.getElementById('loginModal').style.display = 'none';
 }
+
+var doctorname = "Dr. Baris Can Kara"; //temporary
+var patientname = "Patient"; //temporary
+var elementdashboard =document.getElementById("doctor-info");
+elementdashboard.innerHTML = "Welcome " + doctorname + "!";

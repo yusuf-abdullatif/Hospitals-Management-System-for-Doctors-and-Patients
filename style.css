@@ -535,10 +535,64 @@ ul, div,   figcaption {
     font-style: normal;
     font-weight: 500;
 }
+
 .dashboard-container {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.dashboard-left {
+    float: left;
+    flex: 25%;
+    flex-direction: column;
+    height: 1000px;
+    width: auto;
+    background-color: #f00;
+    align-self: center;
+    display: flex;
+}
+
+.dashboard-right {
+    flex: 75%;
+    flex-direction: column;
+    float: right;
+    height: 1000px;
+    width:auto ;
+    background-color: #0f0; 
+    align-items: center;
+    align-self: center;
+}
+.dashboard-mid-container {
+    
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    max-width:auto;
+    flex-direction: row;
+}
+.dashboard-left-top{
+flex:30%;
+background-color: blue;
+}
+.dashboard-left-bottom{
+flex:70%;
+background-color: pink;}
+.dashboard-right-top{
+flex:50%;
+height: 400px;
+width: auto;
+background-color: wheat;
+}
+.dashboard-right-bottom{
+    flex:50%;
+    height: 600px;
+    width: auto;
+    background-color: orange;
+}
+.calendar-container {
+float: right;
 }
