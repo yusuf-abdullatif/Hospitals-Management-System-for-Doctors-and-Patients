@@ -77,32 +77,44 @@
         <div class="dashboard-left">
             <div class="dashboard-left-top">
                 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" width="50" height="50">
-                <p>dashboard-left</p>
+                
                 <div id="doctor-info">
                     <script>
-                        var doctorname = "Dr. Baris Can Kara"; //temporary
-                        var patientname = "Patient"; //temporary
+                        var doctorname = "Dr. Baris Can Kara"; //placeholder
+                        var patientname = "Patient";
                         var elementdashboard =document.getElementById("doctor-info");
                         elementdashboard.innerHTML = "Welcome " + doctorname + "!";
                     </script>
+                    </br><span>example@email.com</span>
+
+                    <div class="button-container ">
+                        <button class="button-inner-for-contact-us">
+                            <a href="main_page.html"><br/>Log Out</a><br/><br/>
+                        </button>
+                    </div> 
                 </div>
             </div>
             <div class="dashboard-left-bottom">
                 <div class="button-container ">
-                    <button class="button-inner">
-                        <span>My information</span>
+                    <button class="button-inner-for-contact-us"><!--using this class for now-->
+                        <br/>My information</a><br/><br/>  
                     </button>
                 </div>
                 <div class="button-container ">
-                    <button class="button-inner">
-                        <span>Patient information</span>
+                    <button class="button-inner-for-contact-us">
+                        <br/>Patient information</a><br/><br/>                          
                     </button>
                 </div>
                 <div class="button-container ">
-                    <button class="button-inner">
-                        <span>My appointments</span>
+                    <button class="button-inner-for-contact-us">
+                        <br/>My appointments</a><br/><br/>
                     </button>
                 </div>
+                <div class="button-container ">
+                <button class="button-inner-for-contact-us">
+                    <a href="main_page.html"><br/>Return to main page</a><br/><br/>
+                </button>
+                </div>   
 
             </div>
         </div>
@@ -112,9 +124,8 @@
 
             </div>
             <div class="dashboard-right-bottom">
-                dashboard-right-bottom
             <div class="calendar-container">
-                <iframe src="https://calendar.google.com/calendar/embed?src=tr.turkish%23holiday%40group.v.calendar.google.com&ctz=Europe%2FIstanbul" style="border: 0" width="600" height="500" frameborder="0" scrolling="no">
+                <iframe src="https://calendar.google.com/calendar/embed?src=tr.turkish%23holiday%40group.v.calendar.google.com&ctz=Europe%2FIstanbul" style="border: 0" width="600" height="500" frameborder="2px" scrolling="no">
                 </iframe>
             </div>
             </div>
