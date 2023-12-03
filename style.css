@@ -544,6 +544,7 @@ ul, div,   figcaption {
     flex-direction: column;
 }
 .dashboard-left {
+    border: 1px solid black;
     float: left;
     flex: 25%;
     flex-direction: column;
@@ -576,16 +577,20 @@ ul, div,   figcaption {
 }
 .dashboard-left-top{
 flex:30%;
-background-color: blue;
-}
+background-color: rgb(103, 189, 189);}
+
 .dashboard-left-bottom{
 flex:70%;
-background-color: pink;}
+background-color: azure;}
+
 .dashboard-right-top{
 flex:50%;
 height: 400px;
 width: auto;
 background-color: wheat;
+background-image: url('resources/contactUsBackground.jpg');
+background-repeat: no-repeat;
+background-size: cover;
 }
 .dashboard-right-bottom{
     flex:50%;
