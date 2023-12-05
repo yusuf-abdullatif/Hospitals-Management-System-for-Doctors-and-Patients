@@ -280,7 +280,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    background-image: url('resources/main_page_background.jpg');
+    background-image: url('/resources/main_page_background.jpg');
     background-position: 0 40%;
 }
 
@@ -291,7 +291,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    background-image: url('resources/contactUsBackground2.jpg');
+    background-image: url('/resources/contactUsBackground2.jpg');
     background-position: 0 40%;
 }
 
@@ -302,7 +302,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    background-image: url('resources/contactUsBackground3.jpg');
+    background-image: url('/resources/contactUsBackground3.jpg');
     background-position: 0 40%;
 }
 
