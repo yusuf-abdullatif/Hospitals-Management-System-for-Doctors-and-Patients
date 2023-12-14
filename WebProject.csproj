@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -47,10 +46,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -129,11 +128,18 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminsController.cs" />
+    <Compile Include="Controllers\appointmentsController.cs" />
+    <Compile Include="Controllers\doctorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\hospitalsController.cs" />
+    <Compile Include="Controllers\patientsController.cs" />
+    <Compile Include="Controllers\prescriptionsController.cs" />
+    <Compile Include="Controllers\testsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\admin.cs" />
+    <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\appointment.cs" />
     <Compile Include="Models\hospital.cs" />
     <Compile Include="Models\hospitalDB.cs" />
@@ -241,11 +247,50 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Offer.cshtml" />
+    <Content Include="Views\Home\Form.cshtml" />
+    <Content Include="Views\Home\Result.cshtml" />
+    <Content Include="Views\Admins\Create.cshtml" />
+    <Content Include="Views\Admins\Delete.cshtml" />
+    <Content Include="Views\Admins\Details.cshtml" />
+    <Content Include="Views\Admins\Edit.cshtml" />
+    <Content Include="Views\Admins\Index.cshtml" />
+    <Content Include="Views\appointments\Create.cshtml" />
+    <Content Include="Views\appointments\Delete.cshtml" />
+    <Content Include="Views\appointments\Details.cshtml" />
+    <Content Include="Views\appointments\Edit.cshtml" />
+    <Content Include="Views\appointments\Index.cshtml" />
+    <Content Include="Views\doctors\Create.cshtml" />
+    <Content Include="Views\doctors\Delete.cshtml" />
+    <Content Include="Views\doctors\Details.cshtml" />
+    <Content Include="Views\doctors\Edit.cshtml" />
+    <Content Include="Views\doctors\Index.cshtml" />
+    <Content Include="Views\hospitals\Create.cshtml" />
+    <Content Include="Views\hospitals\Delete.cshtml" />
+    <Content Include="Views\hospitals\Details.cshtml" />
+    <Content Include="Views\hospitals\Edit.cshtml" />
+    <Content Include="Views\hospitals\Index.cshtml" />
+    <Content Include="Views\patients\Create.cshtml" />
+    <Content Include="Views\patients\Delete.cshtml" />
+    <Content Include="Views\patients\Details.cshtml" />
+    <Content Include="Views\patients\Edit.cshtml" />
+    <Content Include="Views\patients\Index.cshtml" />
+    <Content Include="Views\prescriptions\Create.cshtml" />
+    <Content Include="Views\prescriptions\Delete.cshtml" />
+    <Content Include="Views\prescriptions\Details.cshtml" />
+    <Content Include="Views\prescriptions\Edit.cshtml" />
+    <Content Include="Views\prescriptions\Index.cshtml" />
+    <Content Include="Views\tests\Create.cshtml" />
+    <Content Include="Views\tests\Delete.cshtml" />
+    <Content Include="Views\tests\Details.cshtml" />
+    <Content Include="Views\tests\Edit.cshtml" />
+    <Content Include="Views\tests\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FrontEnd\admin\" />
     <Folder Include="FrontEnd\doctor\" />
     <Folder Include="FrontEnd\patient\" />
+    <Folder Include="Views\Patient\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -293,10 +338,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
-    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
   </Target>
-  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

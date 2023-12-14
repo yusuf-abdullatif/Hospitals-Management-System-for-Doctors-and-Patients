@@ -8,10 +8,10 @@ namespace WebProject.Models
     {
 
         public HospitalDB()
-            : base("name=HospitalDB")
+            : base("HospitalDB")
         {
         }
-        public System.Data.Entity.DbSet<WebProject.Models.admin> Admin { get; set; }
+        public System.Data.Entity.DbSet<WebProject.Models.Admin> Admin { get; set; }
         public System.Data.Entity.DbSet<WebProject.Models.appointment> Appointments { get; set; }
         public System.Data.Entity.DbSet<WebProject.Models.doctor> Doctors { get; set; }
         public System.Data.Entity.DbSet<WebProject.Models.hospital> Hospitals { get; set; }

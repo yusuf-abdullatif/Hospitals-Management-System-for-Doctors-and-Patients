@@ -1,0 +1,50 @@
+﻿@model WebProject.Models.test
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>test</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.patientID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.patientID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.appointmentNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.appointmentNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doctorID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctorID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.attachment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.attachment)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.testID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,32 @@
+﻿@model  WebProject.Models.Card
+
+<html>
+<title> Credit Card Registration</title>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        {
+            <p>Your Name         : @Html.TextBoxFor(x => x.Name) </p>
+            <p>Your Surname      : @Html.TextBoxFor(x => x.SurName) </p>
+            <p>Email Address     : @Html.TextBoxFor(x => x.Email) </p>
+            <p>Gender            :  </p>
+            <p>Male @Html.RadioButton("Gender", "Male")</p>
+            <p>Female @Html.RadioButton("Gender", "Female")</p>
+        }
+
+        <p>
+            Do you want a card?
+            @Html.DropDownListFor(x => x.Choice, new[]
+             {
+                new SelectListItem() {Text = "Yes, I want a Card", Value = bool.TrueString},
+                new SelectListItem() {Text = "No, I do not want a card", Value = bool.FalseString},
+            }, "Choose one!")
+        </p>
+        
+        <input type="submit" value="Submit" />
+        <link rel="StyleSheet" href="@Href("~/Content/Site.css")" type="text/css" />
+
+    }
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebProject.Models.test>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.patientID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.appointmentNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.doctorID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.attachment)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.patientID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.appointmentNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.doctorID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.attachment)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.testID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.testID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.testID })
+        </td>
+    </tr>
+}
+
+</table>
