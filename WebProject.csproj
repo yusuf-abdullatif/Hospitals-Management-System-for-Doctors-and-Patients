@@ -247,9 +247,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Offer.cshtml" />
-    <Content Include="Views\Home\Form.cshtml" />
-    <Content Include="Views\Home\Result.cshtml" />
     <Content Include="Views\Admins\Create.cshtml" />
     <Content Include="Views\Admins\Delete.cshtml" />
     <Content Include="Views\Admins\Details.cshtml" />
