@@ -1,7 +1,4 @@
-﻿@{ 
-    Layout = null;
-}
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,86 +7,33 @@
     <link rel="stylesheet" href="~/Content/style.css">
     <script src="script.js" defer></script>
 </head>
-
+<style>
+    .layout_top_page_container {
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-size: cover;
+        background-image: url("../../FrontEnd/resources/main_page_background.jpg");
+        background-position: 0 40%;
+    }
+</style>
 <body>
-    
 
     <div class="main-page-container">
-        <div class="main-page-top-container">
-            <nav data-role="Header" class="main-page-navbar">
-                <div class="main-page-left-side">
-                    <h1>Terra Europe Hospital </h1>
-                </div>
-                <div class="main-page-right-side">
-                    <div class="main-page-links-container">
-
-                        <span class="main-page-text"><a href="/">Home</a></span>
-                        <div data-thq="thq-dropdown" class="home-thq-dropdown list-item">
-                            <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-main">
-                                <span class="home-text">Departments</span>
-                                <div data-thq="thq-dropdown-arrow" class="home-dropdown-arrow">
-                                    <svg viewBox="0 0 1024 1024" class="home-icon">
-                                        <path d="M426 726v-428l214 214z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <ul data-thq="thq-dropdown-list" class="home-dropdown-list">
-                                <li data-thq="thq-dropdown" class="home-dropdown list-item">
-                                    <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
-                                        <span class="home-text">Cardiology</span>
-                                    </div>
-                                </li>
-                                <li data-thq="thq-dropdown" class="home-dropdown list-item">
-                                    <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
-                                        <span class="home-text">Orthopedics</span>
-                                    </div>
-                                </li>
-                                <li data-thq="thq-dropdown" class="home-dropdown list-item">
-                                    <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
-                                        <span class="home-text">Obstetrics and Gynecology</span>
-                                    </div>
-                                </li>
-                                <li data-thq="thq-dropdown" class="home-dropdown list-item">
-                                    <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
-                                        <span class="home-text">Dermatology</span>
-                                    </div>
-                                </li>
-                                <li data-thq="thq-dropdown" class="home-dropdown list-item">
-                                    <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle-option">
-                                        <span class="home-text">Neurology</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <span class="main-page-text"> <a href="/Home/About">About Us</a></span>
-                        <span class="main-page-text"> <a href="/Home/Contact">Contact Us</a></span>
-                    </div>
-                    <div class="button-container ">
-                        <button class="button-inner">
-                            <span>Sign up</span>
-                        </button>
-                    </div>
-                    <div class="button-container ">
-                        <button class="button-inner">
-                            <span>Sign in</span>
-                        </button>
-                    </div>
-                </div>
-
-            </nav>
-            <div class="main-page-middle">
-                <div class="main-page-text-container">
-                    <h1 class="Heading main-page-text08">Book an appointment</h1>
-                    <h2 class="Subheading main-page-subheading"> For all your needs</h2>
-                    <span class="main-page-text">
-                        <span>Experience exceptional healthcare at Terra Europe, </span>
-                        <br /><span>where expert care meets advanced technology. Our team-</span><br />
-                        <span>is dedicated to your well-being, offering personalized services-</span><br />
-                        <span> and cutting edge treatments.</span>
-                    </span>
-                    <div class="button-container">
-                        <button class="button-inner"><a href="/Home/About">Book Appointment</a> </button>
-                    </div>
+        <div class="main-page-middle">
+            <div class="main-page-text-container">
+                <h1 class="Heading main-page-text08">Book an appointment</h1>
+                <h2 class="Subheading main-page-subheading"> For all your needs</h2>
+                <span class="main-page-text">
+                    <span>Experience exceptional healthcare at Terra Europe, </span>
+                    <br /><span>where expert care meets advanced technology. Our team-</span><br />
+                    <span>is dedicated to your well-being, offering personalized services-</span><br />
+                    <span> and cutting edge treatments.</span>
+                </span>
+                <div class="button-container">
+                    <button class="button-inner"><a href="/Home/About">Book Appointment</a> </button>
                 </div>
             </div>
         </div>
@@ -240,53 +184,5 @@
     </div>
 
 </body>
-<div class="footer">
-    <div class="footer-container">
-        <div class="main-page-footer">
-            <div class="footer-menu">
-                <h1>Terra Europe </h1>
-                <div class="footer-links-container">
-                    <div class="main-page-container1">
-                        <a href="https://example.com" target="_blank" rel="noreferrer noopener"
-                           class="main-page-link01">
-                            Health Packages
-                        </a>
-                        <a href="https://example.com" target="_blank" rel="noreferrer noopener"
-                           class="main-page-link01">
-                            Emergency Services
-                        </a>
-                        <a href="https://example.com" target="_blank" rel="noreferrer noopener"
-                           class="main-page-link01">
-                            Patient Care Excellence
-                        </a>
-                        <a href="https://example.com" target="_blank" rel="noreferrer noopener"
-                           class="main-page-link01">
-                            Wellness Programs
-                        </a>
-                    </div>
-                    <div class="main-page-container2">
-                        <a href="/Home/About" target="_blank" rel="noreferrer noopener"
-                           class="main-page-link01">
-                            About Us
-                        </a>
-                        <a href="https://example.com" target="_blank" rel="noreferrer noopener"
-                           class="main-page-link01">
-                            FAQ
-                        </a>
-                        <a href="https://example.com" target="_blank" rel="noreferrer noopener"
-                           class="main-page-link01">
-                            Terms and conditions
-                        </a>
-                        <a href="/Home/Contact" target="_blank" rel="noreferrer noopener"
-                           class="main-page-link01">
-                            Contact Us
-                        </a>
-                    </div>
-                </div>
-                <div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 </html>
