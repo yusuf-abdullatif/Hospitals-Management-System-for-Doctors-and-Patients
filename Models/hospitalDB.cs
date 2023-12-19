@@ -19,7 +19,7 @@ namespace WebProject.Models
         public System.Data.Entity.DbSet<WebProject.Models.prescription> Prescriptions { get; set; }
         public System.Data.Entity.DbSet<WebProject.Models.test> Tests { get; set; }
 
-
+        public System.Data.Entity.DbSet<WebProject.Models.login> logins { get; set; }
     }
 
 }

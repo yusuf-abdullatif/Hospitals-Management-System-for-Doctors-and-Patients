@@ -127,8 +127,10 @@
     <Compile Include="Controllers\doctorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\hospitalsController.cs" />
+    <Compile Include="Controllers\loginsController.cs" />
     <Compile Include="Controllers\patientsController.cs" />
     <Compile Include="Controllers\prescriptionsController.cs" />
+    <Compile Include="Controllers\securityController.cs" />
     <Compile Include="Controllers\testsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -137,6 +139,7 @@
     <Compile Include="Models\appointment.cs" />
     <Compile Include="Models\hospital.cs" />
     <Compile Include="Models\hospitalDB.cs" />
+    <Compile Include="Models\login.cs" />
     <Compile Include="Models\patient.cs" />
     <Compile Include="Models\doctor.cs" />
     <Compile Include="Models\prescription.cs" />
@@ -291,6 +294,18 @@
     <Content Include="Views\tests\Details.cshtml" />
     <Content Include="Views\tests\Edit.cshtml" />
     <Content Include="Views\tests\Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\logins\Create.cshtml" />
+    <Content Include="Views\logins\Delete.cshtml" />
+    <Content Include="Views\logins\Details.cshtml" />
+    <Content Include="Views\logins\Edit.cshtml" />
+    <Content Include="Views\logins\Index.cshtml" />
+    <Content Include="Views\security\Create.cshtml" />
+    <Content Include="Views\security\Delete.cshtml" />
+    <Content Include="Views\security\Details.cshtml" />
+    <Content Include="Views\security\Edit.cshtml" />
+    <Content Include="Views\security\Index.cshtml" />
+    <Content Include="Views\security\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FrontEnd\admin\" />
