@@ -23,11 +23,11 @@ namespace WebProject.Controllers
         [HttpPost]
         public ActionResult Login(login user)
         {
-            var usr = db.logins.Where(u => u.email == user.email && u.password == user.password && u.ssn == user.ssn).FirstOrDefault();
+            var usr = db.logins.Where(u => u.password == user.password && u.ssn == user.ssn).FirstOrDefault();
             if (usr != null)
             {
                 FormsAuthentication.SetAuthCookie(usr.ssn, false); //auth based on ssn
-                return RedirectToAction("Index", "PersonelManage");
+                return RedirectToAction("Index", "doctors");//redirect to home page when login change this 
             }
             else
             {
