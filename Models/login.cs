@@ -18,5 +18,7 @@ namespace WebProject.Models
         public string email { get; set; }   
         [Required(ErrorMessage = "Please enter your password")]
         public string password { get; set; }
+
+
     }
 }

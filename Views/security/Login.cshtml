@@ -1,12 +1,23 @@
 ﻿@model WebProject.Models.login
-@{
-    Layout = null;
-}
+<style>
+    .layout_top_page_container {
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-size: cover;
+        background-image: url("/resources/yusuf.jpg");
+        background-position: 0 40%;
+    }
+</style>
 <!DOCTYPE html>
-<html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="~/Content/style.css">
+    <script src="script.js" defer></script>
+
 </head>
 <body>
     <div id="login">
@@ -46,4 +57,3 @@
         </div>
     </div>
 </body>
-</html>
