@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="layout_top_page_container">
-        <nav data-role="Header" class="main-page-navbar">
+        <nav data-role="Header" class="main-page-navbar"/>
             <div class="main-page-left-side">
                 <h1>Terra Europe Hospital </h1>
             </div>
@@ -56,18 +56,13 @@
                     <span class="main-page-text"> <a href="/Home/Contact">Contact Us</a></span>
                 </div>
                 <div class="button-container ">
-                    <button class="button-inner">
-                        <span>Sign up</span>
-                    </button>
+                    <button class="button-inner" onclick="location.href='@Url.Action("Login","security")'"> Sign in</button>
                 </div>
-                <div class="button-container ">
-                    <button class="button-inner">
-                        <span>Sign in</span>
-                    </button>
+                <button class="button-inner" onclick="location.href='@Url.Action("login","Create")'"> Sign up</button>
                 </div>
             </div>
 
-        </nav>
+        <nav/>
         <div class="container body-content">
             @RenderBody()
             <hr />
@@ -123,7 +118,7 @@
         </div>
 
         @RenderSection("scripts", required: false)
-    </div>
+    <div/>
 </body>
 
 </html>
