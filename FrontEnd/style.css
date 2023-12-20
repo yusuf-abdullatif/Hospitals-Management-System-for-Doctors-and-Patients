@@ -557,7 +557,7 @@ ul, div,   figcaption {
 
 .dashboard-container {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -567,10 +567,10 @@ ul, div,   figcaption {
     float: left;
     flex: 25%;
     flex-direction: column;
-    height: 1000px;
+    height: auto;
     width: auto;
     background-color: #f00;
-    align-self: center;
+    align-self: flex-start;
     display: flex;
 }
 
@@ -578,17 +578,15 @@ ul, div,   figcaption {
     flex: 75%;
     flex-direction: column;
     float: right;
-    height: 1000px;
+    height: auto;
     width:auto ;
     background-color: #0f0; 
-    align-items: center;
-    align-self: center;
+    align-self: flex-end;
 }
 .dashboard-mid-container {
     
-    align-items: center;
     align-self: center;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-wrap: wrap;    
     max-width:auto;
