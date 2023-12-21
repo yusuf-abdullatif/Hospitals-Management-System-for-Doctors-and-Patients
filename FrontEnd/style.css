@@ -12,7 +12,7 @@ a {
     text-decoration: inherit;
 }
 
-
+/*what the dog doing*/
 .main-page-footer {
     color: #FFFFFF;
     width: 100%;
@@ -371,6 +371,7 @@ body {
 
 .main-page-text-container {
     width: 550px;
+    height: 850px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
