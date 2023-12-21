@@ -23,6 +23,7 @@ a {
     justify-content: center;
     background-color: teal;
 }
+
 .main-page-menu {
     width: 100%;
     display: flex;
@@ -48,7 +49,7 @@ a {
     border-radius: 100px;
     width: 730px;
     padding: 10px;
-    border : 2px solid teal;
+    border: 2px solid teal;
     height: 50px;
     display: flex;
     align-items: center;
@@ -78,12 +79,14 @@ a {
     margin-bottom: 1em;
     text-decoration: none;
 }
+
 .main-page-container2 {
     display: flex;
     align-items: flex-start;
     margin-left: 100px;
     flex-direction: column;
 }
+
 .footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 5px 5px;
@@ -92,7 +95,6 @@ a {
     font-family: 'Barlow', sans-serif;
     font-size: 15px;
     margin-bottom: 0;
-
     padding: 0;
     font-weight: 400;
     font-style: normal;
@@ -102,7 +104,6 @@ a {
     line-height: 1.55;
     color: #000000;
     background-color: #FFFFFF;
-
 }
 
 .logo img {
@@ -110,7 +111,6 @@ a {
 }
 
 #contactUs {
-
     padding-left: 300px;
 }
 
@@ -119,7 +119,7 @@ a {
     width: 50%;
     height: 800px;
     box-sizing: border-box;
-    margin-top : 200px;
+    margin-top: 200px;
     background-position: center center;
     object-fit: fill;
     background-size: cover;
@@ -130,19 +130,19 @@ a {
     width: 50%;
     height: 800px;
     box-sizing: border-box;
-    margin-top : 200px;
+    margin-top: 200px;
     background-position: center center;
     object-fit: fill;
     background-size: cover;
 }
 
 
-.contactTable{
+.contactTable {
     background-color: rgba(0, 128, 128, 0.3);
     border-radius: 50px;
     padding: 20px;
     padding-left: 50px;
-    margin-top:60px;
+    margin-top: 60px;
 }
 
 #ContactLeftLayer, p {
@@ -223,7 +223,7 @@ body {
 
 
 .button-container {
-    border : 20px solid rgba(255, 255, 255, 0.0);
+    border: 20px solid rgba(255, 255, 255, 0.0);
     width: auto;
     display: flex;
     position: relative;
@@ -238,7 +238,7 @@ body {
     background-color: teal;
 }
 
-.button-inner-for-contact-us  {
+.button-inner-for-contact-us {
     color: #FFFFFF;
     border: none;
     border-radius: 100px;
@@ -263,6 +263,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .footer-container {
     width: 100%;
     height: auto;
@@ -303,6 +304,7 @@ body {
     background-image: url('resources/contactUsBackground2.jpg');
     background-position: 0 40%;
 }
+
 .about-us-top-page-top-container_2 {
     width: 100%;
     height: 1000px;
@@ -326,7 +328,6 @@ body {
 }
 
 .main-page-navbar {
-
     width: 1500px;
     height: 105px;
     display: flex;
@@ -353,7 +354,6 @@ body {
 }
 
 .main-page-text {
-
     padding: 2em;
     margin-right: 2em;
 }
@@ -470,7 +470,7 @@ body {
 }
 
 
-ul, div,   figcaption {
+ul, div, figcaption {
     margin: 0;
     padding: 0;
 }
@@ -491,8 +491,8 @@ ul, div,   figcaption {
     position: relative;
     border-radius: 2px;
 }
-.home-dropdown-toggle-main {
 
+.home-dropdown-toggle-main {
     width: 100%;
     display: inline-flex;
     align-items: center;
@@ -503,11 +503,13 @@ ul, div,   figcaption {
 .home-dropdown-arrow {
     transition: 0.3s;
 }
+
 .home-icon {
     width: 18px;
     height: 18px;
     transition: 0.3s;
 }
+
 .home-dropdown-list {
     left: 0;
     width: max-content;
@@ -525,12 +527,14 @@ ul, div,   figcaption {
     background-color: #FFFFFF;
     list-style-position: inside;
 }
+
 .home-dropdown {
     cursor: pointer;
     display: inline-block;
     position: relative;
     border-radius: 2px;
 }
+
 .home-dropdown-toggle-option {
     fill: #595959;
     color: #595959;
@@ -541,11 +545,13 @@ ul, div,   figcaption {
     border-radius: 4px;
     padding: 8px 16px;
 }
-.home-dropdown-toggle-option:hover {
-    fill: #fff;
-    color: #fff;
-    background-color: #595959;
-}
+
+    .home-dropdown-toggle-option:hover {
+        fill: #fff;
+        color: #fff;
+        background-color: #595959;
+    }
+
 .home-text {
     width: 100%;
     cursor: pointer;
@@ -562,6 +568,7 @@ ul, div,   figcaption {
     align-items: center;
     flex-direction: column;
 }
+
 .dashboard-left {
     border: 1px solid black;
     float: left;
@@ -579,42 +586,47 @@ ul, div,   figcaption {
     flex-direction: column;
     float: right;
     height: auto;
-    width:auto ;
-    background-color: #0f0; 
+    width: auto;
+    background-color: #0f0;
     align-self: flex-end;
 }
+
 .dashboard-mid-container {
-    
     align-self: center;
     width: auto;
     display: flex;
-    flex-wrap: wrap;    
-    max-width:auto;
+    flex-wrap: wrap;
+    max-width: auto;
     flex-direction: row;
 }
-.dashboard-left-top{
-flex:30%;
-background-color: rgb(103, 189, 189);}
 
-.dashboard-left-bottom{
-flex:70%;
-background-color: azure;}
-
-.dashboard-right-top{
-flex:50%;
-height: 400px;
-width: auto;
-background-color: wheat;
-background-image: url('resources/contactUsBackground.jpg');
-background-repeat: no-repeat;
-background-size: cover;
+.dashboard-left-top {
+    flex: 30%;
+    background-color: rgb(103, 189, 189);
 }
-.dashboard-right-bottom{
-    flex:50%;
+
+.dashboard-left-bottom {
+    flex: 70%;
+    background-color: azure;
+}
+
+.dashboard-right-top {
+    flex: 50%;
+    height: 400px;
+    width: auto;
+    background-color: wheat;
+    background-image: url('resources/contactUsBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dashboard-right-bottom {
+    flex: 50%;
     height: 600px;
     width: auto;
     background-color: orange;
 }
+
 .calendar-container {
-float: right;
+    float: right;
 }
