@@ -169,35 +169,6 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
-    <Content Include="FrontEnd\.gitignore" />
-    <Content Include="FrontEnd\.idea\shelf\Uncommitted_changes_before_Update_at_11_16_2023_10_40__Changes_.xml" />
-    <Content Include="FrontEnd\.idea\shelf\Uncommitted_changes_before_Update_at_11_16_2023_1_52__Changes_.xml" />
-    <Content Include="FrontEnd\.idea\workspace.xml" />
-    <Content Include="FrontEnd\about_us.html" />
-    <Content Include="FrontEnd\contact_us.html" />
-    <Content Include="FrontEnd\doctor_dashboard.html" />
-    <Content Include="FrontEnd\main_page.html" />
-    <Content Include="FrontEnd\resources\baran.jpg" />
-    <Content Include="FrontEnd\resources\baris.jpg" />
-    <Content Include="FrontEnd\resources\contactUsBackground.jpg" />
-    <Content Include="FrontEnd\resources\contactUsBackground2.jpg" />
-    <Content Include="FrontEnd\resources\contactUsBackground3.jpg" />
-    <Content Include="FrontEnd\resources\eskisehir.jpg" />
-    <Content Include="FrontEnd\resources\hakan.jpg" />
-    <Content Include="FrontEnd\resources\icon.jpg" />
-    <Content Include="FrontEnd\resources\kabul.jpg" />
-    <Content Include="FrontEnd\resources\kocaeli.jpg" />
-    <Content Include="FrontEnd\resources\MainPageBackground.jpg" />
-    <Content Include="FrontEnd\resources\main_page_background.jpg" />
-    <Content Include="FrontEnd\resources\malatya.jpg" />
-    <Content Include="FrontEnd\resources\manisa.jpg" />
-    <Content Include="FrontEnd\resources\mustafa.jpg" />
-    <Content Include="FrontEnd\resources\sakura.jpg" />
-    <Content Include="FrontEnd\resources\sivas.jpg" />
-    <Content Include="FrontEnd\resources\yusuf.jpg" />
-    <Content Include="FrontEnd\script.js" />
-    <Content Include="FrontEnd\style.css" />
-    <Content Include="FrontEnd\test.html" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="resources\baran.jpg" />
@@ -222,12 +193,6 @@
     <Content Include="resources\documents\Entity-Relationship-Diagram.vpp.bak_000f" />
     <Content Include="resources\documents\ER Diagram.drawio" />
     <Content Include="resources\documents\Task1.docx" />
-    <Content Include="FrontEnd\.idea\shelf\Uncommitted_changes_before_Update_at_11_16_2023_10_40_[Changes]\shelved.patch" />
-    <Content Include="FrontEnd\.idea\shelf\Uncommitted_changes_before_Update_at_11_16_2023_1_52_[Changes]\shelved.patch" />
-    <Content Include="FrontEnd\resources\documents\Entity-Relationship-Diagram.vpp" />
-    <Content Include="FrontEnd\resources\documents\Entity-Relationship-Diagram.vpp.bak_000f" />
-    <Content Include="FrontEnd\resources\documents\ER Diagram.drawio" />
-    <Content Include="FrontEnd\resources\documents\Task1.docx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -308,9 +273,6 @@
     <Content Include="Views\security\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FrontEnd\admin\" />
-    <Folder Include="FrontEnd\doctor\" />
-    <Folder Include="FrontEnd\patient\" />
     <Folder Include="Views\Patient\" />
   </ItemGroup>
   <ItemGroup>
