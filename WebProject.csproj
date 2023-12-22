@@ -45,9 +45,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
-      <HintPath>packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -174,7 +171,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="script.js" />
     <Content Include="resources\baran.jpg" />
     <Content Include="resources\baris.jpg" />
     <Content Include="resources\contactUsBackground.jpg" />
@@ -275,16 +271,9 @@
     <Content Include="Views\security\Edit.cshtml" />
     <Content Include="Views\security\Index.cshtml" />
     <Content Include="Views\security\Login.cshtml" />
-    <Content Include="Views\doctors\doc_info.cshtml" />
-    <Content Include="Views\Shared\_LayoutDoctor.cshtml" />
-    <Content Include="Views\doctors\dashboard.cshtml" />
-    <Content Include="Views\Shared\_LayoutPatient.cshtml" />
-    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
-    <Content Include="Views\doctors\patient_info.cshtml" />
-    <Content Include="Views\hospitals\closest.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <Folder Include="Views\Patient\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
