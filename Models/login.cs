@@ -19,6 +19,8 @@ namespace WebProject.Models
         [Required(ErrorMessage = "Please enter your password")]
         public string password { get; set; }
 
+        protected int encrptkey = 123;
+
 
     }
 }
