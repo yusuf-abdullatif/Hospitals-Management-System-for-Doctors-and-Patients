@@ -13,8 +13,16 @@ namespace WebProject.Controllers
     public class doctorsController : Controller
     {
         private HospitalDB db = new HospitalDB();
+        public ActionResult doc_info()
+        {
+            // Get the list of doctors from the database or any other source
+            List<doctor> doctors = db.Doctors.ToList();
 
+            // Pass the model data to the view
+            return View(doctors);
+        }
         // GET: doctors
+
         public ActionResult Index()
         {
             return View(db.Doctors.ToList());
