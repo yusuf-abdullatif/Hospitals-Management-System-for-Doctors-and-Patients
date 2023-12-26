@@ -278,9 +278,7 @@
     <Content Include="Views\security\sec_login_pleb.cshtml" />
     <Content Include="Views\security\sec_login_admin.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Patient\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
     <Content Include="Content\bootstrap.rtl.css.map" />
