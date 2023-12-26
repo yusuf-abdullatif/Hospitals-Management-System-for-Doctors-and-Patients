@@ -1,5 +1,4 @@
-﻿@ -1, 68 + 0, 0 @@
-const loginButton = document.querySelector('.login-button');
+﻿const loginButton = document.querySelector('.login-button');
 const loginPopup = document.querySelector('.login-popup');
 const loginPopupClose = document.querySelector('.login-popup-close');
 document.querySelector('.homebutton');

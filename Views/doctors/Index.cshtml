@@ -1,13 +1,31 @@
 ﻿@model IEnumerable<WebProject.Models.doctor>
 
-@{
-    ViewBag.Title = "Index";
-}
 <!DOCTYPE html>
 <head>
-    <title>Doctorpage</title>>
+    <title>Doctorpage</title>
     <link rel="stylesheet" href="~/Content/style.css">
     <script src="script.js" defer></script>
+    <style>
+        .layout_top_page_container {
+            width: 100%;
+            height: 1000px;
+            flex-direction: column;
+            background-size: cover;
+
+        }
+        .main-page-navbar {
+            width: 1500px;
+            height: 105px;
+            display: flex;
+            padding: 2em;
+            max-width: 1500px;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+    </style>
 </head>
 
 <div class="dashboard-container">
@@ -54,7 +72,6 @@
                     </iframe>
                 </div>
             </div>
-            <p>dashboard-right</p>
         </div>
 </div>
 @*<p>
