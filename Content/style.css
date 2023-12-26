@@ -93,14 +93,103 @@ a {
     height: 50px;
 }
 
+#contactUs {
+    padding-left: 300px;
+}
+
+#ContactLeftLayer {
+    float: left;
+    width: 50%;
+    height: 800px;
+    box-sizing: border-box;
+    margin-top: 200px;
+    background-position: center center;
+    object-fit: fill;
+    background-size: cover;
+}
+
+#ContactRightLayer {
+    float: right;
+    width: 50%;
+    height: 800px;
+    box-sizing: border-box;
+    margin-top: 200px;
+    background-position: center center;
+    object-fit: fill;
+    background-size: cover;
+}
 
 
+.contactTable {
+    background-color: rgba(0, 128, 128, 0.3);
+    border-radius: 50px;
+    padding: 20px;
+    padding-left: 50px;
+    margin-top: 60px;
+}
 
+#ContactLeftLayer, p {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
 
+.main-page-container1 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 100px;
+    flex-direction: column;
+}
 
+.main-page-link01 {
+    margin-bottom: 1em;
+    text-decoration: none;
+}
 
+.main-page-container2 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 100px;
+    flex-direction: column;
+}
 
+.button-inner-for-contact-us {
+    color: #FFFFFF;
+    border: none;
+    border-radius: 100px;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 14px;
+    background-color: teal;
+}
+.contact-us-page-top-container {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-image: url('/resources/contactUsBackground3.jpg');
+    background-position: 0 40%;
+}
 
+.Subheading {
+    font-size: 1.6rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.Heading {
+    font-size: 3rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+}
 
 
 
@@ -119,7 +208,12 @@ img {
     display: block;
 }
 
-
+.home-thq-dropdown {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+}
 
 body {
     margin: 0;
@@ -135,11 +229,11 @@ body {
     background-color: #FFFFFF;
 }
 
-
-
-
-
-
+.home-icon {
+    width: 18px;
+    height: 18px;
+    transition: 0.3s;
+}
 
 .Button {
     font-size: 14px;
