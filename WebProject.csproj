@@ -196,6 +196,7 @@
     <Content Include="resources\documents\Entity-Relationship-Diagram.vpp.bak_000f" />
     <Content Include="resources\documents\ER Diagram.drawio" />
     <Content Include="resources\documents\Task1.docx" />
+    <Content Include="script.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
