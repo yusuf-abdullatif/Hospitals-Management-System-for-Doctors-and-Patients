@@ -444,3 +444,74 @@ ul, div,   figcaption {
     font-style: normal;
     font-weight: 500;
 }
+.dashboard-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-left {
+    border: 1px solid black;
+    float: left;
+    flex: 20%;
+    flex-direction: column;
+    height: 1000px;
+    width: auto;
+    background-color: #f00;
+    align-self: flex-start;
+    display: flex;
+}
+
+.dashboard-right {
+    flex: 80%;
+    flex-direction: column;
+    float: right;
+    height: auto;
+    width: auto;
+    background-color: #0f0;
+    align-self: flex-end;
+}
+
+.dashboard-mid-container {
+    align-self: center;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: auto;
+    flex-direction: row;
+}
+
+.dashboard-left-top {
+    flex: 30%;
+    background-color: rgb(103, 189, 189);
+}
+
+.dashboard-left-bottom {
+    flex: 70%;
+    background-color: azure;
+}
+
+.dashboard-right-top {
+    flex: 50%;
+    height: 400px;
+    width: auto;
+    background-color: wheat;
+    background-image: url("/resources/contactUsBackground.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    
+}
+
+.dashboard-right-bottom {
+    flex: 50%;
+    height: 600px;
+    width: auto;
+    background-color: orange;
+}
+
+.calendar-container {
+    float: right;
+    height: 100%;
+}
