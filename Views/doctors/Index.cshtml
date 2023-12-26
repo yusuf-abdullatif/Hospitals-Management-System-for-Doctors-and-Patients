@@ -1,6 +1,5 @@
 ﻿@model IEnumerable<WebProject.Models.doctor>
 
-<!DOCTYPE html>
 <head>
     <title>Doctorpage</title>
     <link rel="stylesheet" href="~/Content/style.css">
@@ -22,9 +21,19 @@
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
+            margin:0 25%;
 
         }
-
+        .text {
+            font-size: 40px;
+            font-family: "Courier New", Times, serif;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .text p{
+            font-size:20px;
+        }
     </style>
 </head>
 
@@ -35,10 +44,10 @@
 
                 <div id="doctor-info">
                     <script>
-                        var doctorname = "Dr. Baris Can Kara"; //placeholder
+                        var doctorname = "Baris Can Kara"; //placeholder
                         var patientname = "Patient";
                         var elementdashboard = document.getElementById("doctor-info");
-                        elementdashboard.innerHTML = "Welcome " + doctorname + "!";
+                        elementdashboard.innerHTML = doctorname + "!";
                     </script>
                     <br /><span>example@email.com</span>
 
@@ -51,12 +60,15 @@
                 <div class="button-container ">
                     <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> My information</button>
                 </div>
+                <br /><br />
                 <div class="button-container ">
                     <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> Patient information</button>
                 </div>
+                <br /><br />
                 <div class="button-container ">
                     <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> My Appointments</button>
                 </div>
+                <br /><br />
                 <div class="button-container ">
                     <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> Return to Home page</button>
                 </div>
@@ -64,11 +76,15 @@
         </div>
         <div class="dashboard-right">
             <div class="dashboard-right-top">
-                dashboard-right-top
+                <div class="text">
+                    <b>Welcome!</b><br /><br/>
+                    <b>Doctor Baris Can Kara</b><br/><br />
+                    <p>Thank for joining us.</p>
+                </div>
             </div>
             <div class="dashboard-right-bottom">
                 <div class="calendar-container">
-                    <iframe src="https://calendar.google.com/calendar/embed?src=tr.turkish%23holiday%40group.v.calendar.google.com&ctz=Europe%2FIstanbul" style="border: 0" width="600" height="500" frameborder="1" scrolling="no">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=tr.turkish%23holiday%40group.v.calendar.google.com&ctz=Europe%2FIstanbul" style="border: 1px solid" width="700" height="600" frameborder="1" scrolling="no">
                     </iframe>
                 </div>
             </div>

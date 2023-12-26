@@ -458,7 +458,7 @@ ul, div,   figcaption {
     flex-direction: column;
     height: 1000px;
     width: auto;
-    background-color: #f00;
+    background-color: rgb(103, 189, 189);
     align-self: flex-start;
     display: flex;
 }
@@ -483,13 +483,16 @@ ul, div,   figcaption {
 }
 
 .dashboard-left-top {
-    flex: 30%;
+    margin:auto;
+    padding-top:20%;
+    width:50%;
+    flex: 20%;
     background-color: rgb(103, 189, 189);
 }
 
 .dashboard-left-bottom {
-    flex: 70%;
-    background-color: azure;
+    flex: 80%;
+    background-color: #42ddd4;
 }
 
 .dashboard-right-top {
@@ -508,7 +511,7 @@ ul, div,   figcaption {
     flex: 50%;
     height: 600px;
     width: auto;
-    background-color: orange;
+    background-color: azure;
 }
 
 .calendar-container {

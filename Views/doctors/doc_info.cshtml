@@ -1,0 +1,50 @@
+﻿@model List<WebProject.Models.doctor>
+@{
+    ViewBag.Title = "doc_info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<head>
+    <title>@ViewBag.Title</title>
+</head>
+<style>
+    .layout_top_page_container {
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+<div>
+    test
+
+
+    <h2>Doctor List</h2>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Hospital</th>
+            <th>Department</th>
+            <th>Position</th>
+        </tr>
+        @foreach (var doctor in Model)
+        {
+            <tr>
+                <td>@doctor.doctorID</td>
+                <td>@doctor.name</td>
+                <td>@doctor.lastName</td>
+                <td>@doctor.dOfBirth</td>
+                <td>@doctor.hospital</td>
+                <td>@doctor.department</td>
+                <td>@doctor.position</td>
+            </tr>
+        }
+    </table>
+</div>
+<h2>doc_info</h2>
+
