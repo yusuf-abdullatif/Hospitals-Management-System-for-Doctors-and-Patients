@@ -28,6 +28,11 @@ namespace WebProject.Controllers
             return View(db.Doctors.ToList());
         }
 
+        public ActionResult dashboard() 
+        {
+            return View();
+        }
+
         // GET: doctors/Details/5
         public ActionResult Details(int? id)
         {
