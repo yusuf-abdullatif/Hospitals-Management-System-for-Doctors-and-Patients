@@ -125,28 +125,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AdminsController.cs" />
-    <Compile Include="Controllers\appointmentsController.cs" />
-    <Compile Include="Controllers\doctorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\hospitalsController.cs" />
-    <Compile Include="Controllers\loginsController.cs" />
-    <Compile Include="Controllers\patientsController.cs" />
-    <Compile Include="Controllers\prescriptionsController.cs" />
-    <Compile Include="Controllers\securityController.cs" />
-    <Compile Include="Controllers\testsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Admin.cs" />
-    <Compile Include="Models\appointment.cs" />
-    <Compile Include="Models\hospital.cs" />
-    <Compile Include="Models\hospitalDB.cs" />
-    <Compile Include="Models\login.cs" />
-    <Compile Include="Models\patient.cs" />
-    <Compile Include="Models\doctor.cs" />
-    <Compile Include="Models\prescription.cs" />
-    <Compile Include="Models\test.cs" />
+    <Compile Include="Models\DoctorModel.cs" />
+    <Compile Include="Models\PatientModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -197,18 +181,14 @@
     <Content Include="resources\documents\Entity-Relationship-Diagram.vpp.bak_000f" />
     <Content Include="resources\documents\ER Diagram.drawio" />
     <Content Include="resources\documents\Task1.docx" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.esm.js" />
-    <Content Include="Scripts\bootstrap.esm.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -228,58 +208,17 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Admins\Create.cshtml" />
-    <Content Include="Views\Admins\Delete.cshtml" />
-    <Content Include="Views\Admins\Details.cshtml" />
-    <Content Include="Views\Admins\Edit.cshtml" />
-    <Content Include="Views\Admins\Index.cshtml" />
-    <Content Include="Views\appointments\Create.cshtml" />
-    <Content Include="Views\appointments\Delete.cshtml" />
-    <Content Include="Views\appointments\Details.cshtml" />
-    <Content Include="Views\appointments\Edit.cshtml" />
-    <Content Include="Views\appointments\Index.cshtml" />
-    <Content Include="Views\doctors\Create.cshtml" />
-    <Content Include="Views\doctors\Delete.cshtml" />
-    <Content Include="Views\doctors\Details.cshtml" />
-    <Content Include="Views\doctors\Edit.cshtml" />
-    <Content Include="Views\doctors\Index.cshtml" />
-    <Content Include="Views\hospitals\Create.cshtml" />
-    <Content Include="Views\hospitals\Delete.cshtml" />
-    <Content Include="Views\hospitals\Details.cshtml" />
-    <Content Include="Views\hospitals\Edit.cshtml" />
-    <Content Include="Views\hospitals\Index.cshtml" />
-    <Content Include="Views\patients\Create.cshtml" />
-    <Content Include="Views\patients\Delete.cshtml" />
-    <Content Include="Views\patients\Details.cshtml" />
-    <Content Include="Views\patients\Edit.cshtml" />
-    <Content Include="Views\patients\Index.cshtml" />
-    <Content Include="Views\prescriptions\Create.cshtml" />
-    <Content Include="Views\prescriptions\Delete.cshtml" />
-    <Content Include="Views\prescriptions\Details.cshtml" />
-    <Content Include="Views\prescriptions\Edit.cshtml" />
-    <Content Include="Views\prescriptions\Index.cshtml" />
     <Content Include="Views\tests\Create.cshtml" />
     <Content Include="Views\tests\Delete.cshtml" />
     <Content Include="Views\tests\Details.cshtml" />
     <Content Include="Views\tests\Edit.cshtml" />
     <Content Include="Views\tests\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
-    <Content Include="Views\logins\Create.cshtml" />
-    <Content Include="Views\logins\Delete.cshtml" />
-    <Content Include="Views\logins\Details.cshtml" />
-    <Content Include="Views\logins\Edit.cshtml" />
-    <Content Include="Views\logins\Index.cshtml" />
-    <Content Include="Views\security\Create.cshtml" />
-    <Content Include="Views\security\Delete.cshtml" />
-    <Content Include="Views\security\Details.cshtml" />
-    <Content Include="Views\security\Edit.cshtml" />
-    <Content Include="Views\security\Index.cshtml" />
-    <Content Include="Views\security\Login.cshtml" />
-    <Content Include="Views\doctors\doc_info.cshtml" />
     <Content Include="Views\Shared\_LayoutDoctor.cshtml" />
-    <Content Include="Views\doctors\dashboard.cshtml" />
     <Content Include="Views\Shared\_LayoutPatient.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Sign\SignUpPatient.cshtml" />
+    <Content Include="Views\Sign\SignUpDoctor.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -300,12 +239,6 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="packages.config" />
-    <Content Include="Scripts\bootstrap.min.js.map" />
-    <Content Include="Scripts\bootstrap.js.map" />
-    <Content Include="Scripts\bootstrap.esm.min.js.map" />
-    <Content Include="Scripts\bootstrap.esm.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.1.min.map" />
   </ItemGroup>
