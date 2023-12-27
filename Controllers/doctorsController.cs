@@ -22,8 +22,14 @@ namespace WebProject.Controllers
             // Pass the model data to the view
             return View(doctors);
         }
-        // GET: doctors
 
+        //[AllowAnonymous]//to skip login
+        //public ActionResult patient_info()
+        //{
+        //    List<patient> patients = db.Patients.ToList();
+
+        //    return View(doctor);
+        //}
         public ActionResult Index()
         {
             return View(db.Doctors.ToList());
