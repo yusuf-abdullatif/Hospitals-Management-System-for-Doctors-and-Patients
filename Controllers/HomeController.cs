@@ -7,6 +7,7 @@ using WebProject.Models;
 
 namespace WebProject.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         public ActionResult Index()
