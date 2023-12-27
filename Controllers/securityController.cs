@@ -28,7 +28,7 @@ namespace WebProject.Controllers
             if (usr != null)
             {
                 FormsAuthentication.SetAuthCookie(usr.ssn, false); //auth based on ssn
-                return RedirectToAction("Index", "doctors");//redirect to home page when login change this 
+                return RedirectToAction("dashboard", "doctors");//redirect to home page when login change this 
             }
             else
             {
