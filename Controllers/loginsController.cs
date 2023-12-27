@@ -37,6 +37,7 @@ namespace WebProject.Controllers
         }
 
         // GET: logins/Create
+        [AllowAnonymous]
         public ActionResult Create()//redirect here
         {
             return View();
