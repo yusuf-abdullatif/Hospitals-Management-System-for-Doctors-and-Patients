@@ -13,6 +13,7 @@ namespace WebProject.Controllers
     public class doctorsController : Controller
     {
         private HospitalDB db = new HospitalDB();
+        [AllowAnonymous]//to skip login
         public ActionResult doc_info()
         {
             // Get the list of doctors from the database or any other source
@@ -27,7 +28,7 @@ namespace WebProject.Controllers
         {
             return View(db.Doctors.ToList());
         }
-
+        [AllowAnonymous]//to skip login
         public ActionResult dashboard() 
         {
             return View();
@@ -48,7 +49,7 @@ namespace WebProject.Controllers
             return View(doctor);
         }
 
-        // GET: doctors/Create
+        [AllowAnonymous]//to skip login
         public ActionResult Create()
         {
             return View();
