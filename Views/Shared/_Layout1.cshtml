@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="~/Content/style.css">
     <script src="script.js" defer></script>
     <title>@ViewBag.Title</title>
+
+    <style>
+        .layout_top_page_container {
+            width: 100%;
+            height: 1000px;
+            flex-direction: column;
+            background-size: cover;
+        }
+
+        .main-page-navbar {
+            width: 1500px;
+            height: 105px;
+            display: flex;
+            padding: 2em;
+            max-width: 1500px;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 25%;
+        }
+
+        .text {
+            font-size: 40px;
+            font-family: "Courier New", Times, serif;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+            .text p {
+                font-size: 20px;
+            }
+    </style>
 </head>
 
 
@@ -15,11 +48,10 @@
         <div class="container">
             <div class="logo">
                 <!-- Your logo or site name goes here -->
-                <h1>Your Hospital Name</h1>
+                <h1>Terra Europe Hospital</h1>
             </div>
-            <div class="logout-button">
-                <!-- Logout button on the right side -->
-                <a href="/Account/Logout">Logout</a>
+            <div class="button-container ">
+                <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> Log Out</button>
             </div>
         </div>
     </header>
