@@ -11,6 +11,7 @@ using WebProject.Models;
 
 namespace WebProject.Controllers
 {
+    [AllowAnonymous]
     public class securityController : Controller
     {
         HospitalDB db = new HospitalDB();
@@ -40,6 +41,11 @@ namespace WebProject.Controllers
             //    return HttpNotFound();
             //}
             //return View(login);
+        }
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login", "security");
         }
 
     }

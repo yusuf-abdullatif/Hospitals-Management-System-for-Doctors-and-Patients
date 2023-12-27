@@ -15,6 +15,7 @@ namespace WebProject.Controllers
         private HospitalDB db = new HospitalDB();
 
         // GET: logins
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.logins.ToList());
