@@ -3,7 +3,7 @@
     switch (CurrentControllerName)
     {
         case "patients":
-            Layout = "~/Views/Shared/_Layout1.cshtml";
+            Layout = "~/Views/Shared/_LayoutPatient.cshtml";
             break;
         case "doctors":
             Layout = "~/Views/Shared/_LayoutDoctor.cshtml";
@@ -12,7 +12,7 @@
             Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
             break;
         default:
-            Layout = "~/Views/Shared/_LayoutPatient.cshtml";
+            Layout = "~/Views/Shared/_Layout.cshtml";
             break;
     }
 }
