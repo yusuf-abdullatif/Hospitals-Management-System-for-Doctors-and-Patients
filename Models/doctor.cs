@@ -10,8 +10,6 @@ namespace WebProject.Models
 {
     public class doctor
     {
-        internal static List<patient> Patients;
-
         [Key] // This attribute marks the property as the primary key
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // This attribute specifies that the database should generate a value for this property
         public virtual int doctorID {get;set;}
