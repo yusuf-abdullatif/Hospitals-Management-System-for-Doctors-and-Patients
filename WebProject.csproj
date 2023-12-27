@@ -138,6 +138,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312192305304_InitialCreate.cs" />
+    <Compile Include="Migrations\202312192305304_InitialCreate.designer.cs">
+      <DependentUpon>202312192305304_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312271950463_AddForeignKeys.cs" />
+    <Compile Include="Migrations\202312271950463_AddForeignKeys.designer.cs">
+      <DependentUpon>202312271950463_AddForeignKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\appointment.cs" />
     <Compile Include="Models\hospital.cs" />
@@ -283,8 +292,16 @@
     <Content Include="Views\doctors\dashboard.cshtml" />
     <Content Include="Views\Shared\_LayoutPatient.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\doctors\patient_info.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202312192305304_InitialCreate.resx">
+      <DependentUpon>202312192305304_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312271950463_AddForeignKeys.resx">
+      <DependentUpon>202312271950463_AddForeignKeys.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
     <Content Include="Content\bootstrap.rtl.css.map" />
