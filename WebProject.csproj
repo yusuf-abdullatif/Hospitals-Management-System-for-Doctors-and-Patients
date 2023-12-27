@@ -280,6 +280,7 @@
     <Content Include="Views\doctors\dashboard.cshtml" />
     <Content Include="Views\Shared\_LayoutPatient.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Sign\SignUpDoctor.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
