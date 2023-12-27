@@ -284,9 +284,6 @@
     <Content Include="Views\security\Edit.cshtml" />
     <Content Include="Views\security\Index.cshtml" />
     <Content Include="Views\security\Login.cshtml" />
-    <Content Include="Views\security\sec_login_doctor.cshtml" />
-    <Content Include="Views\security\sec_login_pleb.cshtml" />
-    <Content Include="Views\security\sec_login_admin.cshtml" />
     <Content Include="Views\doctors\doc_info.cshtml" />
     <Content Include="Views\Shared\_LayoutDoctor.cshtml" />
     <Content Include="Views\doctors\dashboard.cshtml" />
