@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <script src="script.js" defer></script>
+    <title>@ViewBag.Title</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- Your logo or site name goes here -->
+                <h1>Your Hospital Name</h1>
+            </div>
+            <div class="logout-button">
+                <!-- Logout button on the right side -->
+                <a href="/Account/Logout">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Body content will be rendered here -->
+        @RenderBody()
+    </div>
+
+    <!-- Include your scripts or JavaScript files here -->
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

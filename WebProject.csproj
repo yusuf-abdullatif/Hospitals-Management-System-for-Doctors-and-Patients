@@ -279,6 +279,8 @@
     <Content Include="Views\security\sec_login_pleb.cshtml" />
     <Content Include="Views\security\sec_login_admin.cshtml" />
     <Content Include="Views\doctors\doc_info.cshtml" />
+    <Content Include="Views\Shared\_Layout1.cshtml" />
+    <Content Include="Views\doctors\dashboard.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
