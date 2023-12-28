@@ -280,6 +280,16 @@
     <Content Include="Views\doctors\dashboard.cshtml" />
     <Content Include="Views\Shared\_LayoutPatient.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\doctors\patient_info.cshtml" />
+    <Content Include="Views\hospitals\closest.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202312192305304_InitialCreate.resx">
+      <DependentUpon>202312192305304_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312271950463_AddForeignKeys.resx">
+      <DependentUpon>202312271950463_AddForeignKeys.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
