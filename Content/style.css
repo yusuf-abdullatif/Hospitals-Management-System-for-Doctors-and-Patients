@@ -613,22 +613,21 @@ ul, div,   figcaption {
     height: 100%;
 }
 .hospital-left {
-border: 1px solid black;
     float: left;
-    flex: 20%;
+    flex: 60%;
     flex-direction: column;
     height: 1000px;
-    width: auto;
+    width: 500px;
     background-color: rgb(103, 189, 189);
     align-self: flex-start;
-    display: flex;
 }
-.hospital-right{
-    flex: 80%;
+.hospital-right {
+    flex: 40%;
     flex-direction: column;
     float: right;
-    height: auto;
-    width: auto;
+    height: 1000px;
+    width: 500px;
     background-color: #0f0;
     align-self: flex-end;
+    border: 1px solid black;
 }
