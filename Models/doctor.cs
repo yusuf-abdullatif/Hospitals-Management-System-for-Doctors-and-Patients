@@ -19,6 +19,7 @@ namespace WebProject.Models
      public virtual string hospital{get;set;}
      public virtual string department{get;set;}
      public virtual string position{get;set;}
-     
+     [Required(ErrorMessage = "Please enter your password")]
+     public string doctorpassword { get; set; }
     }
 }

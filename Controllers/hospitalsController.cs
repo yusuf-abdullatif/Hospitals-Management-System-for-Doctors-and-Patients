@@ -19,7 +19,11 @@ namespace WebProject.Controllers
         {
             return View(db.Hospitals.ToList());
         }
-
+        [AllowAnonymous]//to skip login
+        public ActionResult closest()
+        {
+            return View();
+        }
         // GET: hospitals/Details/5
         public ActionResult Details(string id)
         {

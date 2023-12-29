@@ -612,3 +612,22 @@ ul, div,   figcaption {
     float: right;
     height: 100%;
 }
+.hospital-left {
+    float: left;
+    flex: 60%;
+    flex-direction: column;
+    height: 1000px;
+    width: 500px;
+    background-color: rgb(103, 189, 189);
+    align-self: flex-start;
+}
+.hospital-right {
+    flex: 40%;
+    flex-direction: column;
+    float: right;
+    height: 1000px;
+    width: 500px;
+    background-color: #0f0;
+    align-self: flex-end;
+    border: 1px solid black;
+}

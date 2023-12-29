@@ -35,12 +35,7 @@ namespace WebProject.Controllers
                 ViewBag.Message = "Invalid username or password";
                 return View();
             }
-            //login login = db.logins.Find(usr);
-            //if (login == null)
-            //{
-            //    return HttpNotFound();
-            //}
-            //return View(login);
+
         }
         public ActionResult Logout()
         {
