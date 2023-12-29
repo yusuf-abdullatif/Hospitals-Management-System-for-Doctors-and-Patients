@@ -284,14 +284,8 @@
     <Content Include="Views\hospitals\closest.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202312192305304_InitialCreate.resx">
-      <DependentUpon>202312192305304_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312271950463_AddForeignKeys.resx">
-      <DependentUpon>202312271950463_AddForeignKeys.cs</DependentUpon>
-    </EmbeddedResource>
+    <Folder Include="Migrations\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
     <Content Include="Content\bootstrap.rtl.css.map" />
