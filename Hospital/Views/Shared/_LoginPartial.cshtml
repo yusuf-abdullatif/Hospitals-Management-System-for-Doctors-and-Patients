@@ -4,22 +4,20 @@
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
         @Html.AntiForgeryToken()
-
-
         <div class="button-container ">
             <button class="button-inner">@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })</button>
         </div>
         <div class="button-container ">
             <button class="button-inner"><a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">Log off</a></button>
         </div>
-        }
     }
-    else
-    {
-        <div class="button-container ">
-            <button class="button-inner">@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "nav-link" })</button>
-        </div>
-        <div class="button-container ">
-            <button class="button-inner">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "nav-link" })</button>
-        </div>
-    }
+}
+else
+{
+    <div class="button-container ">
+        <button class="button-inner">@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "nav-link" })</button>
+    </div>
+    <div class="button-container ">
+        <button class="button-inner">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "nav-link" })</button>
+    </div>
+}

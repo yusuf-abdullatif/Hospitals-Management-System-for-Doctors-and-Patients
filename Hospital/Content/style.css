@@ -613,3 +613,134 @@ ul, div,   figcaption {
     float: right;
     height: 100%;
 }
+
+
+.main-page-links-container {
+    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.3);
+    /*rounded corners*/
+    border-radius: 100px;
+    width: 730px;
+    padding: 10px;
+    border: 2px solid teal;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-page-text {
+    padding: 2em;
+    margin-right: 2em;
+}
+
+.main-page-info-container {
+    width: 100%;
+    display: flex;
+    grid-gap: 2em;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin-top: 2em;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.list-item {
+    display: list-item;
+}
+
+
+ul, div, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+[data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+    display: flex;
+}
+
+[data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+    transform: rotate(90deg);
+}
+
+.home-thq-dropdown {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.home-dropdown-toggle-main {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2px;
+    padding: 8px 16px;
+}
+
+.home-dropdown-arrow {
+    transition: 0.3s;
+}
+
+.home-icon {
+    width: 18px;
+    height: 18px;
+    transition: 0.3s;
+}
+
+.home-dropdown-list {
+    left: 0;
+    width: max-content;
+    display: none;
+    z-index: 100;
+    position: absolute;
+    min-width: 100%;
+    transition: 0.3s;
+    align-items: stretch;
+    border-color: #D9D9D9;
+    border-width: 1px;
+    border-radius: 4px;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: #FFFFFF;
+    list-style-position: inside;
+}
+
+.home-dropdown {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.home-dropdown-toggle-option {
+    fill: #595959;
+    color: #595959;
+    width: 100%;
+    display: inline-flex;
+    transition: 0.3s;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+    .home-dropdown-toggle-option:hover {
+        fill: #fff;
+        color: #fff;
+        background-color: #595959;
+    }
+
+.home-text {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
