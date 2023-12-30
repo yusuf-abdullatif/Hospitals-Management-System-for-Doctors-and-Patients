@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Hospital.Models.database.patient>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ssn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phoneNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bloodType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diagnoses)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prescription)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ssn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phoneNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bloodType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diagnoses)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prescription)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.patientID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.patientID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.patientID })
+        </td>
+    </tr>
+}
+
+</table>
