@@ -15,7 +15,7 @@ namespace Hospital.Models.database
         public virtual int ssn { get; set; }
         public virtual string name { get; set; }
         public virtual string lastName { get; set; }
-        public virtual string dOfBirth { get; set; }  // can be changed to different type ,Datetime?
+        public virtual string dOfBirth { get; set; }  // change to datetime???????????
         public virtual string hospital { get; set; }
         public virtual string department { get; set; }
         public virtual string position { get; set; }

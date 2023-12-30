@@ -15,10 +15,7 @@ namespace Hospital.Controllers
         {
             return View();
         }
-        public ActionResult adminDashboard()//new
-        {
-            return View();
-        }
+
         public ActionResult About()
         {
             return View();
@@ -51,6 +48,14 @@ namespace Hospital.Controllers
         public ActionResult adminDashboardPatients()
         {
             return View(db.Patients.ToList());
+        }
+        public ActionResult adminDashboardAppointments()
+        {
+            return View(db.Appointments.ToList());
+        }
+        public ActionResult adminDashboard()//for doctors
+        {
+            return View(db.Doctors.ToList());
         }
     }
 }

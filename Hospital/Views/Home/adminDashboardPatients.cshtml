@@ -4,115 +4,150 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Index";
 }
+<style>
+    .dashboard-left {
+        border: 1px solid black;
+        float: left;
+        float: left;
+        flex: 20%;
+        flex-direction: column;
+        height: 1000px;
+        width: auto;
+        background-color: rgb(103, 189, 189);
+        display: flex;
+    }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Admin Dashboard For Patients</title>
-</head>
+    .dashboard-right {
+        flex: 80%;
+        flex-direction: column;
+        float: right;
+        height: auto;
+        width: auto;
+        background-color: rgba(153,203,255,0.5);
+        height: 1000px;
+    }
+    table {
+        border: 3px solid black;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: lightblue;
+    }
+
+    tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+</style>
 <body>
-    <div class="dashboard-left">
-        <div class="dashboard-left-top">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" width="50" height="50">
+    <div class="dashboard-container">
+        <div class="dashboard-left">
+            <div class="dashboard-left-top">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" width="50" height="50">
 
-            <div id="doctor-info">
-
-                <table class="table">
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.ssn)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.dOfBirth)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.name)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.surname)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.email)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.phoneNum)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.bloodType)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.diagnoses)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.prescription)
-                        </th>
-                        <th></th>
-                    </tr>
-
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.ssn)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.dOfBirth)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.name)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.surname)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.email)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.phoneNum)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.bloodType)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.diagnoses)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.prescription)
-                            </td>
-                            <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.patientID }) |
-                                @Html.ActionLink("Details", "Details", new { id = item.patientID }) |
-                                @Html.ActionLink("Delete", "Delete", new { id = item.patientID })
-                            </td>
-                        </tr>
-                    }
-
-                </table>
-
-
-
-                <div class="button-container ">
-                    <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> Log Out</button>
+                <div id="doctor-info">
+                    <div class="button-container ">
+                        <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> Log Out</button>
+                    </div>
                 </div>
             </div>
+            <div class="dashboard-left-bottom">
+                <div class="button-container ">
+                    <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardAppointments","Home")'"> Edit Appointments</button>
+                </div>
+                <br /><br />
+                <div class="button-container ">
+                    <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardPatients","Home")'">Edit Patient Information</button>
+                </div>
+                <br /><br />
+                <div class="button-container ">
+                    <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardDoctor","Home")'"> Edit Doctors</button>
+                </div>
+                <br /><br />
+            </div>
         </div>
-        <div class="dashboard-left-bottom">
-            <div class="button-container ">
-                <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardAppointments","Home")'"> Edit Appointments</button>
-            </div>
-            <br /><br />
-            <div class="button-container ">
-                <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardPatients","Home")'">Edit Patient Information</button>
-            </div>
-            <br /><br />
-            <div class="button-container ">
-                <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardDoctor","Home")'"> Edit Doctors</button>
-            </div>
-            <br /><br />
+        <div class="dashboard-right">
+            <table class="table",border="1px solid">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ssn)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.dOfBirth)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.surname)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.phoneNum)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.bloodType)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.diagnoses)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.prescription)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ssn)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.dOfBirth)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.surname)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.phoneNum)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.bloodType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.diagnoses)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.prescription)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.patientID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.patientID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.patientID })
+                        </td>
+                    </tr>
+                }
+
+            </table>
         </div>
     </div>
 </body>
-</html>
 
 
 
