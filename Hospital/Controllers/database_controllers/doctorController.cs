@@ -123,5 +123,42 @@ namespace Hospital.Controllers.database_controllers
             }
             base.Dispose(disposing);
         }
+
+
+        private List<doctor> GetDoctors()
+        {
+            return new List<doctor>
+            {
+                new doctor { doctorID = 1, ssn = 123456789, name = "John", lastName = "Doe", dOfBirth = "01/01/1980", hospital = "General Hospital", department = "Cardiology", position = "Cardiologist" },
+                new doctor { doctorID = 2, ssn = 987654321, name = "Jane", lastName = "Smith", dOfBirth = "05/15/1985", hospital = "City Hospital", department = "Pediatrics", position = "Pediatrician" },
+                // Add more doctors as needed
+            };
+        }
+
+        public ActionResult dashboard()
+        {
+            var doctors = GetDoctors();
+            return View(doctors);
+        }
+
+        public ActionResult doctor_info(int? id)
+        {
+            if (id == null)
+            {
+                // Handle case where ID is not provided
+                return RedirectToAction("dashboard");
+            }
+
+            var doctorInfo = GetDoctors().Find(d => d.doctorID == id);
+
+            if (doctorInfo == null)
+            {
+                // Handle case where doctor with given ID is not found
+                return RedirectToAction("dashboard");
+            }
+
+            return View(doctorInfo);
+        }
     }
+
 }

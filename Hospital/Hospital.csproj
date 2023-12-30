@@ -170,7 +170,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Views\appointmentController.cs" />
+    <Compile Include="Controllers\database_controllers\appointmentController.cs" />
     <Compile Include="Controllers\database_controllers\doctorController.cs" />
     <Compile Include="Controllers\database_controllers\hospitalController.cs" />
     <Compile Include="Controllers\database_controllers\patientController.cs" />
@@ -326,6 +326,11 @@
     <Content Include="Views\test\Edit.cshtml" />
     <Content Include="Views\test\Index.cshtml" />
     <Content Include="Views\Home\sign_in.cshtml" />
+    <Content Include="Views\Shared\_LayoutPatient.cshtml" />
+    <Content Include="Views\Shared\_LayoutDoctor.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\doctor\dashboard.cshtml" />
+    <Content Include="Views\doctor\doctor_info.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
