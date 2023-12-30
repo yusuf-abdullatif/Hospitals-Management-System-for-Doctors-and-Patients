@@ -548,6 +548,7 @@ ul, div,   figcaption {
 .dashboard-left {
     border: 1px solid black;
     float: left;
+    float: left;
     flex: 20%;
     flex-direction: column;
     height: 1000px;

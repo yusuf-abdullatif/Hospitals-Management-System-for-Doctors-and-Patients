@@ -1,0 +1,62 @@
+﻿@model List<Hospital.Models.database.doctor>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard For Patients</title>
+</head>
+<body>
+    <div class="dashboard-left">
+        <div class="dashboard-left-top">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" width="50" height="50">
+
+            <div id="doctor-info">
+                <table border="1">
+                    <tr>
+                        <th>Doctor ID</th>
+                        <th>SSN</th>
+                        <th>Name</th>
+                        <th>Last Name</th>
+                        <th>Date of Birth</th>
+                        <th>Hospital</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                    </tr>
+                    @foreach (var doctor in Model)
+                    {
+                        <tr>
+                            <td>@doctor.doctorID</td>
+                            <td>@doctor.ssn</td>
+                            <td>@doctor.name</td>
+                            <td>@doctor.lastName</td>
+                            <td>@doctor.dOfBirth</td>
+                            <td>@doctor.hospital</td>
+                            <td>@doctor.department</td>
+                            <td>@doctor.position</td>
+                        </tr>
+                    }
+                </table>
+
+
+
+                <div class="button-container ">
+                    <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> Log Out</button>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-left-bottom">
+            <div class="button-container ">
+                <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardAppointments","Home")'"> Edit Appointments</button>
+            </div>
+            <br /><br />
+            <div class="button-container ">
+                <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardPatients","Home")'">Edit Patient Information</button>
+            </div>
+            <br /><br />
+            <div class="button-container ">
+                <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardDoctor","Home")'"> Edit Doctors</button>
+            </div>
+            <br /><br />
+        </div>
+    </div>
+</body>
+</html>

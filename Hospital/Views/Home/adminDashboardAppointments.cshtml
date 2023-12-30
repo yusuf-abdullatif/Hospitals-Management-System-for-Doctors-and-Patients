@@ -1,0 +1,35 @@
+﻿@model List<Hospital.Models.database.doctor>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-left">
+        <div class="dashboard-left-top">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" width="50" height="50">
+
+            <div id="doctor-info">
+
+                <div class="button-container ">
+                    <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> Log Out</button>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-left-bottom">
+            <div class="button-container ">
+                <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardAppointments","Home")'"> Edit Appointments</button>
+            </div>
+            <br /><br />
+            <div class="button-container ">
+                <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardPatients","Home")'">Edit Patient Information</button>
+            </div>
+            <br /><br />
+            <div class="button-container ">
+                <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardDoctor","Home")'"> Edit Doctors</button>
+            </div>
+            <br /><br />
+        </div>
+    </div>
+</body>
+</html>

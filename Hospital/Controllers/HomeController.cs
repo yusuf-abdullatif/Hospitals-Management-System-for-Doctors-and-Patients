@@ -14,7 +14,10 @@ namespace Hospital.Controllers
         {
             return View();
         }
-
+        public ActionResult adminDashboard()//new
+        {
+            return View();
+        }
         public ActionResult About()
         {
             return View();
