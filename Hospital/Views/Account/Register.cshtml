@@ -1,7 +1,41 @@
 ﻿@model Hospital.Models.RegisterViewModel
 @{
     ViewBag.Title = "Register";
+    Layout = null; // Set the layout to null
 }
+
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: url('/resources/blur-hospital.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    main {
+        width: 400px;
+        background: rgba(65, 157, 178, 0.5); /* Adjust the alpha value for the desired blur effect */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        margin-top: 20px;
+        text-align: center; /* Center the form content */
+    }
+
+    .text-danger {
+        color: #ff0000;
+    }
+</style>
 
 <main aria-labelledby="title">
     <h2 id="title">@ViewBag.Title.</h2>
@@ -9,31 +43,32 @@
     @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
     {
         @Html.AntiForgeryToken()
-        <h4>Create a new account.</h4>
         <hr />
         @Html.ValidationSummary("", new { @class = "text-danger" })
-        <div class="row">
-            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 col-form-label" })
-            <div class="col-md-10">
-                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-            </div>
+
+        <div>
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
         </div>
-        <div class="row">
-            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 col-form-label" })
-            <div class="col-md-10">
-                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-            </div>
+
+        <br />
+
+        <div>
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
         </div>
-        <div class="row">
-            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 col-form-label" })
-            <div class="col-md-10">
-                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-            </div>
+
+        <br />
+
+        <div>
+            @Html.LabelFor(m => m.ConfirmPassword)
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
         </div>
-        <div class="row">
-            <div class="offset-md-2 col-md-10">
-                <input type="submit" value="Register" class="btn btn-outline-dark" />
-            </div>
+
+        <br />
+
+        <div>
+            <input type="submit" value="Register" class="btn btn-outline-dark" />
         </div>
     }
 </main>
