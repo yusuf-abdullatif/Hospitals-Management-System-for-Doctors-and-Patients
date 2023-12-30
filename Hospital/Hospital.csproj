@@ -170,7 +170,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\database_controllers\appointmentController.cs" />
+    <Compile Include="Views\appointmentController.cs" />
     <Compile Include="Controllers\database_controllers\doctorController.cs" />
     <Compile Include="Controllers\database_controllers\hospitalController.cs" />
     <Compile Include="Controllers\database_controllers\patientController.cs" />
@@ -295,21 +295,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\appointments\Create.cshtml" />
-    <Content Include="Views\appointments\Delete.cshtml" />
-    <Content Include="Views\appointments\Details.cshtml" />
-    <Content Include="Views\appointments\Edit.cshtml" />
-    <Content Include="Views\appointments\Index.cshtml" />
-    <Content Include="Views\doctors\Create.cshtml" />
-    <Content Include="Views\doctors\Delete.cshtml" />
-    <Content Include="Views\doctors\Details.cshtml" />
-    <Content Include="Views\doctors\Edit.cshtml" />
-    <Content Include="Views\doctors\Index.cshtml" />
-    <Content Include="Views\hospitals\Create.cshtml" />
-    <Content Include="Views\hospitals\Delete.cshtml" />
-    <Content Include="Views\hospitals\Details.cshtml" />
-    <Content Include="Views\hospitals\Edit.cshtml" />
-    <Content Include="Views\hospitals\Index.cshtml" />
     <Content Include="Views\appointment\Create.cshtml" />
     <Content Include="Views\appointment\Delete.cshtml" />
     <Content Include="Views\appointment\Details.cshtml" />
@@ -340,6 +325,7 @@
     <Content Include="Views\test\Details.cshtml" />
     <Content Include="Views\test\Edit.cshtml" />
     <Content Include="Views\test\Index.cshtml" />
+    <Content Include="Views\Home\sign_in.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -39,5 +39,9 @@ namespace Hospital.Controllers
         {
             return View();
         }
+        public ActionResult sign_in()
+        {
+            return View();
+        }
     }
 }
