@@ -5,11 +5,12 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using Hospital.Models;
-
+using Hospital.Models.database;
 namespace Hospital.Controllers
 {
     public class HomeController : Controller
     {
+        private hospitalDB db = new hospitalDB();
         public ActionResult Index()
         {
             return View();
@@ -45,6 +46,11 @@ namespace Hospital.Controllers
         public ActionResult sign_in()
         {
             return View();
+        }
+
+        public ActionResult adminDashboardPatients()
+        {
+            return View(db.Patients.ToList());
         }
     }
 }
