@@ -142,7 +142,7 @@ namespace Hospital.Controllers.database_controllers
         }
 
         public ActionResult doctor_info(int? id)
-        {
+        {   
             if (id == null)
             {
                 // Handle case where ID is not provided

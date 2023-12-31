@@ -1,7 +1,35 @@
-﻿
-@{
-    ViewBag.Title = "doctor_info";
-}
+﻿@model Hospital.Models.database.doctor
 
-<h2>doctor_info</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Information</title>
+</head>
+<body>
+    <h1>Doctor Information</h1>
 
+    <table border="1">
+        <tr>
+            <th>Doctor ID</th>
+            <th>SSN</th>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Hospital</th>
+            <th>Department</th>
+            <th>Position</th>
+        </tr>
+
+        <tr>
+            <td>@Model.doctorID</td>
+            <td>@Model.ssn</td>
+            <td>@Model.name</td>
+            <td>@Model.lastName</td>
+            <td>@Model.dOfBirth</td>
+            <td>@Model.hospital</td>
+            <td>@Model.department</td>
+            <td>@Model.position</td>
+        </tr>
+    </table>
+</body>
+</html>
