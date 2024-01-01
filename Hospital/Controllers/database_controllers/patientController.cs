@@ -13,6 +13,10 @@ namespace Hospital.Controllers.database_controllers
     public class patientController : Controller
     {
         private hospitalDB db = new hospitalDB();
+        public ActionResult patientDashboard()
+        {
+            return View();
+        }
 
         // GET: patient
         public ActionResult Index()
