@@ -1,0 +1,119 @@
+﻿@model IEnumerable<Hospital.Models.database.doctor>
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Index";
+}
+<style>
+    .dashboard-left {
+        border: 1px solid black;
+        float: left;
+        float: left;
+        flex: 20%;
+        flex-direction: column;
+        height: 1000px;
+        width: auto;
+        background-color: rgb(103, 189, 189);
+        display: flex;
+    }
+
+    .dashboard-right {
+        flex: 80%;
+        flex-direction: column;
+        float: right;
+        height: auto;
+        width: auto;
+        background-color: rgba(153,203,255,0.5);
+        height: 1000px;
+    }
+
+    table {
+        border: 3px solid black;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: lightblue;
+    }
+
+    tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+</style>
+<body>
+    <div class="dashboard-container">
+
+        <div class="dashboard-right">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ssn)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.lastName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.dOfBirth)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.hospital)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.department)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.position)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ssn)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.lastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.dOfBirth)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.hospital)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.department)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.position)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.doctorID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.doctorID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.doctorID })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+        </div>
+    </div>
+</body>
+
+
+
