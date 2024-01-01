@@ -7,12 +7,15 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Hospital.Models;
+using Hospital.Models.database;
+using System.Dynamic;
 
 namespace Hospital.Controllers
 {
     [Authorize]
     public class ManageController : Controller
     {
+        private hospitalDB db = new hospitalDB();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -72,7 +75,11 @@ namespace Hospital.Controllers
                 Logins = await UserManager.GetLoginsAsync(userId),
                 BrowserRemembered = await AuthenticationManager.TwoFactorBrowserRememberedAsync(userId)
             };
-            return View(model);
+            dynamic mymodel = new ExpandoObject();
+            mymodel.account = model;
+            mymodel.patient = db.Patients.Where(x => x.email == User.Identity.Name).FirstOrDefault();
+            mymodel.doctor = db.Doctors.Where(x => x.email == User.Identity.Name).FirstOrDefault();
+            return View(mymodel);
         }
 
         //

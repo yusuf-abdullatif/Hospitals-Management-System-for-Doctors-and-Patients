@@ -298,7 +298,6 @@
     <Content Include="Views\appointment\Details.cshtml" />
     <Content Include="Views\appointment\Edit.cshtml" />
     <Content Include="Views\appointment\Index.cshtml" />
-    <Content Include="Views\doctor\Create.cshtml" />
     <Content Include="Views\doctor\Delete.cshtml" />
     <Content Include="Views\doctor\Details.cshtml" />
     <Content Include="Views\doctor\Edit.cshtml" />
@@ -332,6 +331,7 @@
     <Content Include="Views\Home\adminDashboard.cshtml" />
     <Content Include="Views\Home\adminDashboardPatients.cshtml" />
     <Content Include="Views\Home\adminDashboardAppointments.cshtml" />
+    <Content Include="Views\doctor\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

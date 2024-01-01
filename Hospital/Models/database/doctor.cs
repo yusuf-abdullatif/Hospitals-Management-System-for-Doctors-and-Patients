@@ -13,9 +13,10 @@ namespace Hospital.Models.database
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // This attribute specifies that the database should generate a value for this property
         public virtual int doctorID { get; set; }
         public virtual int ssn { get; set; }
+        public virtual string email { get; set; }
         public virtual string name { get; set; }
         public virtual string lastName { get; set; }
-        public virtual string dOfBirth { get; set; }  // change to datetime???????????
+        public virtual string dOfBirth { get; set; }
         public virtual string hospital { get; set; }
         public virtual string department { get; set; }
         public virtual string position { get; set; }

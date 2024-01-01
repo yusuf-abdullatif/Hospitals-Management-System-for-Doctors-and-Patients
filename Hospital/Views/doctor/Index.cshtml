@@ -1,7 +1,9 @@
-﻿@model IEnumerable<Hospital.Models.database.doctor>
+﻿@using Microsoft.AspNet.Identity
+@model IEnumerable<Hospital.Models.database.doctor>
 
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Index</h2>
@@ -35,35 +37,39 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ssn)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.lastName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.dOfBirth)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.hospital)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.department)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.position)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.doctorID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.doctorID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.doctorID })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        if (item.email == User.Identity.Name)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ssn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.lastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dOfBirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.hospital)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.department)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.position)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.doctorID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.doctorID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.doctorID })
+                </td>
+            </tr>
+        }
+    }
 
 </table>
