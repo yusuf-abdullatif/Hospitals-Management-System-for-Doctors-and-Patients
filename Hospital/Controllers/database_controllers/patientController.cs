@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Hospital.Models.database;
+using Hospital.Models;
 
 namespace Hospital.Controllers.database_controllers
 {
@@ -15,7 +16,7 @@ namespace Hospital.Controllers.database_controllers
         private hospitalDB db = new hospitalDB();
         public ActionResult patientDashboard()
         {
-            return View();
+            return View(db.Appointments.ToList());
         }
 
         // GET: patient
