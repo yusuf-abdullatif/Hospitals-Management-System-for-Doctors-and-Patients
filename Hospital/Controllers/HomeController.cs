@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.Security;
 using Hospital.Models;
 using Hospital.Models.database;
+using System.Dynamic;
 namespace Hospital.Controllers
 {
     public class HomeController : Controller
@@ -61,5 +62,80 @@ namespace Hospital.Controllers
         {
             return View(db.Doctors.ToList());
         }
+        /* JavaScript code for the appointment system
+        function ConfirmApplication() {
+
+        var department = $('#departmentSelect').val();
+        var date = $('#dateSelect').val();
+        var doctorid = $('#doctorSelect').val();
+        if (department && date && doctorid != -1) {
+            $.ajax({
+                url: '@Url.Action("CreateAppointment", "Home")',
+                type: 'GET',
+                data: { doctorId: doctorid, date: date , hospitalName: "Sallamaka"},
+                success: function (data) {
+                    $('#dateSelect').empty();
+                    $('#doctorSelect').empty();
+                    $('#departmentSelect').empty();
+                    $('#showDetails').empty();
+                    $('#ConfirmButton').hide();
+                    $('#dateForm').hide();
+                    $('#doctorForm').hide();
+                    $('#departmentForm').hide();
+                    $('#showDetails').hide();
+                    alert("Appointment created!");
+                    }
+                });
+            }
+        }
+        */
+        public ActionResult CreateAppointment(appointment appointment)
+        {
+            db.Appointments.Add(appointment);
+            db.SaveChanges();
+            return RedirectToAction("Appointment");
+        }
+        [HttpGet]
+        public JsonResult GetMyPatientId()
+        {
+            var patient = db.Patients.Where(p => p.email == User.Identity.Name).FirstOrDefault();
+            return Json(patient.patientID, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult Appointment()
+        {
+            dynamic mymodel = new ExpandoObject();
+            var user = User.Identity;
+            mymodel.userId = user;
+            mymodel.thisappointment = new appointment();
+            mymodel.Appointments = db.Appointments.ToList();
+            mymodel.Patient = db.Patients.Where(x => x.email == user.Name).FirstOrDefault();
+            mymodel.Doctors = db.Doctors.ToList();
+            return View(mymodel);
+        }
+        [HttpGet]
+        public JsonResult GetDoctors(string departmentId)
+        {
+            var doctors = db.Doctors.Where(d => d.department == departmentId)
+                                    .Select(d => new { Value = d.doctorID, Text = d.name })
+                                    .ToList();
+            return Json(doctors, JsonRequestBehavior.AllowGet);
+        }
+        [HttpGet]
+        public JsonResult GetNotBusyDates(int doctorId)
+        {
+            var dates = Enumerable.Range(0, 30).Select(i => DateTime.Now.AddDays(i)).ToList();
+            var appointments = db.Appointments.Where(a => a.doctorID == doctorId)
+                                              .ToList();
+
+            foreach (var appointment in appointments)
+            {
+                dates.Remove(appointment.date);
+            }
+
+            var returnedValues = dates.Select(d => new { Value = d, Text = d.ToString("yyyy-MM-dd") }).ToList();
+            return Json(returnedValues, JsonRequestBehavior.AllowGet);
+        }
+
     }
 }

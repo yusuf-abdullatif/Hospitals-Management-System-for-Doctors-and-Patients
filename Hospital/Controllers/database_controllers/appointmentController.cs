@@ -46,16 +46,13 @@ namespace Hospital.Controllers.database_controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "appointmentID,date,doctorID,patientID,hospitalName")] appointment appointment)
+        public ActionResult Create(appointment appointment)
         {
-            if (ModelState.IsValid)
-            {
-                db.Appointments.Add(appointment);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
 
-            return View(appointment);
+            db.Appointments.Add(appointment);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+           
         }
 
         // GET: appointment/Edit/5

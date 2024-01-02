@@ -1,82 +1,79 @@
-﻿@model Hospital.Models.database.appointment
+﻿@model dynamic
+<div id="oldApplication" style="display:none">
 
-@{
-    ViewBag.Title = "Create";
-}
-
-<h2>Create</h2>
-
-@using (Html.BeginForm())
-{
-@Html.AntiForgeryToken()
-
-<div class="form-horizontal">
-    <h4>appointment</h4>
-    <hr />
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    <div id="departmentForm">
-        <select id="departmentSelect" onchange="getDoctors()">
-            <option value="">Select a department</option>
-            <option value="Neurology">Neurology</option>
-            <option value="Cardiology">Cardiology</option>
-            <option value="Oncology">Oncology</option>
-            <option value="Gynecology">Gynecology</option>
-            <option value="Pediatrics">Pediatrics</option>
-            <option value="Orthopedics">Orthopedics</option>
-            <option value="Dermatology">Dermatology</option>
-        </select>
-        <input type="hidden" id="Department" name="Department" value="" />
-    </div>
-    <div id="doctorForm" style="display: none;">
-        <select id="doctorSelect" onclick="getBusyDates()">
-            <option value="-1">Select a Doctor</option>
-        </select>
-        <input type="hidden" id="Doctor" name="Doctor" value="model.doctorID" />
-    </div>
-    <div id="dateForm" style="display: none">
-        <select id="dateSelect" onclick="getAllDetails()" onselect="getDoctorById()" onchange="updateHiddenDate()">
-        </select>
-        <input type="hidden" id="Date" name="Date" value="model.date" />
-    </div>
-    <button id="ConfirmApplication" onclick="ConfirmApplication()">Confirm</button>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Create" class="btn btn-default" />
-        </div>
-    </div>
 </div>
-}
+<form id="departmentForm">
+    <select id="departmentSelect" onchange="getDoctors()">
+        <option value="">Select a department</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Oncology">Oncology</option>
+        <option value="Gynecology">Gynecology</option>
+        <option value="Pediatrics">Pediatrics</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <option value="Dermatology">Dermatology</option>
+    </select>
+    <input type="hidden" id="Department" name="Department" value="" />
+</form>
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
+<form id="doctorForm" style="display: none;">
+    <select id="doctorSelect" onclick="getBusyDates()">
+        <option value="">Select a Doctor</option>
+    </select>
+    <input type="hidden" id="Doctor" name="Doctor" value="" />
+</form>
+
+<form id="dateForm" style="display: none">
+    <select id="dateSelect" onclick="getAllDetails()" onselect="getDoctorById();">
+    </select>
+    <input type="hidden" id="Date" name="Date" value="" />
+</form>
+
+<div id="showDetails" style="display: none">
 </div>
+
+<button id="ConfirmButton" onclick="ConfirmApplication()" style="display: none">Confirm</button>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    function updateHiddenDate() {
-        var selectedDate = document.getElementById('dateSelect').value;
-        document.getElementById('Date').value = selectedDate;
-    }
-    function ConfirmApplication() {
-        var department = $('#departmentSelect').val();
-        var datetime2val = $('#dateSelect').val();
-        var doctorid = $('#doctorSelect').val();
-        var doctor = $('#doctorSelect option:selected').text();
-        if (department && date && doctorid != -1) {
-            model.doctorID = doctorid;
-            model.date = datetime2val;
-            model.patientID = 123;
-
-            $.ajax({
-                url: '@Url.Action("Create", "appointment")',
-                type: 'POST',
-                data: { appointment: model },
-                success: function (data) {
-                    window.location.href = '@Url.Action("Index", "Appointment")';
-                }
-            });
+    /*
+            [HttpGet]
+        public JsonResult setApp(int doctorId, DateTime date)
+        {
+            var appointment = new appointment();
+            appointment.doctorID = doctorId;
+            appointment.date = date;
+            appointment.patientID = db.Patients.Where(x => x.email == User.Identity.Name).FirstOrDefault().patientID;
+            db.Appointments.Add(appointment);
+            db.SaveChanges();
             return Json(appointment, JsonRequestBehavior.AllowGet);
         }
+    */
+    function ConfirmApplication() {
+        var department = $('#departmentSelect').val();
+        var date = $('#dateSelect option:selected').val();
+        var doctorid = $('#doctorSelect').val();
+        var doctor = $('#doctorSelect option:selected').text();
+        if ( doctorid != -1) {
+            model.thisappointment.doctorID = doctorid;
+            model.thisappointment.date = date;
+            model.thisappointment.patientID = 123;
+            $.ajax({
+                url: '@Url.Action("Create", "appointment")',
+                type: 'GET',
+                data: { appointment:model.thisappointment },
+                success: function (data) {
+                    $('#oldApplication').html("You have successfully applied for an appointment with " + doctor + " on " + date);
+                    $('#oldApplication').show();
+
+                    $('#doctorForm').hide();
+                    $('#dateForm').hide();
+                    $('#ConfirmButton').hide();
+                    $('#showDetails').hide();
+                }
+            });
+        }
+
     }
 
     function getAllDetails() {
@@ -86,12 +83,14 @@
         var doctor = $('#doctorSelect option:selected').text();
         if (department && date && doctorid != -1) {
             document.getElementById("showDetails").innerHTML = "You have selected <br> Department: " + department + "<br> Doctor: " + doctor + "<br> Date: " + date;
-            $('#ConfirmApplication').show();
+            $('#ConfirmButton').show();
             $('#showDetails').show();
         }
         else {
             $('#showDetails').hide();
         }
+
+
     }
     function getBusyDates() {
         var doctorId = $('#doctorSelect').val();
