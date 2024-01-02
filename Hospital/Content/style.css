@@ -754,3 +754,16 @@ ul, div, figcaption {
     font-style: normal;
     font-weight: 500;
 }
+.bot-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start  
+}
+.right-other {
+    flex: 50%;
+    height: 600px;
+    width: auto;
+    background-color: azure;
+}

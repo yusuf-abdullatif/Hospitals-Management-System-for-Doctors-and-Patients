@@ -152,8 +152,7 @@ namespace Hospital.Controllers.database_controllers
 
         public ActionResult dashboard()
         {
-            var doctors = GetDoctors();
-            return View(doctors);
+            return View(db.Appointments.ToList());
         }
 
         public ActionResult doctor_info(int? id)

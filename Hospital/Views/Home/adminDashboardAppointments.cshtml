@@ -13,7 +13,7 @@
 </head>
 
 <!--Check if user is admin -->
-@if (User.IsInRole("Admin"))
+@if (!User.IsInRole("Admin"))
 {
 
     <style>
