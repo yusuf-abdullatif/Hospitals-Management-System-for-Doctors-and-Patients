@@ -561,6 +561,7 @@ ul, div, figcaption {
     font-style: normal;
     font-weight: 500;
 }
+<<<<<<< Updated upstream:FrontEnd/style.css
 
 .dashboard-container {
     width: 100%;
@@ -631,3 +632,6 @@ ul, div, figcaption {
 .calendar-container {
     float: right;
 }
+=======
+.
+>>>>>>> Stashed changes:Hospital/Content/style.css

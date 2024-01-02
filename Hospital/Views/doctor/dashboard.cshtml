@@ -1,0 +1,108 @@
+﻿@model IEnumerable<Hospital.Models.database.appointment>
+
+<head>
+    <title>Doctorpage</title>
+    <link rel="stylesheet" href="~/Content/style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .layout_top_page_container {
+            width: 100%;
+            height: 1000px;
+            flex-direction: column;
+            background-size: cover;
+        }
+
+        .main-page-navbar {
+            width: 1500px;
+            height: 105px;
+            display: flex;
+            padding: 2em;
+            max-width: 1500px;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 25%;
+        }
+
+        .text {
+            font-size: 40px;
+            font-family: "Courier New", Times, serif;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+            .text p {
+                font-size: 20px;
+            }
+    </style>
+</head>
+
+<div class="dashboard-container">
+    <div class="dashboard-right">
+        <div class="dashboard-right-top">
+            <div class="text">
+                @if (Model.Any())
+                {
+                    var doctorName = Model.First().name + " " + Model.First().lastName;
+                    <b>Welcome, @doctorName!</b><br /><br />
+                    <p>Thank you for joining us.</p>
+                }
+                else
+                {
+                    <b>Welcome!</b><br /><br />
+                    <p>Thank you for joining us.</p>
+                }
+            </div>
+        </div>
+        <div class="contactTable">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.date)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.doctorID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.patientID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.hospitalName)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    if (item.patientID == ViewBag.PatientID)
+                    {
+                        {
+
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.date)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.doctorID)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.patientID)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.hospitalName)
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+            </table>
+        </div>
+        <div class="dashboard-right-bottom">
+            <div class="calendar-container">
+                <iframe src="https://calendar.google.com/calendar/embed?src=tr.turkish%23holiday%40group.v.calendar.google.com&ctz=Europe%2FIstanbul" style="border: 1px solid" width="700" height="600" frameborder="1" scrolling="no">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
