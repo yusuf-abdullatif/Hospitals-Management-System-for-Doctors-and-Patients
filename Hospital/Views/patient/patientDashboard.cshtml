@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "patientDashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.PatientID = 3131;
 }
 
 <head>
@@ -71,6 +72,10 @@
 
             @foreach (var item in Model)
             {
+                if (item.patientID == ViewBag.PatientID)
+                {
+                    {
+
                 <tr>
                     <td>
                         @Html.DisplayFor(modelItem => item.date)
@@ -85,8 +90,9 @@
                         @Html.DisplayFor(modelItem => item.hospitalName)
                     </td>
                 </tr>
+                    }
+                }
             }
-
         </table>
     </div>
 </div>
