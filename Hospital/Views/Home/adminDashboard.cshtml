@@ -12,53 +12,52 @@
     <script src="script.js" defer></script>
     <title>@ViewBag.Title</title>
 </head>
+<style>
+    .dashboard-left {
+        border: 1px solid black;
+        float: left;
+        float: left;
+        flex: 20%;
+        flex-direction: column;
+        height: 1000px;
+        width: auto;
+        background-color: rgb(103, 189, 189);
+        display: flex;
+    }
 
-<!--Check if user is admin -->
+    .dashboard-right {
+        flex: 80%;
+        flex-direction: column;
+        float: right;
+        height: auto;
+        width: auto;
+        background-color: rgba(153,203,255,0.5);
+        height: 1000px;
+    }
 
+    table {
+        border: 3px solid black;
+        border-collapse: collapse;
+        width: 100%;
+    }
 
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
 
-    <style>
-        .dashboard-left {
-            border: 1px solid black;
-            float: left;
-            float: left;
-            flex: 20%;
-            flex-direction: column;
-            height: 1000px;
-            width: auto;
-            background-color: rgb(103, 189, 189);
-            display: flex;
-        }
-        .dashboard-right {
-            flex: 80%;
-            flex-direction: column;
-            float: right;
-            height: auto;
-            width: auto;
-            background-color: rgba(153,203,255,0.5);
-            height: 1000px;
-        }
+    th {
+        background-color: lightblue;
+    }
 
-        table {
-            border: 3px solid black;
-            border-collapse: collapse;
-            width: 100%;
-        }
+    tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+</style>
+@if (User.IsInRole("Admin"))
+{
 
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-
-        th {
-            background-color: lightblue;
-        }
-
-        tr:nth-child(odd) {
-            background-color: lightgray;
-        }
-    </style>
     <body>
         <div class="dashboard-container">
             <div class="dashboard-left">
@@ -74,15 +73,15 @@
                 </div>
                 <div class="dashboard-left-bottom">
                     <div class="button-container ">
-                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardAppointments","Home")'"> Edit Appointments</button>
+                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardAppointments", "Home")'"> Edit Appointments</button>
                     </div>
                     <br /><br />
                     <div class="button-container ">
-                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardPatients","Home")'">Edit Patient Information</button>
+                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardPatients", "Home")'">Edit Patient Information</button>
                     </div>
                     <br /><br />
                     <div class="button-container ">
-                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardDoctor","Home")'"> Edit Doctors</button>
+                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardDoctor", "Home")'"> Edit Doctors</button>
                     </div>
                     <br /><br />
 
@@ -117,37 +116,42 @@
 
                     @foreach (var item in Model)
                     {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.ssn)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.name)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.lastName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.dOfBirth)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.hospital)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.department)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.position)
-                        </td>
-                        <td>
-                            @Html.ActionLink("Edit", "Edit","Doctor", new { id = item.doctorID }) |
-                            @Html.ActionLink("Details", "Details", "Doctor", new { id = item.doctorID }) |
-                            @Html.ActionLink("Delete", "Delete", "Doctor", new { id = item.doctorID })
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ssn)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.lastName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.dOfBirth)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.hospital)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.department)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.position)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "Doctor", new { id = item.doctorID }) |
+                                @Html.ActionLink("Details", "Details", "Doctor", new { id = item.doctorID }) |
+                                @Html.ActionLink("Delete", "Delete", "Doctor", new { id = item.doctorID })
+                            </td>
+                        </tr>
                     }
 
                 </table>
             </div>
         </div>
     </body>
+}
+else
+{
+    <p>You are not authorized to view this page.</p>
+}

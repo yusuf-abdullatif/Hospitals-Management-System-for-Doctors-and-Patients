@@ -5,78 +5,77 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Patient Dashboard</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ssn)
+            Your SSN
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.dOfBirth)
+            Your Date of Birth
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.name)
+            Your Name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.surname)
+            Your Surname
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.email)
+            Your Email
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.phoneNum)
+            Your Phone Number
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.bloodType)
+            Your Blood Type
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.diagnoses)
+            Your Diagnoses
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.prescription)
+            Your Prescription
         </th>
+
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ssn)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.dOfBirth)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.surname)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.phoneNum)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.bloodType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.diagnoses)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.prescription)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.patientID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.patientID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.patientID })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ssn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phoneNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bloodType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.diagnoses)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prescription)
+            </td>
+            <td>
+                @Html.ActionLink("Edit My Details", "Edit", new { id = item.patientID }) |
+                @Html.ActionLink("Details My Details", "Details", new { id = item.patientID }) |
+                @Html.ActionLink("Delete My Profile", "Delete", new { id = item.patientID })
+            </td>
+        </tr>
+    }
 
 </table>

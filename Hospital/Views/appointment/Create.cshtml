@@ -4,8 +4,6 @@
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
-
 @using (Html.BeginForm())
 {
 @Html.AntiForgeryToken()
@@ -14,6 +12,13 @@
     <h4>appointment</h4>
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.doctorID, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+
     <div id="departmentForm">
         <select id="departmentSelect" onchange="getDoctors()">
             <option value="">Select a department</option>
@@ -31,7 +36,7 @@
         <select id="doctorSelect" onclick="getBusyDates()">
             <option value="-1">Select a Doctor</option>
         </select>
-        <input type="hidden" id="Doctor" name="Doctor" value="model.doctorID" />
+        <input type="hidden" id="doctorID" name="doctorID" value="mdoel.doctorID" />
     </div>
     <div id="dateForm" style="display: none">
         <select id="dateSelect" onclick="getAllDetails()" onselect="getDoctorById()" onchange="updateHiddenDate()">
@@ -39,11 +44,7 @@
         <input type="hidden" id="Date" name="Date" value="model.date" />
     </div>
     <button id="ConfirmApplication" onclick="ConfirmApplication()">Confirm</button>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Create" class="btn btn-default" />
-        </div>
-    </div>
+
 </div>
 }
 
@@ -63,14 +64,10 @@
         var doctorid = $('#doctorSelect').val();
         var doctor = $('#doctorSelect option:selected').text();
         if (department && date && doctorid != -1) {
-            model.doctorID = doctorid;
-            model.date = datetime2val;
-            model.patientID = 123;
-
             $.ajax({
-                url: '@Url.Action("Create", "appointment")',
+                url: '@Url.Action("Laaaaaaan", "appointment")',
                 type: 'POST',
-                data: { appointment: model },
+                data: { val1: $('#doctorSelect').val(), val2: $('#dateSelect').val() },
                 success: function (data) {
                     window.location.href = '@Url.Action("Index", "Appointment")';
                 }

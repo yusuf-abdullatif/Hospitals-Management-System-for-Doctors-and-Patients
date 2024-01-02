@@ -334,6 +334,7 @@
     <Content Include="Views\doctor\Create.cshtml" />
     <Content Include="Views\patient\patientDashboard.cshtml" />
     <Content Include="Views\Home\adminDashboardDoctor.cshtml" />
+    <Content Include="Views\Home\Appointment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

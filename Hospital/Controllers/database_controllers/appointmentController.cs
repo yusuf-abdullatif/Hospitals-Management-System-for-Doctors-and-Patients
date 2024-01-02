@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Hospital.Models;
 using Hospital.Models.database;
 
 namespace Hospital.Controllers.database_controllers
@@ -48,11 +49,26 @@ namespace Hospital.Controllers.database_controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(appointment appointment)
         {
-
+            if (!ModelState.IsValid)
+            {
+                return View(appointment);
+            }
             db.Appointments.Add(appointment);
             db.SaveChanges();
             return RedirectToAction("Index");
            
+        }
+        
+        [HttpPost]
+        public ActionResult Laaaaaaan(int val1, DateTime val2)
+        {
+            appointment appointment = new appointment();
+            appointment.doctorID = val1;
+            appointment.date = val2;
+            appointment.patientID = db.Patients.Where(x => x.email == User.Identity.Name).FirstOrDefault().patientID;
+            db.Appointments.Add(appointment);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         // GET: appointment/Edit/5

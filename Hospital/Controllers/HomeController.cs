@@ -62,33 +62,6 @@ namespace Hospital.Controllers
         {
             return View(db.Doctors.ToList());
         }
-        /* JavaScript code for the appointment system
-        function ConfirmApplication() {
-
-        var department = $('#departmentSelect').val();
-        var date = $('#dateSelect').val();
-        var doctorid = $('#doctorSelect').val();
-        if (department && date && doctorid != -1) {
-            $.ajax({
-                url: '@Url.Action("CreateAppointment", "Home")',
-                type: 'GET',
-                data: { doctorId: doctorid, date: date , hospitalName: "Sallamaka"},
-                success: function (data) {
-                    $('#dateSelect').empty();
-                    $('#doctorSelect').empty();
-                    $('#departmentSelect').empty();
-                    $('#showDetails').empty();
-                    $('#ConfirmButton').hide();
-                    $('#dateForm').hide();
-                    $('#doctorForm').hide();
-                    $('#departmentForm').hide();
-                    $('#showDetails').hide();
-                    alert("Appointment created!");
-                    }
-                });
-            }
-        }
-        */
         public ActionResult CreateAppointment(appointment appointment)
         {
             db.Appointments.Add(appointment);
@@ -111,7 +84,7 @@ namespace Hospital.Controllers
             mymodel.Appointments = db.Appointments.ToList();
             mymodel.Patient = db.Patients.Where(x => x.email == user.Name).FirstOrDefault();
             mymodel.Doctors = db.Doctors.ToList();
-            return View(mymodel);
+            return View(mymodel.thisappointment);
         }
         [HttpGet]
         public JsonResult GetDoctors(string departmentId)

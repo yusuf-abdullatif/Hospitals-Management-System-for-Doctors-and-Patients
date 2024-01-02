@@ -36,9 +36,10 @@
             padding-top: 20px;
         }
 
-        .text p {
-            font-size: 20px;
-        }
+            .text p {
+                font-size: 20px;
+            }
+
         .dashboard-left {
             border: 1px solid black;
             float: left;
@@ -64,52 +65,5 @@
 </head>
 
 
-<body>
-
-    <div class="dashboard-container">
-        <div class="dashboard-left">
-            <div class="dashboard-left-top">
-                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" width="50" height="50">
-                
-                <div id="doctor-info">
-                    <script>
-                        var doctorInfo = @Html.Raw(Json.Encode(ViewBag.CurrentDoctor));
-                        if (doctorInfo) {
-                            var elementdashboard = document.getElementById("doctor-info");
-                            elementdashboard.innerHTML = "Doctor ID: " + doctorInfo.doctorID + "<br />" +
-                                "Name: " + doctorInfo.name + "<br />" +
-                                "Department: " + doctorInfo.department;
-                        }
-                    </script>
-
-
-
-                    <div class="button1-container ">
-                        @Html.Partial("_LoginPartial")
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard-left-bottom">
-                <div class="button-container ">
-                    <button class="button-inner" onclick="location.href='@Url.Action("doctor_info","doctor")'"> My information</button>
-                </div>
-                <br /><br />
-                <div class="button-container ">
-                    <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> Patient information</button>
-                </div>
-                <br /><br />
-                <div class="button-container ">
-                    <button class="button-inner" onclick="location.href='@Url.Action("Index","Home")'"> My Appointments</button>
-                </div>
-                <br /><br />
-
-            </div>
-        </div>
-
-
-        @RenderBody()
-
-
-    </div>
-</body>
+@RenderBody()
 </html>

@@ -20,6 +20,7 @@ namespace Hospital.Controllers.database_controllers
             return View(db.Doctors.ToList());
         }
 
+
         // GET: doctor/Details/5
         public ActionResult Details(int? id)
         {
@@ -172,6 +173,27 @@ namespace Hospital.Controllers.database_controllers
             }
 
             return View(doctorInfo);
+        }
+
+        [HttpGet]
+        public JsonResult getPatients()
+        {
+            var myDoctorId = db.Doctors.Where(d => d.email == User.Identity.Name).FirstOrDefault().doctorID;
+            var appointments = db.Appointments.Where(a => a.doctorID == myDoctorId).ToList();
+            var patients = new List<patient>();
+            foreach (var appointment in appointments)
+            {
+                var patient = db.Patients.Where(p => p.patientID == appointment.patientID).FirstOrDefault();
+                patients.Add(patient);
+            }
+            return Json(patients, JsonRequestBehavior.AllowGet);
+        }
+        [HttpGet]
+        public JsonResult getAppointments()
+        {
+            var myDoctorId = db.Doctors.Where(d => d.email == User.Identity.Name).FirstOrDefault().doctorID;
+            var appointments = db.Appointments.Where(a => a.doctorID == myDoctorId).ToList();
+            return Json(appointments, JsonRequestBehavior.AllowGet);
         }
     }
 
