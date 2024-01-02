@@ -141,9 +141,9 @@
                             @Html.DisplayFor(modelItem => item.position)
                         </td>
                         <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.doctorID }) |
-                            @Html.ActionLink("Details", "Details", new { id = item.doctorID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.doctorID })
+                            @Html.ActionLink("Edit", "Edit","Doctor", new { id = item.doctorID }) |
+                            @Html.ActionLink("Details", "Details", "Doctor", new { id = item.doctorID }) |
+                            @Html.ActionLink("Delete", "Delete", "Doctor", new { id = item.doctorID })
                         </td>
                     </tr>
                     }

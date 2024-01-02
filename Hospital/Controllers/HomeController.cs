@@ -53,7 +53,7 @@ namespace Hospital.Controllers
         {
             return View(db.Appointments.ToList());
         }
-        public ActionResult adminDashboardDoctors()
+        public ActionResult adminDashboardDoctor()
         {
             return View(db.Doctors.ToList());
         }

@@ -117,9 +117,9 @@
                                 @Html.DisplayFor(modelItem => item.hospitalName)
                             </td>
                             <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.appointmentID }) |
-                                @Html.ActionLink("Details", "Details", new { id = item.appointmentID }) |
-                                @Html.ActionLink("Delete", "Delete", new { id = item.appointmentID })
+                                @Html.ActionLink("Edit", "Edit", new { controller = "appointment", id = item.appointmentID }) |
+                                @Html.ActionLink("Details", "Details", new { controller = "appointment", id = item.appointmentID }) |
+                                @Html.ActionLink("Delete", "Delete", new { controller = "appointment", id = item.appointmentID })
                             </td>
                         </tr>
                     }

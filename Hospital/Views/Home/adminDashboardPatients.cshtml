@@ -120,40 +120,43 @@
 
                     @foreach (var item in Model)
                     {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.ssn)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.dOfBirth)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.name)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.surname)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.email)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.phoneNum)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.bloodType)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.diagnoses)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.prescription)
-                            </td>
-                            <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.patientID }) |
-                                @Html.ActionLink("Details", "Details", new { id = item.patientID }) |
-                                @Html.ActionLink("Delete", "Delete", new { id = item.patientID })
-                            </td>
-                        </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ssn)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.dOfBirth)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.surname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.phoneNum)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.bloodType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.diagnoses)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.prescription)
+                    </td>
+                    <td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", "Patient", new { id = item.patientID }, null) |
+                        @Html.ActionLink("Details", "Details", "Patient", new { id = item.patientID }, null) |
+                        @Html.ActionLink("Delete", "Delete", "Patient", new { id = item.patientID }, null)
+                    </td>
+
+                    </td>
+                </tr>
                     }
 
                 </table>

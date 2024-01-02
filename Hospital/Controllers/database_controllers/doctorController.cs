@@ -48,11 +48,26 @@ namespace Hospital.Controllers.database_controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "doctorID,ssn,email,name,lastName,dOfBirth,hospital,department,position")] doctor doctor)
         {
-            if (ModelState.IsValid)
+            try
             {
-                db.Doctors.Add(doctor);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    db.Doctors.Add(doctor);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                Console.WriteLine(ex.ToString());
+                throw; // Rethrow the exception if needed
+            }
+
+            // Log the ModelState errors
+            foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+            {
+                Console.WriteLine(error.ErrorMessage);
             }
 
             return View(doctor);

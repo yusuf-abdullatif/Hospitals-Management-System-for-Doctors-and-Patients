@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Hospital</RootNamespace>
     <AssemblyName>Hospital</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -333,6 +333,7 @@
     <Content Include="Views\Home\adminDashboardAppointments.cshtml" />
     <Content Include="Views\doctor\Create.cshtml" />
     <Content Include="Views\patient\patientDashboard.cshtml" />
+    <Content Include="Views\Home\adminDashboardDoctor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

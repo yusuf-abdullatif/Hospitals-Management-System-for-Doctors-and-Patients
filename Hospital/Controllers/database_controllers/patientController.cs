@@ -57,7 +57,7 @@ namespace Hospital.Controllers.database_controllers
             {
                 db.Patients.Add(patient);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("PatientDashboard");
             }
 
             return View(patient);
