@@ -1,16 +1,35 @@
 ﻿@using Microsoft.AspNet.Identity
 @model IEnumerable<Hospital.Models.database.doctor>
 @{
-    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
-    ViewBag.Title = "zurt";
+    Layout = null;
+    ViewBag.Title = "Admin Dashboard";
 }
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <script src="script.js" defer></script>
+    <title>@ViewBag.Title</title>
+</head>
+
 <!--Check if user is admin -->
 @if (User.IsInRole("Admin"))
 {
 
 
     <style>
-
+        .dashboard-left {
+            border: 1px solid black;
+            float: left;
+            float: left;
+            flex: 20%;
+            flex-direction: column;
+            height: 1000px;
+            width: auto;
+            background-color: rgb(103, 189, 189);
+            display: flex;
+        }
         .dashboard-right {
             flex: 80%;
             flex-direction: column;
@@ -43,7 +62,33 @@
     </style>
     <body>
         <div class="dashboard-container">
+            <div class="dashboard-left">
+                <div class="dashboard-left-top">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" width="50" height="50">
 
+                    <div id="doctor-info">
+
+                        <div class="button-container ">
+                            @Html.Partial("_LoginPartial")
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-left-bottom">
+                    <div class="button-container ">
+                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardAppointments","Home")'"> Edit Appointments</button>
+                    </div>
+                    <br /><br />
+                    <div class="button-container ">
+                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardPatients","Home")'">Edit Patient Information</button>
+                    </div>
+                    <br /><br />
+                    <div class="button-container ">
+                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardDoctor","Home")'"> Edit Doctors</button>
+                    </div>
+                    <br /><br />
+
+                </div>
+            </div>
             <div class="dashboard-right">
                 <table class="table">
                     <tr>
@@ -73,34 +118,34 @@
 
                     @foreach (var item in Model)
                     {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.ssn)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.name)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.lastName)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.dOfBirth)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.hospital)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.department)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.position)
-                            </td>
-                            <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.doctorID }) |
-                                @Html.ActionLink("Details", "Details", new { id = item.doctorID }) |
-                                @Html.ActionLink("Delete", "Delete", new { id = item.doctorID })
-                            </td>
-                        </tr>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ssn)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.lastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.dOfBirth)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.hospital)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.department)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.position)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.doctorID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.doctorID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.doctorID })
+                        </td>
+                    </tr>
                     }
 
                 </table>

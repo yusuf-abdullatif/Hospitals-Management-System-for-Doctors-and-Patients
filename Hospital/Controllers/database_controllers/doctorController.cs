@@ -129,8 +129,8 @@ namespace Hospital.Controllers.database_controllers
         {
             return new List<doctor>
             {
-                new doctor { doctorID = 1, ssn = 123456789, name = "John", lastName = "Doe", dOfBirth = "01/01/1980", hospital = "General Hospital", department = "Cardiology", position = "Cardiologist" },
-                new doctor { doctorID = 2, ssn = 987654321, name = "Jane", lastName = "Smith", dOfBirth = "05/15/1985", hospital = "City Hospital", department = "Pediatrics", position = "Pediatrician" },
+                new doctor { doctorID = 1, ssn = 123456789, email = "doctor@hotmail.com", name = "John", lastName = "Doe", dOfBirth = "01/01/1980", hospital = "General Hospital", department = "Cardiology", position = "Cardiologist" },
+                new doctor { doctorID = 2, ssn = 987654321, email = "patient@hotmail.com",name = "Jane", lastName = "Smith", dOfBirth = "05/15/1985", hospital = "City Hospital", department = "Pediatrics", position = "Pediatrician" },
                 // Add more doctors as needed
             };
         }

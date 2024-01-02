@@ -1,100 +1,136 @@
 ﻿
 @model IEnumerable<Hospital.Models.database.appointment>
 @{
-    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
-    ViewBag.Title = "zort";
+    Layout = null;
+    ViewBag.Title = "Admin Dashboard";
 }
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <script src="script.js" defer></script>
+    <title>@ViewBag.Title</title>
+</head>
 
-<style>
-    .dashboard-left {
-        border: 1px solid black;
-        float: left;
-        float: left;
-        flex: 20%;
-        flex-direction: column;
-        height: 1000px;
-        width: auto;
-        background-color: rgb(103, 189, 189);
-        display: flex;
-    }
+<!--Check if user is admin -->
+@if (User.IsInRole("Admin"))
+{
 
-    .dashboard-right {
-        flex: 80%;
-        flex-direction: column;
-        float: right;
-        height: auto;
-        width: auto;
-        background-color: rgba(153,203,255,0.5);
-        height: 1000px;
-    }
-    table {
-        border: 3px solid black;
-        border-collapse: collapse;
-        width: 100%;
-    }
+    <style>
+        .dashboard-left {
+            border: 1px solid black;
+            float: left;
+            float: left;
+            flex: 20%;
+            flex-direction: column;
+            height: 100%;
+            width: 20%;
+            background-color: rgb(103, 189, 189);
+            display: flex;
+        }
 
-    th, td {
-        border: 1px solid black;
-        padding: 10px;
-        text-align: center;
-    }
+        .dashboard-right {
+            flex: 80%;
+            flex-direction: column;
+            float: right;
+            height: auto;
+            width: auto;
+            background-color: rgba(153,203,255,0.5);
+            height: 1000px;
+        }
 
-    th {
-        background-color: lightblue;
-    }
+        table {
+            border: 3px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-    tr:nth-child(odd) {
-        background-color: lightgray;
-    }
-</style>
-<body>
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
 
+        th {
+            background-color: lightblue;
+        }
 
-    <div class="dashboard-right">
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.date)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.doctorID)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.patientID)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.hospitalName)
-                </th>
-                <th></th>
-            </tr>
+        tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+    </style>
+    <body>
+        <div class="dashboard-container">
+            <div class="dashboard-left">
+                <div class="dashboard-left-top">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" width="50" height="50">
+                    Welcome system administrator!
+                    @Html.Partial("_LoginPartial")
+                </div>
+                <div class="dashboard-left-bottom">
+                    <div class="button-container ">
+                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardAppointments", "Home")'"> Edit Appointments</button>
+                    </div>
+                    <br /><br />
+                    <div class="button-container ">
+                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardPatients", "Home")'">Edit Patient Information</button>
+                    </div>
+                    <br /><br />
+                    <div class="button-container ">
+                        <button class="button-inner" onclick="location.href='@Url.Action("adminDashboardDoctor", "Home")'"> Edit Doctors</button>
+                    </div>
+                    <br /><br />
+                </div>
+            </div>
 
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.date)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.doctorID)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.patientID)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.hospitalName)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.appointmentID }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.appointmentID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.appointmentID })
-                    </td>
-                </tr>
-            }
+            <div class="dashboard-right">
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.date)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.doctorID)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.patientID)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.hospitalName)
+                        </th>
+                        <th></th>
+                    </tr>
 
-        </table>
-    </div>
-    </div>
-</body>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.date)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.doctorID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.patientID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.hospitalName)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.appointmentID }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.appointmentID }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.appointmentID })
+                            </td>
+                        </tr>
+                    }
 
-
+                </table>
+            </div>
+        </div>
+    </body>
+}
+else
+{
+    < h2 > You are not authorized to view this page </ h2 >
+}
 
