@@ -51,7 +51,9 @@ map = new Map(document.getElementById("map"), {
 });
 function msgAlert() {
     const msgSent = "Message Sent!";
+
     alert(msgSent);
+    //forward to home index
 }
 
 function openLoginModal() {

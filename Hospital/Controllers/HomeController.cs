@@ -97,7 +97,8 @@ namespace Hospital.Controllers
         [HttpGet]
         public JsonResult GetNotBusyDates(int doctorId)
         {
-            var dates = Enumerable.Range(0, 30).Select(i => DateTime.Now.AddDays(i)).ToList();
+            //but hr part needs to be fixed at 12:00:00 AM
+            var dates = Enumerable.Range(0, 30).Select(i => DateTime.Now.AddDays(i).Date).ToList();
             var appointments = db.Appointments.Where(a => a.doctorID == doctorId)
                                               .ToList();
 
@@ -108,6 +109,12 @@ namespace Hospital.Controllers
 
             var returnedValues = dates.Select(d => new { Value = d, Text = d.ToString("yyyy-MM-dd") }).ToList();
             return Json(returnedValues, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult post()
+        {
+            //forward to index page
+            return RedirectToAction("Index");
         }
 
     }

@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<Hospital.Models.database.patient>
-
+@using Microsoft.AspNet.Identity
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -42,40 +42,43 @@
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ssn)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dOfBirth)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.surname)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.phoneNum)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.bloodType)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.diagnoses)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.prescription)
-            </td>
-            <td>
-                @Html.ActionLink("Edit My Details", "Edit", new { id = item.patientID }) |
-                @Html.ActionLink("Details My Details", "Details", new { id = item.patientID }) |
-                @Html.ActionLink("Delete My Profile", "Delete", new { id = item.patientID })
-            </td>
-        </tr>
+        if (item.email == User.Identity.Name)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ssn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dOfBirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.surname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.phoneNum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.bloodType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.diagnoses)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.prescription)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit My Details", "Edit", new { id = item.patientID }) |
+                    @Html.ActionLink("Details My Details", "Details", new { id = item.patientID }) |
+                    @Html.ActionLink("Delete My Profile", "Delete", new { id = item.patientID })
+                </td>
+            </tr>
+        }
     }
 
 </table>

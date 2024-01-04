@@ -93,7 +93,7 @@ namespace Hospital.Controllers.database_controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken] // ValidateAntiForgeryToken is used to prevent CSRF attacks, which are attacks that use a user's identity without their knowledge.
         public ActionResult Edit([Bind(Include = "doctorID,ssn,name,lastName,dOfBirth,hospital,department,position")] doctor doctor)
         {
             if (ModelState.IsValid)
@@ -120,9 +120,8 @@ namespace Hospital.Controllers.database_controllers
             return View(doctor);
         }
 
-        // POST: doctor/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        [HttpPost, ActionName("Delete")] // HttpPost is used to specify that the action supports the HTTP POST method which is used to submit data.
+        [ValidateAntiForgeryToken] // ValidateAntiForgeryToken is used to prevent CSRF attacks, which are attacks that use a user's identity without their knowledge.
         public ActionResult DeleteConfirmed(int id)
         {
             doctor doctor = db.Doctors.Find(id);
@@ -151,6 +150,7 @@ namespace Hospital.Controllers.database_controllers
             };
         }
 
+        //actionresult is used to return a view
         public ActionResult dashboard()
         {
             return View(db.Appointments.ToList());
@@ -175,7 +175,7 @@ namespace Hospital.Controllers.database_controllers
             return View(doctorInfo);
         }
 
-        [HttpGet]
+        [HttpGet] // This attribute is used to specify that the action supports the HTTP GET method which is used to retrieve data.
         public JsonResult getPatients()
         {
             var myDoctorId = db.Doctors.Where(d => d.email == User.Identity.Name).FirstOrDefault().doctorID;
